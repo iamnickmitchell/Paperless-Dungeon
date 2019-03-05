@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# THIS README IS PORTED OVER FROM THE PREVIOUS REPOSITORY.
 
-## Available Scripts
+### The app is currently being upgraded using react.js. All previous versions and releases are now broken and null. Please wait while a new release is created.
 
-In the project directory, you can run:
+#### README.md is currently out of date. Please wait while it is being upgraded.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A website designed to teach me how to properly update, maintain, organize, and create apps. This will be functioning and regularly used (weekly at a minimum), meaning there are incentives to maintain and improve it. This is only going to be visible to those who request, are invited, and myself.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<h1>Paperless Dungeon</h1>
+<p>version 0.2.0.1 Alpha Release (current release)</p>
+<p>version 0.3.2.6 Alpha Release (pre-release)</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# To view current release:
+1) Go to https://plaguefromthenorth.000webhostapp.com
 
-### `npm run build`
+# To view pre-release:
+1) Fork a copy of the pre-release code at https://github.com/iamnickmitchell/DnD.
+2) Go into the DnD/CharacterInfo subfolder using the terminal of your choice (I currently use GitBash).
+3) Start a localhost server in the subfolder.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# To use the app (pre-release):
+To view character stats-
+1) click on the button on the homepage that says "Player Stats"
+2) scroll down the page to see the character you wish to see.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To view character items-
+1) click on the icon in the footer that looks like three people.
+2) click on the icon of the respective player you wish to view
+(If you don't know which icon you would like to see you can find it on the player stats page nest to the character name.)
+3) click on an item to view a linked page on that item.
 
-### `npm run eject`
+To view the shops-
+---This feature is not yet implimented---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To view group funds, turn counter, turn timer, current day, or current weather-
+1) go to the 3rd icon in the footer (a d6 "normal" dice)
+*the page might take a minute to load if it hasn't been used recently because of the API having to wake up
+2) !-Click on the "Next Day" buttons only if you are playing! If you accidentally click them or click them to see what happens please let me know at service@Ayrshiretechnology.com. I have to undo clicks that are done out of the game. Thank you for your understanding.
+3) you can click on the next turn button as much as you'd like.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Built with:
+* HTML5
+* CSS3
+* Javascript
+* json
+----------------
+* browserify - code modularization
+----------------
+* fontawesome - icon fonts
+* bootstrap - minor layout
+* google fonts - text fonts
+----------------
+* Microsoft Visual Code - coding terminal
+* GitBash/ GitHub - terminal
+* Heroku - API storage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Authors:
+<h3>Nick Mitchell - lead designer, lead coder<h3>
 
-## Learn More
+# Licensing:
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Acknowledgments:
+* NewForce - for teaching me how to code
+* Friends - for giving me a reason to make this
+* Family - for supporting me with feedback as features are added
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-- Ayrshire Technology 2019 --
