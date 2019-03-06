@@ -1,0 +1,243 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "Empire"
+    },
+    {
+      "id": 2,
+      "name": "Rebel Alliance"
+    },
+    {
+      "id": 3,
+      "name": "Black Sun"
+    },
+    {
+      "id": 4,
+      "name": "Red Key"
+    }
+  ],
+  "groupFunds": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "funds": 119340851037456918347569138475
+    },
+    {
+      "id": 2,
+      "groupId": 2,
+      "funds": 569183
+    },
+    {
+      "id": 3,
+      "groupId": 3,
+      "funds": 347569138475
+    },
+    {
+      "id": 4,
+      "groupId": 4,
+      "funds": 47569138475
+    }
+  ],
+  "days": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "day": 0
+    },
+    {
+      "id": 2,
+      "groupId": 2,
+      "day": 35
+    },
+    {
+      "id": 3,
+      "groupId": 3,
+      "day": 35
+    },
+    {
+      "id": 4,
+      "groupId": 4,
+      "day": 35
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Apollyon"
+    },
+    {
+      "id": 2,
+      "name": "Megan"
+    }
+  ],
+  "userPasswords": [
+    {
+      "id": 1,
+      "usersId": 1,
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "usersId": 2,
+      "password": "megan"
+    }
+  ],
+  "itemTypes": [
+    {
+      "id": 1,
+      "category": "Weapons"
+    },
+    {
+      "id": 2,
+      "category": "Armor"
+    },
+    {
+      "id": 3,
+      "category": "Goods"
+    },
+    {
+      "id": 4,
+      "category": "Clothing"
+    },
+    {
+      "id": 5,
+      "category": "Tools"
+    }
+  ],
+  "itemRarities": [
+    {
+      "id": 1,
+      "availability": "Common"
+    },
+    {
+      "id": 2,
+      "availability": "Uncommon"
+    },
+    {
+      "id": 3,
+      "availability": "Rare"
+    },
+    {
+      "id": 4,
+      "availability": "Very-Rare"
+    },
+    {
+      "id": 5,
+      "availability": "Legendary"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "itemTypeId": 1,
+      "name": "E-11",
+      "accuracy": "0",
+      "damage": "2d6",
+      "itemRarityId": 2,
+      "value": 3000,
+      "legal": false
+    }
+  ],
+  "userItems": [
+    {
+      "id": 1,
+      "userId": 1,
+      "itemId": 10
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "itemId": 8
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "itemId": 10
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "itemId": 30
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "itemId": 40
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "itemId": 14
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "itemId": 3
+    }
+  ],
+  "playerFunds": [
+    {
+      "id": 1,
+      "userId": "1",
+      "funds": 125200
+    },
+    {
+      "id": 2,
+      "userId": "2",
+      "funds": 50000
+    }
+  ],
+  "planets": [
+    {
+      "id": 1,
+      "name": "Tatooine"
+    }
+  ],
+  "citySizes": [
+    {
+      "id": 1,
+      "size": "Tiny"
+    },
+    {
+      "id": 2,
+      "size": "Small"
+    },
+    {
+      "id": 3,
+      "size": "Medium"
+    },
+    {
+      "id": 4,
+      "size": "Large"
+    },
+    {
+      "id": 5,
+      "size": "Huge"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "planetId": 1,
+      "cityName": "Mos Eisley",
+      "citySizeId": 2,
+      "governmentType": "Dictatorship",
+      "ruler": "Jabba the Hutt",
+      "biome": "Desert",
+      "weather": "Sunny"
+    }
+  ],
+  "playerLocation": [
+    {
+      "id": 1,
+      "userId": "1",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "userId": "2",
+      "locationId": 2
+    }
+  ]
+}

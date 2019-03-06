@@ -1,60 +1,24 @@
-import React, { Component } from 'react'
-
+import React, { Component } from "react";
 
 class Home extends Component {
-    render() {
-        return (
-    <div className="mainPage">
-      <h2>Hello Adventurers!</h2>
-      <p className="lead">
-        This tool is intended to help automate the grunt work of your campaign.
-      </p>
-      <hr className="my-4" />
-      <p>
-        Click the symbols in the footer to view different pages. (People = players, Cart = shops, D6 = group info, Chart = player stats, D20 = home)
-      </p>
-    </div>
-        )
-    }
+  render() {
+    return (
+      <div className="mainPage">
+        <h2>Hello Scoundrels!</h2>
+        <p className="lead">
+          This tool is intended to help automate the grunt work of your
+          campaign.
+        </p>
+        <hr className="my-4" />
+        <p>
+          View other players characters or check out the galaxy map. Login to
+          see your characters stats, current items, funds,and location. Go to
+          the shop and buy new items or sell ones you don't want! This is your
+          datapad, use it however you please.
+        </p>
+      </div>
+    );
+  }
 }
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
