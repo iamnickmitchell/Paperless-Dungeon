@@ -2,29 +2,26 @@ import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-
 class NavBar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
-                <ul className="nav nav-pills">
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/characters">Characters</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/day">Day</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/maps">Maps</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/shop">Shop</Link>
-                    </li>
-                </ul>
-            </nav>
+            <footer className="footer">
+                    <p className="">
+                        <Link className="fas fa-home size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/"></Link>
+                    </p>
+                    <p className="nav-item">
+                        <Link className="fas fa-users size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/characters"></Link>
+                    </p>
+                    <p className="nav-item">
+                        <Link className="fas fa-cloud-sun size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/day"></Link>
+                    </p>
+                    <p className="nav-item">
+                        <Link className="fas fa-globe size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/maps"></Link>
+                    </p>
+                    <p className="nav-item">
+                        <Link className="fas fa-shopping-cart size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/shop"></Link>
+                    </p>
+            </footer>
         )
     }
 }

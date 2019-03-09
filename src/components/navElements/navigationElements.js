@@ -1,19 +1,16 @@
 import { Route } from 'react-router-dom'
 import React, { Component } from "react"
-import Home from './home'
-import Shop from './shop'
-import Characters from './player'
-import Maps from './maps'
-import Day from './day'
+import Home from '../home'
+import Shop from '../shop'
+import Characters from '../player'
+import Maps from '../maps'
+import Day from '../day'
 
 
-class ApplicationViews extends Component {
+class NavigationElements extends Component {
     state = {
-        // players: this.employeesFromAPI,
-        // shop: this.locationsFromAPI,
-        // map: this.animalsFromAPI
-    }
 
+    }
     // componentDidMount(){
     //     const newState = {};
     //     fetch("http://localhost:8080/userItems?_expand=user&&_expand=item")
@@ -30,7 +27,7 @@ class ApplicationViews extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <div>
                 <Route exact path="/" render={(props) => {
                     return <Home />
                 }} />
@@ -46,9 +43,9 @@ class ApplicationViews extends Component {
                 <Route path="/Day" render={(props) => {
                     return <Day />
                 }} />
-            </React.Fragment>
+            </div>
         )
     }
 }
 
-export default ApplicationViews
+export default NavigationElements;
