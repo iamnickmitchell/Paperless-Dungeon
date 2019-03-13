@@ -2,85 +2,50 @@
   "groups": [
     {
       "id": 1,
-      "name": "Empire"
+      "name": "Empire",
+      "funds": 119340851037456918347569138475,
+      "day": 34634
     },
     {
       "id": 2,
-      "name": "Rebel Alliance"
+      "name": "Rebel Alliance",
+      "funds": 569183,
+      "day": 24454
     },
     {
       "id": 3,
-      "name": "Black Sun"
+      "name": "Black Sun",
+      "funds": 347569138475,
+      "day": 2839572395
     },
     {
       "id": 4,
-      "name": "Red Key"
-    }
-  ],
-  "groupFunds": [
-    {
-      "id": 1,
-      "groupId": 1,
-      "funds": 119340851037456918347569138475
-    },
-    {
-      "id": 2,
-      "groupId": 2,
-      "funds": 569183
-    },
-    {
-      "id": 3,
-      "groupId": 3,
-      "funds": 347569138475
-    },
-    {
-      "id": 4,
-      "groupId": 4,
-      "funds": 47569138475
-    }
-  ],
-  "days": [
-    {
-      "id": 1,
-      "groupId": 1,
-      "day": 0
-    },
-    {
-      "id": 2,
-      "groupId": 2,
-      "day": 35
-    },
-    {
-      "id": 3,
-      "groupId": 3,
-      "day": 35
-    },
-    {
-      "id": 4,
-      "groupId": 4,
-      "day": 35
+      "name": "Red Key",
+      "funds": 47569138475,
+      "day": 30234
     }
   ],
   "users": [
     {
       "id": 1,
-      "name": "Apollyon"
+      "name": "Apollyon",
+      "dm": true,
+      "password": "admin",
+      "funds": 50000
     },
     {
       "id": 2,
-      "name": "Megan"
-    }
-  ],
-  "userPasswords": [
-    {
-      "id": 1,
-      "usersId": 1,
-      "password": "admin"
+      "name": "Megan",
+      "dm": false,
+      "password": "megan",
+      "funds": 50000
     },
     {
-      "id": 2,
-      "usersId": 2,
-      "password": "megan"
+      "id": 3,
+      "name": "Cam",
+      "dm": false,
+      "password": "cam",
+      "funds": 50000
     }
   ],
   "itemTypes": [
@@ -152,7 +117,8 @@
       "damage": "2d6",
       "itemRarityId": 2,
       "value": 3000,
-      "legal": false
+      "legal": false,
+      "userId": 1
     },
     {
       "id": 2,
@@ -162,7 +128,8 @@
       "damage": "1d6+2",
       "itemRarityId": 3,
       "value": 2000,
-      "legal": true
+      "legal": true,
+      "userId": 1
     },
     {
       "id": 3,
@@ -172,7 +139,151 @@
       "damage": "2d8",
       "itemRarityId": 4,
       "value": 5000,
-      "legal": true
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "itemTypeId": 1,
+      "name": "DL-44",
+      "accuracy": "+3",
+      "damage": "1d8+2",
+      "itemRarityId": 2,
+      "value": 750,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "itemTypeId": 1,
+      "name": "Defender Sport Blaster",
+      "accuracy": "+1",
+      "damage": "1d4+1",
+      "itemRarityId": 1,
+      "value": 300,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "itemTypeId": 2,
+      "name": "T-21",
+      "accuracy": "+2",
+      "damage": "1d12+2",
+      "itemRarityId": 2,
+      "value": 6000,
+      "legal": false,
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "itemTypeId": 3,
+      "name": "E-Web",
+      "accuracy": "-1",
+      "damage": "2d12+4",
+      "itemRarityId": 3,
+      "value": 10000,
+      "legal": false,
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "itemTypeId": 1,
+      "name": "Ion Blaster",
+      "accuracy": "-3",
+      "damage": "1d4-2",
+      "itemRarityId": 2,
+      "value": 800,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "itemTypeId": 2,
+      "name": "Bowcaster",
+      "accuracy": "+3",
+      "damage": "3d6+3",
+      "itemRarityId": 4,
+      "value": 1500,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "itemTypeId": 3,
+      "name": "Emperor-4 Beam Tube",
+      "accuracy": "-1",
+      "damage": "1d20",
+      "itemRarityId": 4,
+      "value": 2000,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 11,
+      "itemTypeId": 1,
+      "name": "Paddle Beamer",
+      "accuracy": "-1",
+      "damage": "1d4-1",
+      "itemRarityId": 4,
+      "value": 1500,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 12,
+      "itemTypeId": 1,
+      "name": "DX-2 Disruptor",
+      "accuracy": "-4",
+      "damage": "2d8+2",
+      "itemRarityId": 3,
+      "value": 1000,
+      "legal": false,
+      "userId": 1
+    },
+    {
+      "id": 12,
+      "itemTypeId": 0,
+      "name": "DXR-6 Disruptor",
+      "accuracy": "-3",
+      "damage": "3d8+3",
+      "itemRarityId": 3,
+      "value": 4000,
+      "legal": false,
+      "userId": 1
+    },
+    {
+      "id": 13,
+      "itemTypeId": 1,
+      "name": "SD-77 Sonic",
+      "accuracy": "-2",
+      "damage": "2d4",
+      "itemRarityId": 2,
+      "value": 800,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 14,
+      "itemTypeId": 2,
+      "name": "SG-82 Sonic",
+      "accuracy": "-1",
+      "damage": "3d4",
+      "itemRarityId": 1,
+      "value": 2000,
+      "legal": true,
+      "userId": 1
+    },
+    {
+      "id": 15,
+      "itemTypeId": 4,
+      "name": "MM9",
+      "accuracy": "+2",
+      "damage": "3d12+4",
+      "itemRarityId": 2,
+      "value": 10000,
+      "legal": true,
+      "userId": 1
     }
   ],
   "userItems": [
@@ -190,24 +301,104 @@
       "id": 3,
       "userId": 1,
       "itemId": 2
-    }
-  ],
-  "playerFunds": [
-    {
-      "id": 1,
-      "userId": "1",
-      "funds": 125200
     },
     {
-      "id": 2,
-      "userId": "2",
-      "funds": 50000
+      "id": 4,
+      "userId": 1,
+      "itemId": 5
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "itemId": 9
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "itemId": 11
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "itemId": 2
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "itemId": 6
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "itemId": 1
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "itemId": 15
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "itemId": 14
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "itemId": 8
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "itemId": 7
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "itemId": 3
+    },
+    {
+      "id": 15,
+      "userId": 1,
+      "itemId": 4
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "itemId": 5
+    },
+    {
+      "id": 17,
+      "userId": 1,
+      "itemId": 6
+    },
+    {
+      "id": 18,
+      "userId": 1,
+      "itemId": 7
+    },
+    {
+      "id": 19,
+      "userId": 1,
+      "itemId": 8
     }
   ],
   "planets": [
     {
       "id": 1,
       "name": "Tatooine"
+    },
+    {
+      "id": 2,
+      "name": "Hoth"
+    },
+    {
+      "id": 3,
+      "name": "Coruscant"
+    },
+    {
+      "id": 4,
+      "name": "Mustafar"
     }
   ],
   "citySizes": [
@@ -241,10 +432,19 @@
       "governmentType": "Dictatorship",
       "ruler": "Jabba the Hutt",
       "biome": "Desert",
-      "weather": "Sunny"
+      "weatherId": 1,
+      "locationCode": "mp73os",
+      "userId": 1
     }
   ],
-  "playerLocation": [
+  "weather": [
+    {
+      "id": 1,
+      "weather": "Sunny",
+      "weatherIcon": ""
+    }
+  ],
+  "playerLocations": [
     {
       "id": 1,
       "userId": "1",
@@ -253,7 +453,7 @@
     {
       "id": 2,
       "userId": "2",
-      "locationId": 2
+      "locationId": 1
     }
   ]
 }
