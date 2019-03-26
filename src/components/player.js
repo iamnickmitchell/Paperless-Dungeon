@@ -1,43 +1,37 @@
 import React, { Component } from "react";
-import CharacterItems from "./character/characterItems"
-import apiManager from "./apiManager";
+import CharacterItems from "./character/characterItems";
+import { Link } from "react-router-dom";
 
 class Characters extends Component {
   state = {
-    username: [],
-    items: [],
-    funds: []
   };
-
-  componentDidMount() {
-    apiManager.user
-    .then(parsedUser => {const username = parsedUser.name
-    this.setState({username})})
-    apiManager.userItems
-    .then(parsedUserItems => {const items = parsedUserItems
-    this.setState({items})})
-    apiManager.user
-    .then(parsedFunds => {const funds = parsedFunds.funds
-    this.setState({funds})})
-  }
-
-  // componentWillReceiveProps(nextProps) {
-  //   this.state.items.length !== nextProps.items.legth ? this.setState({nextProps.items})
-  // }
 
   render() {
     return (
-      <div className="jumbotron">
-        <h1 className="display-4 color-white">{this.state.username}</h1>
-        <p className="lead">Current Funds = {this.state.funds} credits</p>
-        <hr className="my-4" />
-        <h4 className="color-white">Items</h4>
-        <p className="thin-line"></p>
-        <div className="items"><p>Name</p><p>Damage Dice</p><p>Accuracy</p></div>
-        {this.state.items.map(item => <CharacterItems key={item.id} item={item} />)}
-        {/* <Table>
+      <div>
+        <p className="footer-item logout-btn">
+          <Link
+            className="fas fa-sign-out-alt size2half logout-btn"
+            style={{ textDecoration: "none" }}
+            to="/logout"
+          />
+        </p>
+        <div className="playerDiv">
+          <div className="jumbotron">
+            <h1 className="display-4 color-white">{this.props.username}</h1>
+            <p className="lead color-orange">Current Funds = {this.props.funds} credits</p>
+            <hr className="my-4" />
+            <h4 className="color-white">Items</h4>
+            <p className="thin-line" />
+            <div className="items">
+            {this.props.userItems.map(item => (
+              <CharacterItems key={item.id} item={item} />
+            ))}</div>
+            {/* <Table>
           this.state.items.map(i => <item item={i} />)
           </Table> */}
+          </div>
+        </div>
       </div>
     );
   }

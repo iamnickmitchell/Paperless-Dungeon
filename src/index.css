@@ -14,7 +14,7 @@ code {
 } */
 
 :root{
-  --main-background-color: #8ee4af;
+  --main-background-color: grey;
   --main-txt-color: #fbeec1;
   /* --main-padding: 15px; */
   /* --main-box-shadow: 5px 5px 5px black; */
@@ -29,11 +29,14 @@ code {
   --color-shale: #379683;
   --color-ocean-blue: #557a95;
   --color-green: #479761;
+  --color-light-green: #8ee4af;
+  --color-orange: #f7b438;
+  background-color: var(--color-ocean-blue)
 }
 
 /* Sets the footers parameters */
 .footer {
-  background-color: var(--color-light-brown);
+  background-color: var(--color-grey-slate);
   display: flex;
   justify-content: space-evenly;
   /* Adjusts the footers position */
@@ -44,6 +47,7 @@ code {
   border: 2px solid white;
   flex-wrap: wrap;
   padding-bottom: 35px;
+  z-index: -1;
 }
 
 /* The area that player symbols are shown */
@@ -69,10 +73,13 @@ code {
 .color-white {
   color: white;
 }
+.color-orange {
+  color: var(--color-orange)
+}
 
 /* green hover effect for buttons */
 .iconFooter:hover {
-  color: var(--color-green);
+  color: var(--color-orange);
   transition: all 0.3s ease;
 }
 
@@ -107,6 +114,9 @@ body {
   text-align: center;
   background-color: var(--color-ocean-blue);
   color: black;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* stats styling */
@@ -129,8 +139,30 @@ body {
 }
 
 .mapsDiv{
-  height: 34rem;
+  height: 76.5vh;
   overflow-y: scroll;
+}
+
+.playerDiv{
+  height: 78.5vh;
+  overflow-y: scroll;
+}
+
+.shopPtag{
+  margin: 0px;
+  color: white;
+}
+
+#shopBuyButton{
+  color: var(--color-orange)
+}
+
+.shopDiv{
+  height: 78.5vh;
+  overflow-y: scroll;
+  z-index: 0;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* character item styling */
@@ -141,7 +173,14 @@ body {
   border: 0px;
   padding: 0px;
   display: flex;
-  justify-content:space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#item{
+  margin: 5px !important;
+  background-color: var(--color-grey-slate);
 }
 
 /* lines to be used throughout app */
@@ -154,7 +193,7 @@ body {
 
 .thin-line {
   margin-bottom: 1.5rem !important;
-  border-bottom: .5px solid var(--color-grey-slate);
+  border-bottom: 1px solid var(--color-grey-slate);
   margin-left: 30%;
   margin-right: 30%;
 }
@@ -232,7 +271,6 @@ body {
 .comingSoon {
   background-color: var(--color-ocean-blue);
   width: 100%;
-  margin-top: 200px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
@@ -270,4 +308,29 @@ body {
 
 h3.CharStat {
   background-color: var(--color-sky-blue);
+}
+
+.logout-btn{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--color-grey-slate);
+}
+
+.logout-btn-page{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logout-btn button{
+  background-color: var(--color-off-white);
+  color: white;
+}
+
+input{
+  background-color: var(--color-sky-blue);
+  border-color: var(--color-grey-slate);
 }

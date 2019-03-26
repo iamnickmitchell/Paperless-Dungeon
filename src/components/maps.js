@@ -1,16 +1,26 @@
-
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 
-const locationImage = "Tatooine.jpeg"
+const locationImage = "Tatooine.jpeg";
 
 class Maps extends Component {
   render() {
     return (
+      <div><p className="footer-item logout-btn">
+          <Link
+            className="fas fa-sign-out-alt size2half logout-btn"
+            style={{ textDecoration: "none" }}
+            to="/logout"
+          />
+        </p>
       <div className="mainPage">
         <div className="mapsDiv">
-        <img src={require(`./maps/mapImages/${locationImage}`)} alt="Whoops"></img>
+          <img
+            src={require(`./maps/mapImages/${locationImage}`)}
+            alt="Whoops"
+          />
         </div>
-      </div>
+      </div></div>
     );
   }
 }

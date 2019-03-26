@@ -19,37 +19,38 @@ const styles = {
   }
 };
 
-function CharacterItems(props) {
+function ShopClothing(props) {
   const { classes } = props;
+  if(props.items.itemTypeId === 4){
   return (
     <Card id="item" className={classes.card}>
-      <CardActionArea href={props.item.item.description} alt="Whoops" style={{textDecoration: 'none'}}>
+      <CardActionArea href={props.items.description} alt="Whoops" style={{textDecoration: 'none'}}>
         <CardMedia
           className={classes.media}
-          image={props.item.item.image}
-          title={props.item.item.description}
+          image={props.items.image}
+          title={props.items.description}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.item.item.name}
+            {props.items.name}
           </Typography>
           <Typography component="div">
-            <p className="shopPtag">{props.item.item.statOne}</p>
-            <p className="shopPtag">{props.item.item.statTwo}</p>
+            <p className="shopPtag">{props.items.statOne}</p>
+            <p className="shopPtag">{props.items.statTwo}</p>
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" id="shopBuyButton">
-          Sell Item ({props.item.item.value / 2})
+          Buy ({props.items.value})
         </Button>
       </CardActions>
     </Card>
-  );
+  )} else {return null}
 }
 
-CharacterItems.propTypes = {
+ShopClothing.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(CharacterItems);
+export default withStyles(styles)(ShopClothing);

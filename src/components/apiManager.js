@@ -1,28 +1,33 @@
-const currentUserId = 1;
+let currentUserId = localStorage.getItem("logged-in");
+if (currentUserId === null) {
+  currentUserId = 1;
+}
+
+const fetchURL = "http://localhost:8080"
 
 const apiManager = {
-  user: fetch(`http://localhost:8080/users/${currentUserId}`).then(user =>
-    user.json()
-  ),
-  userItems: fetch(
-    `http://localhost:8080/userItems?userId=${currentUserId}&&_expand=item`
-  ).then(userItems => userItems.json()),
-  location: fetch("http://localhost:8080/locations").then(location =>
-    location.json()
-  ),
-  login: fetch("http://localhost:8080/users").then(login => login.json())
-  // putToGroupFunds:
-  //   fetch(`http://localhost:8080/group/${1}`, {
-  //     method: "PUT",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify("groupFunds[0]")
-  //   }),
-  // putToDays:
-  //   fetch(`http://localhost:8080/days/${1}`, {
-  //     method: "PUT",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify("dayCount[0]")
-  //   }),
+  user: () =>
+    fetch(`${fetchURL}/users/${currentUserId}`).then(user =>
+      user.json()
+    ),
+  userItems: () =>
+    fetch(
+      `${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`
+    ).then(userItems => userItems.json()),
+  items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
+  location: () =>
+    fetch(`${fetchURL}/locations`).then(location => location.json()),
+  playerLocations: () =>
+    fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`).then(user =>
+      user.json()
+    ),
+  login: () => fetch(`${fetchURL}/users`).then(login => login.json()),
+  register: createUser => {
+    fetch(`${fetchURL}/users`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(createUser)
+    });
+  }
 };
-
 export default apiManager;

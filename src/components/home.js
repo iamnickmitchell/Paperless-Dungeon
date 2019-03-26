@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 class Home extends Component {
+
   render() {
     return (
+      <div>
       <div className="mainPage">
+
         <h2>Hello Scoundrels!</h2>
         <p className="lead">
           This tool is intended to help automate the grunt work of your
@@ -15,7 +18,7 @@ class Home extends Component {
           the shop and buy new items or sell ones you don't want! This is your
           datapad, use it however you please.
         </p>
-      </div>
+      </div></div>
     );
   }
 }
