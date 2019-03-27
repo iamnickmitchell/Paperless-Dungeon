@@ -11,7 +11,7 @@ import Register from "../login-register/register";
 import PleaseLogin from "../login-register/please-login";
 import apiManager from "../apiManager";
 
-const fetchURL = "http://localhost:8080"
+const fetchURL = "http://localhost:8080";
 
 class NavigationElements extends Component {
   state = {
@@ -19,21 +19,19 @@ class NavigationElements extends Component {
     userItems: [],
     funds: [],
     items: [],
-    weapons: [],
-    playerLocation: []
+    playerLocation: [],
+    playerLocationSize: []
   };
 
   refresh = () => {
-    const newState = {}
-    const currentUserId = localStorage.getItem("logged-in")
+    const newState = {};
+    const currentUserId = localStorage.getItem("logged-in");
     fetch(`${fetchURL}/users/${currentUserId}`)
       .then(user => user.json())
       .then(parsedUser => {
         newState.username = parsedUser.name;
       });
-    fetch(
-      `${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`
-    )
+    fetch(`${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`)
       .then(userItems => userItems.json())
       .then(parsedUserItems => {
         newState.userItems = parsedUserItems;
@@ -43,22 +41,22 @@ class NavigationElements extends Component {
       .then(parsedFunds => {
         newState.funds = parsedFunds.funds;
       });
-      fetch(`${fetchURL}/items`)
+    fetch(`${fetchURL}/items`)
       .then(items => items.json())
       .then(parsedItems => {
         newState.items = parsedItems;
       });
-      fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`)
-      .then(location =>
-      location.json())
+    fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`)
+      .then(location => location.json())
       .then(parsedplayerLocation => {
         newState.playerLocation = parsedplayerLocation.location.cityName;
+        newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
       })
-      .then(()=>this.setState(newState))
+      .then(() => this.setState(newState));
   };
 
   componentDidMount() {
-    const newState = {}
+    const newState = {};
     apiManager.user().then(parsedUser => {
       newState.username = parsedUser.name;
     });
@@ -71,11 +69,13 @@ class NavigationElements extends Component {
     apiManager.items().then(parsedItems => {
       newState.items = parsedItems;
     });
-    apiManager.playerLocations()
-    .then(parsedplayerLocation => {
-      newState.playerLocation = parsedplayerLocation.location.cityName;
-    })
-    .then(()=>this.setState(newState))
+    apiManager
+      .playerLocations()
+      .then(parsedplayerLocation => {
+        newState.playerLocation = parsedplayerLocation.location.cityName;
+        newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
+      })
+      .then(() => this.setState(newState));
   }
 
   isAuthenticated = () => localStorage.getItem("logged-in") !== null;
@@ -123,8 +123,16 @@ class NavigationElements extends Component {
           path="/Shop"
           render={props => {
             if (this.isAuthenticated()) {
-              return <Shop {...props} items={this.state.items} funds={this.state.funds}
-              playerLocation={this.state.playerLocation} />;
+              return (
+                <Shop
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                />
+              );
             } else {
               return <PleaseLogin />;
             }
@@ -149,7 +157,7 @@ class NavigationElements extends Component {
         <Route
           path="/register"
           render={props => {
-            return <Register {...props}/>;
+            return <Register {...props} />;
           }}
         />
         <Route

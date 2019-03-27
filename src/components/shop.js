@@ -4,8 +4,13 @@ import ShopTools from "./shop/shopTools";
 import ShopWeapons from "./shop/shopWeapons";
 import ShopFood from "./shop/shopFood";
 import ShopClothing from "./shop/shopClothing";
+import shopBuy from "./shop/shopBuy";
 
 class Shop extends Component {
+  itemShopBuy(id, value) {
+    shopBuy(id, value);
+  }
+
   render() {
     return (
       <div>
@@ -54,7 +59,14 @@ class Shop extends Component {
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
-              <ShopWeapons {...this.props} key={items.id} items={items} />
+              <ShopWeapons
+                {...this.props}
+                refresh={this.props.refresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocationSize={this.props.playerLocationSize}
+              />
             ))}
           </div>
         </div>
