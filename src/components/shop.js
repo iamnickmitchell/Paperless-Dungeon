@@ -7,6 +7,14 @@ import ShopClothing from "./shop/shopClothing";
 import shopBuy from "./shop/shopBuy";
 
 class Shop extends Component {
+
+  state = {
+    playerLocation: this.props.playerLocation,
+    playerLocationSize: this.props.playerLocationSize,
+    funds: this.props.funds,
+    items: this.props.items
+  }
+
   itemShopBuy(id, value) {
     shopBuy(id, value);
   }
@@ -60,7 +68,6 @@ class Shop extends Component {
           <div className="items">
             {this.props.items.map(items => (
               <ShopWeapons
-                {...this.props}
                 refresh={this.props.refresh}
                 itemShopBuy={this.itemShopBuy}
                 key={items.id}

@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import shopSell from "../shop/shopSell";
 
 const styles = {
   card: {
@@ -23,7 +24,11 @@ function CharacterItems(props) {
   const { classes } = props;
   return (
     <Card id="item" className={classes.card}>
-      <CardActionArea href={props.item.item.description} alt="Whoops" style={{textDecoration: 'none'}}>
+      <CardActionArea
+        href={props.item.item.description}
+        alt="Whoops"
+        style={{ textDecoration: "none" }}
+      >
         <CardMedia
           className={classes.media}
           image={props.item.item.image}
@@ -40,7 +45,18 @@ function CharacterItems(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" id="shopBuyButton">
+        <Button
+          size="small"
+          id="shopBuyButton"
+          onClick={() => {
+            shopSell(
+              props.item.id,
+              props.item.item.value / 2,
+              props.playerLocation,
+              props.refresh
+            );
+          }}
+        >
           Sell Item ({props.item.item.value / 2})
         </Button>
       </CardActions>

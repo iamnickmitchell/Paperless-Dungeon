@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import shopBuy from "./shopBuy"
 
 const styles = {
   card: {
@@ -21,7 +22,7 @@ const styles = {
 
 function ShopFood(props) {
   const { classes } = props;
-  if(props.items.itemTypeId === 3){
+  if(props.items.itemTypeId === 3 && Number(props.items.itemRarityId) <= Number(props.playerLocationSize)){
   return (
     <Card id="item" className={classes.card}>
       <CardActionArea href={props.items.description} alt="Whoops" style={{textDecoration: 'none'}}>
@@ -41,7 +42,7 @@ function ShopFood(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" id="shopBuyButton">
+        <Button size="small" id="shopBuyButton" onClick={()=>{shopBuy(props.items.id, props.items.value, props.refresh)}}>
           Buy ({props.items.value})
         </Button>
       </CardActions>

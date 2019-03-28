@@ -23,6 +23,8 @@ class NavigationElements extends Component {
     playerLocationSize: []
   };
 
+
+
   refresh = () => {
     const newState = {};
     const currentUserId = localStorage.getItem("logged-in");
@@ -112,6 +114,7 @@ class NavigationElements extends Component {
                   userItems={this.state.userItems}
                   funds={this.state.funds}
                   playerLocation={this.state.playerLocation}
+                  refresh={this.refresh}
                 />
               );
             } else {

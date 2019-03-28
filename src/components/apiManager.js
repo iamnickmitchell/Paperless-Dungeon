@@ -28,6 +28,8 @@ const apiManager = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(createUser)
     });
-  }
+  },
+  shopBuyOne: () => fetch(`${fetchURL}/users/${currentUserId}`)
+    .then(user => user.json())
 };
 export default apiManager;
