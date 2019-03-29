@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import shopBuy from "./shopBuy"
 
 const styles = {
   card: {
@@ -21,7 +22,7 @@ const styles = {
 
 function ShopTools(props) {
   const { classes } = props;
-  if(props.items.itemTypeId === 2){
+  if(props.items.itemTypeId === 2 && Number(props.items.itemRarityId) <= Number(props.playerLocationSize)){
   return (
     <Card id="item" className={classes.card}>
       <CardActionArea href={props.items.description} alt="Whoops" style={{textDecoration: 'none'}}>
@@ -41,9 +42,20 @@ function ShopTools(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" id="shopBuyButton">
-          Buy ({props.items.value})
-        </Button>
+      <Button
+            size="small"
+            id="shopBuyButton"
+            onClick={() => {
+              shopBuy(
+                props.items.id,
+                props.items.value,
+                props.playerLocation,
+                props.shopBuySellRefresh
+              );
+            }}
+          >
+            Buy ({props.items.value})
+          </Button>
       </CardActions>
     </Card>
   )} else {return null}

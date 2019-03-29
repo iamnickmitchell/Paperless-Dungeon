@@ -12,7 +12,7 @@ const apiManager = {
     ),
   userItems: () =>
     fetch(
-      `${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`
+      `${fetchURL}/userItems?userId=${currentUserId}&_expand=item`
     ).then(userItems => userItems.json()),
   items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
   location: () =>
@@ -28,6 +28,8 @@ const apiManager = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(createUser)
     });
-  }
+  },
+  shopBuyOne: () => fetch(`${fetchURL}/users/${currentUserId}`)
+    .then(user => user.json())
 };
 export default apiManager;

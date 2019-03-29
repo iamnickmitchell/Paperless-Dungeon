@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import shopSell from "../shop/shopSell";
 
 const styles = {
   card: {
@@ -21,31 +22,50 @@ const styles = {
 
 function CharacterItems(props) {
   const { classes } = props;
-  return (
-    <Card id="item" className={classes.card}>
-      <CardActionArea href={props.item.item.description} alt="Whoops" style={{textDecoration: 'none'}}>
-        <CardMedia
-          className={classes.media}
-          image={props.item.item.image}
-          title={props.item.item.description}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.item.item.name}
-          </Typography>
-          <Typography component="div">
-            <p className="shopPtag">{props.item.item.statOne}</p>
-            <p className="shopPtag">{props.item.item.statTwo}</p>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" id="shopBuyButton">
-          Sell Item ({props.item.item.value / 2})
-        </Button>
-      </CardActions>
-    </Card>
-  );
+  if (props.item.sold === null) {
+    return (
+      <Card id="item" className={classes.card}>
+        <CardActionArea
+          href={props.item.item.description}
+          alt="Whoops"
+          style={{ textDecoration: "none" }}
+        >
+          <CardMedia
+            className={classes.media}
+            image={props.item.item.image}
+            title={props.item.item.description}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {props.item.item.name}
+            </Typography>
+            <Typography component="div">
+              <p className="shopPtag">{props.item.item.statOne}</p>
+              <p className="shopPtag">{props.item.item.statTwo}</p>
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button
+            size="small"
+            id="shopBuyButton"
+            onClick={() => {
+              shopSell(
+                props.item.id,
+                props.item.item.value / 2,
+                props.playerLocation,
+                props.shopBuySellRefresh
+              );
+            }}
+          >
+            Sell Item ({props.item.item.value / 2})
+          </Button>
+        </CardActions>
+      </Card>
+    );
+  } else {
+    return null;
+  }
 }
 
 CharacterItems.propTypes = {
