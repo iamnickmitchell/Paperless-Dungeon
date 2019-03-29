@@ -30,13 +30,10 @@ class Characters extends Component {
                   key={item.id}
                   item={item}
                   playerLocation={this.props.playerLocation}
-                  refresh={this.props.refresh}
+                  shopBuySellRefresh={this.props.shopBuySellRefresh}
                 />
               ))}
             </div>
-            {/* <Table>
-          this.state.items.map(i => <item item={i} />)
-          </Table> */}
           </div>
         </div>
       </div>

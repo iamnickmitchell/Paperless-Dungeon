@@ -12,7 +12,7 @@ const apiManager = {
     ),
   userItems: () =>
     fetch(
-      `${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`
+      `${fetchURL}/userItems?userId=${currentUserId}&_expand=item`
     ).then(userItems => userItems.json()),
   items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
   location: () =>

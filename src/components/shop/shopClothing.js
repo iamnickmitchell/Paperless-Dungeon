@@ -42,9 +42,20 @@ function ShopClothing(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" id="shopBuyButton" onClick={()=>{shopBuy(props.items.id, props.items.value, props.refresh)}}>
-          Buy ({props.items.value})
-        </Button>
+      <Button
+            size="small"
+            id="shopBuyButton"
+            onClick={() => {
+              shopBuy(
+                props.items.id,
+                props.items.value,
+                props.playerLocation,
+                props.shopBuySellRefresh
+              );
+            }}
+          >
+            Buy ({props.items.value})
+          </Button>
       </CardActions>
     </Card>
   )} else {return null}

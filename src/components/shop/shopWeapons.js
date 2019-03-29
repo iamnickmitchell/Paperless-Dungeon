@@ -54,7 +54,7 @@ function ShopWeapons(props) {
             size="small"
             id="shopBuyButton"
             onClick={() => {
-              shopBuy(props.items.id, props.items.value,props.playerLocation, props.refresh)
+              shopBuy(props.items.id, props.items.value,props.playerLocation, props.shopBuySellRefresh)
             }}
           >
             Buy ({props.items.value})

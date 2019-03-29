@@ -4,7 +4,6 @@ const fetchURL = "http://localhost:8080";
 
 function shopBuy(id, value, location, refresh) {
   let funds = 0;
-  let boughtLocation = location;
   const currentUserId = localStorage.getItem("logged-in");
   apiManager
     .shopBuyOne()
@@ -15,7 +14,7 @@ function shopBuy(id, value, location, refresh) {
       const newItem = {
         userId: localStorage.getItem("logged-in"),
         itemId: id,
-        bought: boughtLocation,
+        bought: location,
         sold: null
       };
       if (Number(funds) >= Number(value)) {
@@ -23,13 +22,13 @@ function shopBuy(id, value, location, refresh) {
           .user()
           .then(parsedFunds => {
             const newFunds = parsedFunds.funds - value;
-            fetch(`${fetchURL}/users/${currentUserId}`, {
+            return fetch(`${fetchURL}/users/${currentUserId}`, {
               method: "PATCH",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ funds: newFunds })
             });
           })
-          .then(
+          .then(()=>
             fetch(`${fetchURL}/userItems`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },

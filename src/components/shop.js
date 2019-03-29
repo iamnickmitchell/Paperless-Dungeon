@@ -7,13 +7,12 @@ import ShopClothing from "./shop/shopClothing";
 import shopBuy from "./shop/shopBuy";
 
 class Shop extends Component {
-
   state = {
     playerLocation: this.props.playerLocation,
     playerLocationSize: this.props.playerLocationSize,
     funds: this.props.funds,
     items: this.props.items
-  }
+  };
 
   itemShopBuy(id, value) {
     shopBuy(id, value);
@@ -43,7 +42,14 @@ class Shop extends Component {
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
-              <ShopTools {...this.props} key={items.id} items={items} />
+              <ShopTools
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocation={this.props.playerLocation}
+                playerLocationSize={this.props.playerLocationSize}
+              />
             ))}
           </div>
           <hr className="my-4" />
@@ -51,7 +57,14 @@ class Shop extends Component {
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
-              <ShopFood {...this.props} key={items.id} items={items} />
+              <ShopFood
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocation={this.props.playerLocation}
+                playerLocationSize={this.props.playerLocationSize}
+              />
             ))}
           </div>
           <hr className="my-4" />
@@ -59,7 +72,14 @@ class Shop extends Component {
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
-              <ShopClothing {...this.props} key={items.id} items={items} />
+              <ShopClothing
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocation={this.props.playerLocation}
+                playerLocationSize={this.props.playerLocationSize}
+              />
             ))}
           </div>
           <hr className="my-4" />
@@ -68,10 +88,11 @@ class Shop extends Component {
           <div className="items">
             {this.props.items.map(items => (
               <ShopWeapons
-                refresh={this.props.refresh}
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
                 itemShopBuy={this.itemShopBuy}
                 key={items.id}
                 items={items}
+                playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
               />
             ))}

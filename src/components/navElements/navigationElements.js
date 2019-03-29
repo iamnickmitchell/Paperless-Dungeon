@@ -23,60 +23,94 @@ class NavigationElements extends Component {
     playerLocationSize: []
   };
 
-
+  shopBuySellRefresh = () => {
+    const newState = {};
+    const currentUserId = localStorage.getItem("logged-in")
+    return fetch(`${fetchURL}/userItems?userId=${currentUserId}&_expand=item`)
+      .then(userItems => userItems.json())
+      .then(parsedUserItems => {
+        newState.userItems = parsedUserItems;
+      })
+      .then(() =>
+        fetch(`${fetchURL}/users/${currentUserId}`)
+          .then(user => user.json())
+          .then(parsedFunds => {
+            newState.funds = parsedFunds.funds;
+          })
+      )
+      .then(() => this.setState(newState));
+  };
 
   refresh = () => {
     const newState = {};
     const currentUserId = localStorage.getItem("logged-in");
-    fetch(`${fetchURL}/users/${currentUserId}`)
+    return fetch(`${fetchURL}/users/${currentUserId}`)
       .then(user => user.json())
       .then(parsedUser => {
         newState.username = parsedUser.name;
-      });
-    fetch(`${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`)
-      .then(userItems => userItems.json())
-      .then(parsedUserItems => {
-        newState.userItems = parsedUserItems;
-      });
-    fetch(`${fetchURL}/users/${currentUserId}`)
-      .then(user => user.json())
-      .then(parsedFunds => {
-        newState.funds = parsedFunds.funds;
-      });
-    fetch(`${fetchURL}/items`)
-      .then(items => items.json())
-      .then(parsedItems => {
-        newState.items = parsedItems;
-      });
-    fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`)
-      .then(location => location.json())
-      .then(parsedplayerLocation => {
-        newState.playerLocation = parsedplayerLocation.location.cityName;
-        newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
       })
+      .then(() =>
+        fetch(`${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`)
+          .then(userItems => userItems.json())
+          .then(parsedUserItems => {
+            newState.userItems = parsedUserItems;
+          })
+      )
+      .then(() =>
+        fetch(`${fetchURL}/users/${currentUserId}`)
+          .then(user => user.json())
+          .then(parsedFunds => {
+            newState.funds = parsedFunds.funds;
+          })
+      )
+      .then(() =>
+        fetch(`${fetchURL}/items`)
+          .then(items => items.json())
+          .then(parsedItems => {
+            newState.items = parsedItems;
+          })
+      )
+      .then(() =>
+        fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`)
+          .then(location => location.json())
+          .then(parsedplayerLocation => {
+            newState.playerLocation = parsedplayerLocation.location.cityName;
+            newState.playerLocationSize =
+              parsedplayerLocation.location.citySizeId;
+          })
+      )
       .then(() => this.setState(newState));
   };
 
   componentDidMount() {
     const newState = {};
-    apiManager.user().then(parsedUser => {
-      newState.username = parsedUser.name;
-    });
-    apiManager.userItems().then(parsedUserItems => {
-      newState.userItems = parsedUserItems;
-    });
-    apiManager.user().then(parsedFunds => {
-      newState.funds = parsedFunds.funds;
-    });
-    apiManager.items().then(parsedItems => {
-      newState.items = parsedItems;
-    });
-    apiManager
-      .playerLocations()
-      .then(parsedplayerLocation => {
-        newState.playerLocation = parsedplayerLocation.location.cityName;
-        newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
+    return apiManager
+      .user()
+      .then(parsedUser => {
+        newState.username = parsedUser.name;
       })
+      .then(() =>
+        apiManager.userItems().then(parsedUserItems => {
+          newState.userItems = parsedUserItems;
+        })
+      )
+      .then(() =>
+        apiManager.user().then(parsedFunds => {
+          newState.funds = parsedFunds.funds;
+        })
+      )
+      .then(() =>
+        apiManager.items().then(parsedItems => {
+          newState.items = parsedItems;
+        })
+      )
+      .then(() =>
+        apiManager.playerLocations().then(parsedplayerLocation => {
+          newState.playerLocation = parsedplayerLocation.location.cityName;
+          newState.playerLocationSize =
+            parsedplayerLocation.location.citySizeId;
+        })
+      )
       .then(() => this.setState(newState));
   }
 
@@ -114,7 +148,7 @@ class NavigationElements extends Component {
                   userItems={this.state.userItems}
                   funds={this.state.funds}
                   playerLocation={this.state.playerLocation}
-                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
                 />
               );
             } else {
@@ -134,6 +168,7 @@ class NavigationElements extends Component {
                   playerLocation={this.state.playerLocation}
                   playerLocationSize={this.state.playerLocationSize}
                   refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
                 />
               );
             } else {
