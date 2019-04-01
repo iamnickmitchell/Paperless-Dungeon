@@ -6,6 +6,7 @@ import Characters from "../player";
 import Maps from "../maps";
 import Day from "../day";
 import ItemCreate from "../shop/shopCreateItem"
+import ItemEdit from "../shop/shopEditItem"
 import Login from "../login-register/login";
 import Logout from "../login-register/logout";
 import Register from "../login-register/register";
@@ -218,6 +219,12 @@ class NavigationElements extends Component {
           path="/item-create"
           render={props => {
             return <ItemCreate itemsRefresh={this.itemsRefresh}  />;
+          }}
+        />
+        <Route
+          path="/item-edit"
+          render={props => {
+            return <ItemEdit {...this.props} {...props} itemsRefresh={this.itemsRefresh} editItems={this.props.editItems} />;
           }}
         />
       </div>

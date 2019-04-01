@@ -490,7 +490,7 @@
       "statOne": "Used to store liquids",
       "statTwo": "Holds up to 1 pint",
       "description": "https://www.starwars.com/",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://bd6fbb2d3fb67582526e-49e6790a1cf25f1c4f07a221c3b0e633.ssl.cf5.rackcdn.com/G032.jpg",
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "1",
@@ -532,132 +532,6 @@
       "itemId": 1,
       "bought": "Mos Eisley",
       "sold": null
-    },
-    {
-      "userId": "1",
-      "itemId": 21,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 2
-    },
-    {
-      "userId": "1",
-      "itemId": 23,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 3
-    },
-    {
-      "userId": "1",
-      "itemId": 22,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 4
-    },
-    {
-      "userId": "1",
-      "itemId": 22,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 5
-    },
-    {
-      "userId": "1",
-      "itemId": 21,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 6
-    },
-    {
-      "userId": "1",
-      "itemId": 25,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 7
-    },
-    {
-      "userId": "1",
-      "itemId": 20,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 8
-    },
-    {
-      "userId": "1",
-      "itemId": 5,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 9
-    },
-    {
-      "userId": "1",
-      "itemId": 5,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 10
-    },
-    {
-      "userId": "1",
-      "itemId": 4,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 11
-    },
-    {
-      "userId": "1",
-      "itemId": 4,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 12
-    },
-    {
-      "userId": "1",
-      "itemId": 6,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 13
-    },
-    {
-      "userId": "1",
-      "itemId": 5,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 14
-    },
-    {
-      "userId": "1",
-      "itemId": 16,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 15
-    },
-    {
-      "userId": "1",
-      "itemId": 14,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 16
-    },
-    {
-      "userId": "1",
-      "itemId": 5,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 17
-    },
-    {
-      "userId": "1",
-      "itemId": 5,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 18
-    },
-    {
-      "userId": "1",
-      "itemId": 24,
-      "bought": "Mos Eisley",
-      "sold": "Mos Eisley",
-      "id": 19
     }
   ],
   "planets": [
