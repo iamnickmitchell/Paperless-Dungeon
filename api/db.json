@@ -121,7 +121,7 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 990089,
+      "funds": 908614,
       "groupId": 1
     },
     {
@@ -356,82 +356,82 @@
       "userId": 1
     },
     {
-      "id": 14,
-      "itemTypeId": 1,
       "name": "SD-77 Sonic",
-      "description": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "statOne": "Accuracy: -2",
       "statTwo": "Damage: 2d4",
+      "description": "",
+      "image": "https://vignette.wikia.nocookie.net/starwars/images/9/9d/Sd-77_sonic_pistol.png/revision/latest?cb=20090604165012",
+      "itemTypeId": 1,
       "itemRarityId": 2,
       "value": 800,
       "legal": true,
-      "userId": 1
+      "userId": "1",
+      "id": 14
     },
     {
-      "id": 15,
-      "itemTypeId": 1,
       "name": "SG-82 Sonic",
-      "description": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "statOne": "Accuracy: -1",
       "statTwo": "Damage: 3d4",
+      "description": "",
+      "image": "https://vignette.wikia.nocookie.net/starwars/images/7/77/White_Thranta_Rifle.jpg/revision/latest?cb=20091230174045",
+      "itemTypeId": 1,
       "itemRarityId": 1,
       "value": 2000,
       "legal": true,
-      "userId": 1
+      "userId": "1",
+      "id": 15
     },
     {
-      "id": 16,
-      "itemTypeId": 1,
       "name": "MM9",
-      "description": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "statOne": "Accuracy: +2",
       "statTwo": "Damage: 3d12+4",
+      "description": "",
+      "image": "https://vignette.wikia.nocookie.net/starwars/images/7/78/MM9_Wrist_Rocket_System.jpg/revision/latest?cb=20090209234104",
+      "itemTypeId": 1,
       "itemRarityId": 2,
       "value": 10000,
       "legal": true,
-      "userId": 1
+      "userId": "1",
+      "id": 16
     },
     {
-      "id": 17,
-      "itemTypeId": 2,
       "name": "Datapad",
-      "description": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "statOne": "Basically a space ipad!",
       "statTwo": "Control electronics around you.",
+      "description": "",
+      "image": "https://vignette.wikia.nocookie.net/starwars/images/4/41/Imperial_datapad.png/revision/latest?cb=20161204113618",
+      "itemTypeId": 2,
       "itemRarityId": 1,
       "value": 250,
       "legal": true,
-      "userId": 1
+      "userId": "1",
+      "id": 17
     },
     {
-      "id": 18,
-      "itemTypeId": 3,
       "name": "Bantha Meat",
-      "description": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "statOne": "Type: Meat",
       "statTwo": "Wt: 1 lbs",
+      "description": "",
+      "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/18/08/1519155106-flank-steak-horizontal.jpg",
+      "itemTypeId": 3,
       "itemRarityId": 1,
       "value": 2,
       "legal": true,
-      "userId": 1
+      "userId": "1",
+      "id": 18
     },
     {
-      "id": 19,
-      "itemTypeId": 4,
       "name": "Tunic",
-      "description": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "statOne": "Armor: None",
       "statTwo": "Very plain tunic made out of thin cloth",
+      "description": "",
+      "image": "https://ae01.alicdn.com/kf/HTB1EGQ_bWmWQ1JjSZPhq6xCJFXaH/Free-Shipping-Custom-Made-Obi-Wan-Kenobi-Jedi-Tunic-Star-Wars-Cosplay-Costume-XS-XXXL-Available.jpg_640x640.jpg",
+      "itemTypeId": 4,
       "itemRarityId": 1,
       "value": 5,
       "legal": true,
-      "userId": 1
+      "userId": "1",
+      "id": 19
     },
     {
       "name": "Bantha Milk",
@@ -490,7 +490,7 @@
       "statOne": "Used to store liquids",
       "statTwo": "Holds up to 1 pint",
       "description": "https://www.starwars.com/",
-      "image": "https://bd6fbb2d3fb67582526e-49e6790a1cf25f1c4f07a221c3b0e633.ssl.cf5.rackcdn.com/G032.jpg",
+      "image": "https://jooinn.com/images/bottle-on-table-2.jpg",
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "1",
@@ -503,7 +503,7 @@
       "statOne": "A popular drink in bars around the galaxy!",
       "statTwo": "",
       "description": "https://www.starwars.com/",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://www.pirateshipvallarta.com/blog/wp-content/uploads/2015/09/8MKJiwyZ8z06JWiXULxdVRp-Mx44jBPA-6grwotOVTY.jpg",
       "itemTypeId": 3,
       "itemRarityId": 1,
       "value": 4,
@@ -523,15 +523,150 @@
       "legal": true,
       "userId": "1",
       "id": 26
+    },
+    {
+      "name": "AT-AT",
+      "statOne": "Large walker used by Galactic Empire.",
+      "statTwo": "Extremely Powerful.",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": "5",
+      "itemRarityId": "4",
+      "value": "1500000",
+      "legal": true,
+      "userId": "1",
+      "id": 27
+    },
+    {
+      "name": "Backpack",
+      "statOne": "Used to carry items.",
+      "statTwo": "Can hold up to 50lbs.",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": "2",
+      "itemRarityId": 1,
+      "value": "25",
+      "legal": true,
+      "userId": "1",
+      "id": 28
+    },
+    {
+      "name": "Socks",
+      "statOne": "",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": "4",
+      "itemRarityId": 1,
+      "value": "1",
+      "legal": true,
+      "userId": "1",
+      "id": 29
+    },
+    {
+      "name": "Trousers",
+      "statOne": "Worn over humanoid legs.",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": "4",
+      "itemRarityId": 1,
+      "value": "10",
+      "legal": true,
+      "userId": "1",
+      "id": 30
     }
   ],
   "userItems": [
     {
-      "id": 1,
-      "userId": 2,
-      "itemId": 1,
+      "userId": "1",
+      "itemId": 31,
       "bought": "Mos Eisley",
-      "sold": null
+      "boughtTime": 1554142984941,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143005553,
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "itemId": 23,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142988076,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143014116,
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "itemId": 22,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142988908,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143006682,
+      "id": 3
+    },
+    {
+      "userId": "1",
+      "itemId": 28,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142989772,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143013311,
+      "id": 4
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142990384,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143012126,
+      "id": 5
+    },
+    {
+      "userId": "1",
+      "itemId": 21,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142992128,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143007737,
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "itemId": 26,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142993847,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143008918,
+      "id": 7
+    },
+    {
+      "userId": "1",
+      "itemId": 19,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142996213,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143009994,
+      "id": 8
+    },
+    {
+      "userId": "1",
+      "itemId": 5,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142998688,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143011394,
+      "id": 9
+    },
+    {
+      "userId": "1",
+      "itemId": 6,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554142999266,
+      "sold": "Mos Eisley",
+      "soldTime": 1554143012728,
+      "id": 10
     }
   ],
   "planets": [

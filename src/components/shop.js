@@ -71,6 +71,7 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>
@@ -86,6 +87,7 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>
@@ -101,6 +103,7 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>
@@ -116,6 +119,7 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>

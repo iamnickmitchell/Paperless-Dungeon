@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import apiManager from "../apiManager";
-import { Link } from "react-router-dom";
 
 class ItemEdit extends Component {
   state = {
@@ -48,16 +47,6 @@ class ItemEdit extends Component {
             const success =
               "Congratulations, a new item has been made! You can view it in the shop.";
             this.setState({ success });
-            const shop = (
-              <p className="footer-item">
-                <Link
-                  className="fas fa-shopping-cart size2half color-orange"
-                  style={{ textDecoration: "none" }}
-                  to="/shop"
-                />
-              </p>
-            );
-            this.setState({ shop });
           }
         }
       });
@@ -74,10 +63,10 @@ class ItemEdit extends Component {
       userId: localStorage.getItem("logged-in")
     };
     const id = this.props.location.state.id
-    console.log(id)
     if (this.state.success !== null) {
       apiManager.itemEdit(editItem, id)
       .then(()=>this.props.itemsRefresh())
+      .then(()=>this.props.history.push("/shop"))
     }
   };
 

@@ -23,6 +23,13 @@ function shopSell(id, value, location, refresh) {
         body: JSON.stringify({ sold: soldLocation })
       })
     )
+    .then(() =>
+      fetch(`${fetchURL}/userItems/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ soldTime: Date.now() })
+      })
+    )
     .then(() => refresh());
 }
 export default shopSell;

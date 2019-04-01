@@ -9,6 +9,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import shopBuy from "./shopBuy";
+import shopDelete from "./shopDelete"
 import { Link } from "react-router-dom";
 
 const styles = {
@@ -26,7 +27,8 @@ function ShopTools(props) {
   if (
     Number(props.items.itemTypeId) === 2 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
-    Number(props.items.userId) !== Number(localStorage.getItem("logged-in"))
+    Number(props.items.userId) !== Number(localStorage.getItem("logged-in")) &&
+    props.items.legal === true
   ) {
     return (
       <Card id="item" className={classes.card}>
@@ -71,7 +73,8 @@ function ShopTools(props) {
   } else if (
     Number(props.items.itemTypeId) === 2 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
-    Number(props.items.userId) === Number(localStorage.getItem("logged-in"))
+    Number(props.items.userId) === Number(localStorage.getItem("logged-in")) &&
+    props.items.legal === true
   ) {
     return (
       <Card id="item" className={classes.card}>
@@ -109,6 +112,15 @@ function ShopTools(props) {
             }}
           >
             Buy ({props.items.value})
+          </Button>
+          <Button
+            size="small"
+            id="shopBuyButton"
+            onClick={() => {
+              shopDelete(props.items.id, props.itemsRefresh);
+            }}
+          >
+            Delete
           </Button>
           <p className="footer-icon color-orange">
             <Link

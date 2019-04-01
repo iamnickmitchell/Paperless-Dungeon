@@ -52,7 +52,7 @@ class ItemCreate extends Component {
             const shop = (
               <p className="footer-item">
                 <Link
-                  className="fas fa-shopping-cart size2half color-orange"
+                  className="far fa-shopping-cart size2half color-orange"
                   style={{ textDecoration: "none" }}
                   to="/shop"
                 />
@@ -148,7 +148,7 @@ class ItemCreate extends Component {
         <p>
         <label>Item Rarity: </label>
           <select id="itemRarityId" onChange={this.handleFieldChange}>
-            <option selected value="1">Common</option>
+            <option defaultValue="1">Common</option>
             <option value="2">Uncommon</option>
             <option value="3">Rare</option>
             <option value="4">Very-Rare</option>
@@ -158,7 +158,7 @@ class ItemCreate extends Component {
         <p>
         <label>Item Type: </label>
           <select id="itemTypeId" onChange={this.handleFieldChange}>
-            <option selected value="1">Weapon</option>
+            <option defaultValue="1">Weapon</option>
             <option value="2">Tool</option>
             <option value="3">Food</option>
             <option value="4">Clothing</option>

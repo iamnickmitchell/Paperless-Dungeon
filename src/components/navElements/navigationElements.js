@@ -180,6 +180,7 @@ class NavigationElements extends Component {
                   playerLocationSize={this.state.playerLocationSize}
                   refresh={this.refresh}
                   shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
                 />
               );
             } else {
