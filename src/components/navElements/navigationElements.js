@@ -5,6 +5,7 @@ import Shop from "../shop";
 import Characters from "../player";
 import Maps from "../maps";
 import Day from "../day";
+import ItemCreate from "../shop/shopCreateItem"
 import Login from "../login-register/login";
 import Logout from "../login-register/logout";
 import Register from "../login-register/register";
@@ -40,6 +41,15 @@ class NavigationElements extends Component {
       )
       .then(() => this.setState(newState));
   };
+
+  itemsRefresh = () => {
+    const newState = {};
+    return fetch(`${fetchURL}/items`).then(item => item.json())
+    .then(items => {
+      newState.items = items
+    })
+    .then(() => this.setState(newState))
+  }
 
   refresh = () => {
     const newState = {};
@@ -202,6 +212,12 @@ class NavigationElements extends Component {
           path="/logout"
           render={props => {
             return <Logout {...props} />;
+          }}
+        />
+        <Route
+          path="/item-create"
+          render={props => {
+            return <ItemCreate itemsRefresh={this.itemsRefresh}  />;
           }}
         />
       </div>

@@ -334,3 +334,8 @@ input{
   background-color: var(--color-sky-blue);
   border-color: var(--color-grey-slate);
 }
+
+.editButton{
+  display: flex;
+  justify-content: flex-end;
+}

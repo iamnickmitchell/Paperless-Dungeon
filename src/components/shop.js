@@ -11,12 +11,34 @@ class Shop extends Component {
     playerLocation: this.props.playerLocation,
     playerLocationSize: this.props.playerLocationSize,
     funds: this.props.funds,
-    items: this.props.items
+    items: this.props.items,
+    newItemButton: ``
   };
 
   itemShopBuy(id, value) {
     shopBuy(id, value);
   }
+
+  componentDidMount(){
+    const fetchURL = "http://localhost:8080";
+    let currentUserId = localStorage.getItem("logged-in")
+    let newItemButton = ``
+    if (currentUserId !== null) {
+      return fetch(`${fetchURL}/users/${currentUserId}`)
+        .then(user => user.json())
+        .then(user => {
+          if (user.dm === true) {
+          newItemButton = (<p className="footer-icon color-orange">
+          <Link
+            className="fas fa-pen-square size2half color-white iconFooter"
+            style={{ textDecoration: "none" }}
+            to="/item-create"
+          />
+        </p>)
+          } else {}
+        }).then(()=> this.setState({newItemButton}));
+    }
+  };
 
   render() {
     return (
@@ -36,7 +58,7 @@ class Shop extends Component {
           <p className="lead color-orange">
             Current Funds = {this.props.funds} credits
           </p>
-
+          {this.state.newItemButton}
           <hr className="my-4" />
           <h4 className="color-white">Hardware Store</h4>
           <p className="thin-line" />
