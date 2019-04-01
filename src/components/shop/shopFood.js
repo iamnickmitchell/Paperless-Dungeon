@@ -23,7 +23,7 @@ const styles = {
 function ShopFood(props) {
   const { classes } = props;
   if (
-    props.items.itemTypeId === 3 &&
+    Number(props.items.itemTypeId) === 3 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize)
   ) {
     return (

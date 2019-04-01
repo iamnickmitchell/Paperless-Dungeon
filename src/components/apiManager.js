@@ -29,6 +29,20 @@ const apiManager = {
       body: JSON.stringify(createUser)
     });
   },
+  itemCreate: createItem => {
+    return fetch(`${fetchURL}/items`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(createItem)
+    });
+  },
+  itemEdit: (editItem,id) => {
+    return fetch(`${fetchURL}/items/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(editItem)
+    });
+  },
   shopBuyOne: () => fetch(`${fetchURL}/users/${currentUserId}`)
     .then(user => user.json())
 };

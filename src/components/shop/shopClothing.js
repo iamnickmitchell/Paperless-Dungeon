@@ -22,7 +22,7 @@ const styles = {
 
 function ShopClothing(props) {
   const { classes } = props;
-  if(props.items.itemTypeId === 4 && Number(props.items.itemRarityId) <= Number(props.playerLocationSize)){
+  if(Number(props.items.itemTypeId) === 4 && Number(props.items.itemRarityId) <= Number(props.playerLocationSize)){
   return (
     <Card id="item" className={classes.card}>
       <CardActionArea href={props.items.description} alt="Whoops" style={{textDecoration: 'none'}}>
