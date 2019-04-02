@@ -121,7 +121,7 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 908614,
+      "funds": 889737,
       "groupId": 1
     },
     {
@@ -129,7 +129,7 @@
       "name": "Megan",
       "dm": false,
       "password": "megan",
-      "funds": 1000000,
+      "funds": 890107.5,
       "groupId": 1
     },
     {
@@ -667,6 +667,231 @@
       "sold": "Mos Eisley",
       "soldTime": 1554143012728,
       "id": 10
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151378742,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151413254,
+      "id": 11
+    },
+    {
+      "userId": "1",
+      "itemId": 23,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151379845,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151420824,
+      "id": 12
+    },
+    {
+      "userId": "1",
+      "itemId": 30,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151382859,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151417323,
+      "id": 13
+    },
+    {
+      "userId": "1",
+      "itemId": 16,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151388044,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151416374,
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "itemId": 16,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151388321,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151414386,
+      "id": 15
+    },
+    {
+      "userId": "1",
+      "itemId": 4,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151390312,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151415354,
+      "id": 16
+    },
+    {
+      "userId": "1",
+      "itemId": 16,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151391363,
+      "sold": "Mos Eisley",
+      "soldTime": 1554151418118,
+      "id": 17
+    },
+    {
+      "userId": "2",
+      "itemId": 17,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151578801,
+      "sold": null,
+      "soldTime": null,
+      "id": 18
+    },
+    {
+      "userId": "2",
+      "itemId": 20,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151584796,
+      "sold": "Mos Eisley",
+      "soldTime": 1554153168307,
+      "id": 19
+    },
+    {
+      "userId": "2",
+      "itemId": 18,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151616452,
+      "sold": "Mos Eisley",
+      "soldTime": 1554153166790,
+      "id": 20
+    },
+    {
+      "userId": "2",
+      "itemId": 30,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151624647,
+      "sold": null,
+      "soldTime": null,
+      "id": 21
+    },
+    {
+      "userId": "2",
+      "itemId": 29,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151625315,
+      "sold": null,
+      "soldTime": null,
+      "id": 22
+    },
+    {
+      "userId": "2",
+      "itemId": 4,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151633361,
+      "sold": null,
+      "soldTime": null,
+      "id": 23
+    },
+    {
+      "userId": "2",
+      "itemId": 1,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151634859,
+      "sold": null,
+      "soldTime": null,
+      "id": 24
+    },
+    {
+      "userId": "2",
+      "itemId": 5,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554151636010,
+      "sold": "Mos Eisley",
+      "soldTime": 1554153148350,
+      "id": 25
+    },
+    {
+      "userId": "2",
+      "itemId": 19,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153113128,
+      "sold": null,
+      "soldTime": null,
+      "id": 26
+    },
+    {
+      "userId": "1",
+      "itemId": 28,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153217022,
+      "sold": null,
+      "soldTime": null,
+      "id": 27
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153218202,
+      "sold": null,
+      "soldTime": null,
+      "id": 28
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153219792,
+      "sold": null,
+      "soldTime": null,
+      "id": 29
+    },
+    {
+      "userId": "1",
+      "itemId": 26,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153222932,
+      "sold": null,
+      "soldTime": null,
+      "id": 30
+    },
+    {
+      "userId": "1",
+      "itemId": 21,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153224024,
+      "sold": null,
+      "soldTime": null,
+      "id": 31
+    },
+    {
+      "userId": "1",
+      "itemId": 20,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153225212,
+      "sold": null,
+      "soldTime": null,
+      "id": 32
+    },
+    {
+      "userId": "1",
+      "itemId": 19,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153228716,
+      "sold": null,
+      "soldTime": null,
+      "id": 33
+    },
+    {
+      "userId": "1",
+      "itemId": 30,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153229999,
+      "sold": null,
+      "soldTime": null,
+      "id": 34
+    },
+    {
+      "userId": "1",
+      "itemId": 32,
+      "bought": "Mos Eisley",
+      "boughtTime": 1554153335785,
+      "sold": "Mos Eisley",
+      "soldTime": 1554211023717,
+      "id": 35
     }
   ],
   "planets": [
@@ -733,6 +958,18 @@
       "weatherId": 1,
       "locationCode": "mp73os",
       "userId": 1
+    },
+    {
+      "id": 3,
+      "planetId": 3,
+      "cityName": "Coruscant",
+      "citySizeId": 5,
+      "governmentType": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "cor123",
+      "userId": 1
     }
   ],
   "weather": [
@@ -746,7 +983,7 @@
     {
       "id": 1,
       "userId": "1",
-      "locationId": 1
+      "locationId": 3
     },
     {
       "id": 2,

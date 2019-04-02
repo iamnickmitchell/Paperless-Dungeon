@@ -5,6 +5,7 @@ import ShopWeapons from "./shop/shopWeapons";
 import ShopFood from "./shop/shopFood";
 import ShopClothing from "./shop/shopClothing";
 import shopBuy from "./shop/shopBuy";
+import ShopLargeItems from "./shop/shopLargeItems";
 
 class Shop extends Component {
   state = {
@@ -19,26 +20,30 @@ class Shop extends Component {
     shopBuy(id, value);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const fetchURL = "http://localhost:8080";
-    let currentUserId = localStorage.getItem("logged-in")
-    let newItemButton = ``
+    let currentUserId = localStorage.getItem("logged-in");
+    let newItemButton = ``;
     if (currentUserId !== null) {
       return fetch(`${fetchURL}/users/${currentUserId}`)
         .then(user => user.json())
         .then(user => {
           if (user.dm === true) {
-          newItemButton = (<p className="footer-icon color-orange">
-          <Link
-            className="fas fa-pen-square size2half color-white iconFooter"
-            style={{ textDecoration: "none" }}
-            to="/item-create"
-          />
-        </p>)
-          } else {}
-        }).then(()=> this.setState({newItemButton}));
+            newItemButton = (
+              <p className="footer-icon color-orange">
+                <Link
+                  className="fas fa-pen-square size2half color-white iconFooter"
+                  style={{ textDecoration: "none" }}
+                  to="/item-create"
+                />
+              </p>
+            );
+          } else {
+          }
+        })
+        .then(() => this.setState({ newItemButton }));
     }
-  };
+  }
 
   render() {
     return (
@@ -113,6 +118,22 @@ class Shop extends Component {
           <div className="items">
             {this.props.items.map(items => (
               <ShopWeapons
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocation={this.props.playerLocation}
+                playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
+              />
+            ))}
+          </div>
+          <hr className="my-4" />
+          <h4 className="color-white">Ship Lot and Realator</h4>
+          <p className="thin-line" />
+          <div className="items">
+            {this.props.items.map(items => (
+              <ShopLargeItems
                 shopBuySellRefresh={this.props.shopBuySellRefresh}
                 itemShopBuy={this.itemShopBuy}
                 key={items.id}

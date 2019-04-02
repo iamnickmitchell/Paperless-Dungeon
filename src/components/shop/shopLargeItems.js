@@ -9,8 +9,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import shopBuy from "./shopBuy";
-import {Link} from "react-router-dom"
 import shopDelete from "./shopDelete"
+import { Link } from "react-router-dom";
 
 const styles = {
   card: {
@@ -22,12 +22,13 @@ const styles = {
   }
 };
 
-function ShopFood(props) {
+function ShopLargeItems(props) {
   const { classes } = props;
   if (
-    Number(props.items.itemTypeId) === 3 &&
-    Number(props.items.itemRarityId) <= Number(props.playerLocationSize)&&
-    Number(props.items.userId) !== Number(localStorage.getItem("logged-in"))
+    Number(props.items.itemTypeId) === 5 &&
+    Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
+    Number(props.items.userId) !== Number(localStorage.getItem("logged-in")) &&
+    props.items.legal === true
   ) {
     return (
       <Card id="item" className={classes.card}>
@@ -69,10 +70,11 @@ function ShopFood(props) {
         </CardActions>
       </Card>
     );
-  }else if (
-    Number(props.items.itemTypeId) === 3 &&
+  } else if (
+    Number(props.items.itemTypeId) === 5 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
-    Number(props.items.userId) === Number(localStorage.getItem("logged-in"))
+    Number(props.items.userId) === Number(localStorage.getItem("logged-in")) &&
+    props.items.legal === true
   ) {
     return (
       <Card id="item" className={classes.card}>
@@ -149,8 +151,8 @@ function ShopFood(props) {
   }
 }
 
-ShopFood.propTypes = {
+ShopLargeItems.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ShopFood);
+export default withStyles(styles)(ShopLargeItems);

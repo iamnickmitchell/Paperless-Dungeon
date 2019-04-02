@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import shopBuy from "./shopBuy";
 import {Link} from "react-router-dom"
+import shopDelete from "./shopDelete"
 
 const styles = {
   card: {
@@ -109,6 +110,15 @@ function ShopWeapons(props) {
             }}
           >
             Buy ({props.items.value})
+          </Button>
+          <Button
+            size="small"
+            id="shopBuyButton"
+            onClick={() => {
+              shopDelete(props.items.id, props.itemsRefresh);
+            }}
+          >
+            Delete
           </Button>
           <p className="footer-icon color-orange">
             <Link
