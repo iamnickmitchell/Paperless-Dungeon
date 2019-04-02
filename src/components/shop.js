@@ -47,7 +47,7 @@ class Shop extends Component {
 
   render() {
     return (
-      <div>
+      <div className="space-background">
         <p className="footer-item logout-btn">
           <Link
             className="fas fa-sign-out-alt size2half logout-btn"
@@ -56,16 +56,16 @@ class Shop extends Component {
           />
         </p>
         <div className="jumbotron shopDiv">
-          <h3 className="color-white">
+          <h3 className="color-black orange-background">
             {" "}
             {this.props.playerLocation} Shopping Center
           </h3>
-          <p className="lead color-orange">
+          <p className="lead color-orange grey-background">
             Current Funds = {this.props.funds} credits
           </p>
           {this.state.newItemButton}
           <hr className="my-4" />
-          <h4 className="color-white">Hardware Store</h4>
+          <h4 className="color-white blue-background">Hardware Store</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -81,7 +81,7 @@ class Shop extends Component {
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Market</h4>
+          <h4 className="color-white blue-background">Market</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -97,7 +97,7 @@ class Shop extends Component {
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Tailor</h4>
+          <h4 className="color-white blue-background">Tailor</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -113,7 +113,7 @@ class Shop extends Component {
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Weapons Shop</h4>
+          <h4 className="color-white blue-background">Weapons Shop</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -129,7 +129,7 @@ class Shop extends Component {
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Ship Lot and Realator</h4>
+          <h4 className="color-white blue-background">Ship Lot and Realator</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (

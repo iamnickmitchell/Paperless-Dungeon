@@ -121,7 +121,7 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 889737,
+      "funds": 889508,
       "groupId": 1
     },
     {
@@ -817,8 +817,8 @@
       "itemId": 28,
       "bought": "Mos Eisley",
       "boughtTime": 1554153217022,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220101149,
       "id": 27
     },
     {
@@ -826,8 +826,8 @@
       "itemId": 24,
       "bought": "Mos Eisley",
       "boughtTime": 1554153218202,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220100471,
       "id": 28
     },
     {
@@ -835,8 +835,8 @@
       "itemId": 17,
       "bought": "Mos Eisley",
       "boughtTime": 1554153219792,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220098951,
       "id": 29
     },
     {
@@ -844,8 +844,8 @@
       "itemId": 26,
       "bought": "Mos Eisley",
       "boughtTime": 1554153222932,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220098048,
       "id": 30
     },
     {
@@ -853,8 +853,8 @@
       "itemId": 21,
       "bought": "Mos Eisley",
       "boughtTime": 1554153224024,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220096970,
       "id": 31
     },
     {
@@ -862,8 +862,8 @@
       "itemId": 20,
       "bought": "Mos Eisley",
       "boughtTime": 1554153225212,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220095526,
       "id": 32
     },
     {
@@ -871,8 +871,8 @@
       "itemId": 19,
       "bought": "Mos Eisley",
       "boughtTime": 1554153228716,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220094716,
       "id": 33
     },
     {
@@ -880,8 +880,8 @@
       "itemId": 30,
       "bought": "Mos Eisley",
       "boughtTime": 1554153229999,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Coruscant",
+      "soldTime": 1554220093439,
       "id": 34
     },
     {
@@ -892,6 +892,96 @@
       "sold": "Mos Eisley",
       "soldTime": 1554211023717,
       "id": 35
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220052906,
+      "sold": "Coruscant",
+      "soldTime": 1554220092374,
+      "id": 36
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220060377,
+      "sold": "Coruscant",
+      "soldTime": 1554220091298,
+      "id": 37
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220061235,
+      "sold": "Coruscant",
+      "soldTime": 1554220089165,
+      "id": 38
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220061973,
+      "sold": "Coruscant",
+      "soldTime": 1554220088479,
+      "id": 39
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220062683,
+      "sold": "Coruscant",
+      "soldTime": 1554220087100,
+      "id": 40
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220063328,
+      "sold": "Coruscant",
+      "soldTime": 1554220087725,
+      "id": 41
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554220063991,
+      "sold": "Coruscant",
+      "soldTime": 1554220086263,
+      "id": 42
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Coruscant",
+      "boughtTime": 1554220068169,
+      "sold": "Coruscant",
+      "soldTime": 1554220084653,
+      "id": 43
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Coruscant",
+      "boughtTime": 1554220069068,
+      "sold": "Coruscant",
+      "soldTime": 1554220083518,
+      "id": 44
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Coruscant",
+      "boughtTime": 1554220070393,
+      "sold": "Coruscant",
+      "soldTime": 1554220082691,
+      "id": 45
     }
   ],
   "planets": [

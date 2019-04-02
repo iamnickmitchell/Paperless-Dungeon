@@ -9,7 +9,6 @@ function shopSell(id, value, location, refresh) {
     .user()
     .then(parsedFunds => {
       const newFunds = parsedFunds.funds + value;
-      console.log(newFunds);
       return fetch(`${fetchURL}/users/${currentUserId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },

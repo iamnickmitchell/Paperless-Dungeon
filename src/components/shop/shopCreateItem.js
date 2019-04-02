@@ -41,7 +41,7 @@ class ItemCreate extends Component {
       .then(item => item.json())
       .then(item => {
         for (let i = 0; i < item.length; i++) {
-          if (item[i].name === this.state.usernameCreate) {
+          if (item[i].name === this.state.name) {
             const error =
               "This item already exists! Try naming it something else.";
             this.setState({ error });
@@ -82,7 +82,8 @@ class ItemCreate extends Component {
 
   render() {
     return (
-      <form className="mainPage" onSubmit={this.handleLogin}>
+      <div className="space-background createPage">
+      <form className="createItems" onSubmit={this.handleLogin}>
         <h1 className="h3 mb-3 font-weight-normal">Create an Item</h1>
         <p>
           <label htmlFor="inputUsername">Name: </label>
@@ -178,7 +179,7 @@ class ItemCreate extends Component {
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.shop}</h4>
-      </form>
+      </form></div>
     );
   }
 }

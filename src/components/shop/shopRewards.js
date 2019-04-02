@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 
 class ItemCreate extends Component {
   state = {
-    name: "",
-    statOne: "",
-    statTwo: "",
-    description: "https://www.starwars.com/",
-    image: "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-    itemTypeId: 1,
-    itemRarityId: 1,
-    value: 0,
-    legal: true,
-    error: "",
-    success: "",
+    userName: "",
+    itemName: "",
+    userId: "",
+    itemId: "",
+    rewardFunds: "",
+    itemSelect: "",
+    wealthSelect: "",
+    errorItem: "",
+    successItem: "",
+    errorUser: "",
+    successUser: "",
     shop: ``
   };
 
@@ -32,7 +32,7 @@ class ItemCreate extends Component {
   };
 
   // Simplistic handler for login submit
-  handleLogin = e => {
+  handleLoginItem = e => {
     e.preventDefault();
 
     const fetchURL = "http://localhost:8080";
@@ -40,14 +40,14 @@ class ItemCreate extends Component {
       .then(item => item.json())
       .then(item => {
         for (let i = 0; i < item.length; i++) {
-          if (item[i].name === this.state.usernameCreate) {
-            const error =
-              "This item already exists! Try naming it something else.";
-            this.setState({ error });
+          if (item[i].name !== this.state.itemName) {
+            const errorItem =
+              "This item doesn't exists! Make sure you are tying the Item name exactly as it is in the shop.";
+            this.setState({ errorItem });
           } else {
-            const success =
-              "Congratulations, a new item has been made! You can view it in the shop.";
-            this.setState({ success });
+            const successItem =
+              "Item is able to be sent.";
+            this.setState({ successItem });
             const shop = (
               <p className="footer-item">
                 <Link
@@ -81,7 +81,7 @@ class ItemCreate extends Component {
 
   render() {
     return (
-      <form className="mainPage" onSubmit={this.handleLogin}>
+      <form className="mainPage" onSubmit={this.handleLoginItem}>
         <h1 className="h3 mb-3 font-weight-normal">Create an Item</h1>
         <p>
           <label htmlFor="inputUsername">Name: </label>

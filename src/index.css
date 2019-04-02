@@ -13,7 +13,7 @@ code {
     monospace;
 } */
 
-:root{
+:root {
   --main-background-color: grey;
   --main-txt-color: #fbeec1;
   /* --main-padding: 15px; */
@@ -25,13 +25,13 @@ code {
   --color-cream: #fbeec1;
   --color-off-white: #edf5e1;
   --color-house-blue: #7395ae;
-  --color-grey-slate: #5d5c61;
+  --color-grey-slate: rgb(93, 92, 97);
   --color-shale: #379683;
-  --color-ocean-blue: #557a95;
+  --color-ocean-blue: rgb(85, 122, 149);
   --color-green: #479761;
   --color-light-green: #8ee4af;
-  --color-orange: #f7b438;
-  background-color: var(--color-ocean-blue)
+  --color-orange: rgb(247, 180, 56);
+  background-color: var(--color-ocean-blue);
 }
 
 /* Sets the footers parameters */
@@ -74,7 +74,7 @@ code {
   color: white;
 }
 .color-orange {
-  color: var(--color-orange)
+  color: var(--color-orange);
 }
 
 /* green hover effect for buttons */
@@ -112,7 +112,7 @@ body {
 /* home page visuals */
 .jumbotron {
   text-align: center;
-  background-color: var(--color-ocean-blue);
+  background-color: transparent;
   color: black;
   padding-top: 10px;
   padding-bottom: 0px;
@@ -138,26 +138,27 @@ body {
   border-color: var(--color-light-brown);
 }
 
-.mapsDiv{
+.mapsDiv {
   height: 76.5vh;
   overflow-y: scroll;
 }
 
-.playerDiv{
+.playerDiv {
   height: 78.5vh;
   overflow-y: scroll;
 }
 
-.shopPtag{
+.shopPtag {
   margin: 0px;
   color: white;
 }
 
-#shopBuyButton{
-  color: var(--color-orange)
+#shopBuyButton {
+  color: var(--color-orange);
+  font-weight: bold;
 }
 
-.shopDiv{
+.shopDiv {
   height: 78.5vh;
   overflow-y: scroll;
   z-index: 0;
@@ -169,7 +170,7 @@ body {
 .items {
   color: white;
   /* font-family: fantasy; */
-  font-size: .75rem;
+  font-size: 0.75rem;
   border: 0px;
   padding: 0px;
   display: flex;
@@ -178,7 +179,7 @@ body {
   justify-content: center;
 }
 
-#item{
+#item {
   margin: 5px !important;
   background-color: var(--color-grey-slate);
 }
@@ -260,6 +261,20 @@ body {
   text-align: center;
   border: 2px solid white;
 }
+.createItems {
+  background-color: rgba(85, 122, 149, 70%);
+  color: white;
+  padding-bottom: 0px;
+  text-align: center;
+  border: 2px solid white;
+  max-width: 75vw;
+  min-width: 75vw;
+}
+.createPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 #mainPage {
   background-color: var(--color-sky-blue);
@@ -310,7 +325,7 @@ h3.CharStat {
   background-color: var(--color-sky-blue);
 }
 
-.logout-btn{
+.logout-btn {
   display: flex;
   justify-content: flex-end;
   padding: 0px;
@@ -318,24 +333,93 @@ h3.CharStat {
   background-color: var(--color-grey-slate);
 }
 
-.logout-btn-page{
+.logout-btn-page {
   display: flex;
   justify-content: space-evenly;
   padding: 0px;
   margin: 0px;
 }
 
-.logout-btn button{
+.logout-btn button {
   background-color: var(--color-off-white);
   color: white;
 }
 
-input{
+input {
   background-color: var(--color-sky-blue);
   border-color: var(--color-grey-slate);
 }
 
-.editButton{
+.editButton {
   display: flex;
   justify-content: flex-end;
+}
+
+.space-background {
+  background-image: url("https://i.imgur.com/AHwPKud.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+.grey-background {
+  background-color: rgba(93, 92, 97, 50%);
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.blue-background {
+  background-color: rgba(85, 122, 149, 50%);
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.orange-background {
+  background-color: rgba(247, 180, 56, 50%);
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#name{
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 50vw;
+  max-width: 50vw;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+#statOne{
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 50vw;
+  max-width: 50vw;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+#statTwo{
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 50vw;
+  max-width: 50vw;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
 }
