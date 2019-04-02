@@ -3,7 +3,6 @@ import apiManager from "../apiManager";
 import { Link } from "react-router-dom";
 
 class ItemCreate extends Component {
-  // Set initial state
   state = {
     name: "",
     statOne: "",
@@ -25,14 +24,13 @@ class ItemCreate extends Component {
     });
   };
 
-  // Update state whenever an input field is edited
   handleFieldChange = evt => {
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
     this.setState(stateToChange);
   };
 
-  // Simplistic handler for login submit
+
   handleLogin = e => {
     e.preventDefault();
 
@@ -84,72 +82,79 @@ class ItemCreate extends Component {
     return (
       <div className="space-background createPage">
       <form className="createItems" onSubmit={this.handleLogin}>
-        <h1 className="h3 mb-3 font-weight-normal">Create an Item</h1>
+        <h1 className="h3 mb-3 font-weight-normal color-orange">Create an Item</h1>
         <p>
-          <label htmlFor="inputUsername">Name: </label>
+          <label htmlFor="inputUsername"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="name"
-            placeholder="Datapad"
+            placeholder="Item Name"
             required=""
             autoFocus=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">First Stat: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statOne"
-            placeholder="A space tablet"
+            placeholder="Item's first stat"
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Second Stat: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statTwo"
-            placeholder="Able to get information."
+            placeholder="Item's second stat"
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Description: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="description"
-            placeholder="Insert URL to external web page or leave blank."
+            placeholder="Description: Insert URL to external web page or leave blank."
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Image: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="image"
-            placeholder="Insert URL to image or leave blank."
+            placeholder="Image: Insert URL to image or leave blank."
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label>Value: </label>
+          <label></label>
           <input
             onChange={this.handleFieldChange}
             type="number"
             id="value"
             placeholder="Item Cost"
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-        <label>Item Rarity: </label>
+        <label></label>
           <select id="itemRarityId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">Common</option>
+            <option defaultValue="1">--> Select Item Rarity:</option>
+            <option value="1">Common</option>
             <option value="2">Uncommon</option>
             <option value="3">Rare</option>
             <option value="4">Very-Rare</option>
@@ -157,9 +162,10 @@ class ItemCreate extends Component {
           </select>
         </p>
         <p>
-        <label>Item Type: </label>
+        <label></label>
           <select id="itemTypeId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">Weapon</option>
+            <option defaultValue="1">--> Select Item Type:</option>
+            <option value="1">Weapon</option>
             <option value="2">Tool</option>
             <option value="3">Food</option>
             <option value="4">Clothing</option>
@@ -175,7 +181,7 @@ class ItemCreate extends Component {
             onChange={this.toggleChange}
           />
         </p>
-        <button type="submit">Create Item</button>
+        <button className="submit" type="submit">Create Item</button>
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.shop}</h4>

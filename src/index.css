@@ -389,10 +389,13 @@ input {
 }
 
 #name{
+  text-align: center;
   color: white;
   background-color: rgba(93, 92, 97, 50%);
   min-width: 50vw;
   max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
   border-radius: 10px;
   border-right: 2px solid rgb(94, 142, 175);
   border-bottom: 2px solid rgb(94, 142, 175);
@@ -401,10 +404,13 @@ input {
 }
 
 #statOne{
+  text-align: center;
   color: white;
   background-color: rgba(93, 92, 97, 50%);
   min-width: 50vw;
   max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
   border-radius: 10px;
   border-right: 2px solid rgb(94, 142, 175);
   border-bottom: 2px solid rgb(94, 142, 175);
@@ -413,13 +419,141 @@ input {
 }
 
 #statTwo{
+  text-align: center;
   color: white;
   background-color: rgba(93, 92, 97, 50%);
   min-width: 50vw;
   max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
   border-radius: 10px;
   border-right: 2px solid rgb(94, 142, 175);
   border-bottom: 2px solid rgb(94, 142, 175);
   border-left: 2px solid rgb(29, 70, 99);
   border-top: 2px solid rgb(29, 70, 99);
+}
+
+#description{
+  text-align: center;
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+#image{
+  text-align: center;
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+#value{
+  text-align: center;
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+#itemRarityId{
+  text-align: center;
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+option{
+  background-color: rgba(93, 92, 97, 100%);
+  text-align: center;
+}
+
+
+.submit{
+  text-align: center;
+  color: rgba(247, 180, 56, 100%);
+  font-size: 1.25rem;
+  background-color: rgba(85, 122, 149, 50%);
+  min-width: 60vw;
+  max-width: 60vw;
+  border-radius: 10px;
+  border-right: 2px solid rgba(29, 70, 99);
+  border-bottom: 2px solid rgba(29, 70, 99);
+  border-left: 2px solid rgba(94, 142, 175);
+  border-top: 2px solid rgba(94, 142, 175);
+}
+
+button:hover{
+  background-color: rgba(16, 47, 70, 50%);
+  color: rgba(247, 180, 56, 50%);
+}
+
+#itemTypeId{
+  text-align: center;
+  color: white;
+  background-color: rgba(93, 92, 97, 50%);
+  min-width: 20vw;
+  max-width: 20vw;
+  border-radius: 10px;
+  border-right: 2px solid rgb(94, 142, 175);
+  border-bottom: 2px solid rgb(94, 142, 175);
+  border-left: 2px solid rgb(29, 70, 99);
+  border-top: 2px solid rgb(29, 70, 99);
+}
+
+::placeholder{
+  color: rgba(255,255,255, 50%);
+}
+
+/* ########################################### */
+/* ######## Three Image Transition ########### */
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+canvas {
+	background-image: radial-gradient(#666, #333);
+}
+
+#instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 100px;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
 }
