@@ -10,16 +10,16 @@ class NavBar extends Component {
                         <Link className="fas fa-home size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/"></Link>
                     </p>
                     <p className="footer-icon">
-                        <Link className="fas fa-users size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/characters"></Link>
+                        <Link className="fas fa-warehouse size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/characters"></Link>
                     </p>
                     <p className="footer-icon">
                         <Link className="fas fa-cloud-sun size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/day"></Link>
                     </p>
                     <p className="footer-icon">
-                        <Link className="fas fa-globe size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/maps"></Link>
+                        <Link className="fas fa-map-marker-alt size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/maps"></Link>
                     </p>
                     <p className="footer-icon">
-                        <Link className="fas fa-shopping-cart size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/shop"></Link>
+                        <Link className="fas fa-store size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/shop"></Link>
                     </p>
             </footer>
         )

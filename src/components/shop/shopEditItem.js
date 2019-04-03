@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import apiManager from "../apiManager";
-import { Link } from "react-router-dom";
 
 class ItemEdit extends Component {
   state = {
@@ -48,16 +47,6 @@ class ItemEdit extends Component {
             const success =
               "Congratulations, a new item has been made! You can view it in the shop.";
             this.setState({ success });
-            const shop = (
-              <p className="footer-item">
-                <Link
-                  className="fas fa-shopping-cart size2half color-orange"
-                  style={{ textDecoration: "none" }}
-                  to="/shop"
-                />
-              </p>
-            );
-            this.setState({ shop });
           }
         }
       });
@@ -74,24 +63,25 @@ class ItemEdit extends Component {
       userId: localStorage.getItem("logged-in")
     };
     const id = this.props.location.state.id
-    console.log(id)
     if (this.state.success !== null) {
       apiManager.itemEdit(editItem, id)
       .then(()=>this.props.itemsRefresh())
+      .then(()=>this.props.history.push("/shop"))
     }
   };
 
   render() {
     return (
-      <form className="mainPage" onSubmit={this.handleLogin}>
-        <h1 className="h3 mb-3 font-weight-normal">Create an Item</h1>
+      <div className="space-background createPage">
+      <form className="createItems" onSubmit={this.handleLogin}>
+        <h1 className="h3 mb-3 font-weight-normal color-orange">Create an Item</h1>
         <p>
-          <label htmlFor="inputUsername">Name: </label>
+          <label htmlFor="inputUsername"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="name"
-            placeholder="Datapad"
+            placeholder="Name"
             required=""
             autoFocus=""
             autoComplete="off"
@@ -99,55 +89,55 @@ class ItemEdit extends Component {
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">First Stat: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statOne"
-            placeholder="A space tablet"
+            placeholder="First Stat:"
             required=""
             autoComplete="off"
             value={this.state.statOne}
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Second Stat: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statTwo"
-            placeholder="Able to get information."
+            placeholder="Second Stat."
             required=""
             autoComplete="off"
             value={this.state.statTwo}
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Description: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="description"
-            placeholder="Insert URL to external web page or leave blank."
+            placeholder="Description"
             required=""
             autoComplete="off"
             value={this.state.description}
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Image: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="image"
-            placeholder="Insert URL to image or leave blank."
+            placeholder="Image"
             required=""
             autoComplete="off"
             value={this.state.image}
           />
         </p>
         <p>
-          <label>Value: </label>
+          <label></label>
           <input
             onChange={this.handleFieldChange}
             type="number"
@@ -159,7 +149,7 @@ class ItemEdit extends Component {
           />
         </p>
         <p>
-        <label>Item Rarity: </label>
+        <label></label>
           <select value={this.state.itemRarityId} id="itemRarityId" onChange={this.handleFieldChange}>
             <option defaultValue="1">Common</option>
             <option value="2">Uncommon</option>
@@ -169,7 +159,7 @@ class ItemEdit extends Component {
           </select>
         </p>
         <p>
-        <label>Item Type: </label>
+        <label></label>
           <select value={this.state.itemTypeId} id="itemTypeId" onChange={this.handleFieldChange}>
             <option defaultValue="1">Weapon</option>
             <option value="2">Tool</option>
@@ -187,11 +177,11 @@ class ItemEdit extends Component {
             onChange={this.toggleChange}
           />
         </p>
-        <button type="submit">Save Edit</button>
+        <button className="submit" type="submit">Save Edit</button>
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.shop}</h4>
-      </form>
+      </form></div>
     );
   }
 }

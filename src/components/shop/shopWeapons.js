@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import shopBuy from "./shopBuy";
 import {Link} from "react-router-dom"
+import shopDelete from "./shopDelete"
 
 const styles = {
   card: {
@@ -68,7 +69,7 @@ function ShopWeapons(props) {
         </CardActions>
       </Card>
     );
-  } else if (
+  }else if (
     Number(props.items.itemTypeId) === 1 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) === Number(localStorage.getItem("logged-in"))
@@ -110,11 +111,34 @@ function ShopWeapons(props) {
           >
             Buy ({props.items.value})
           </Button>
+          <Button
+            size="small"
+            id="shopBuyButton"
+            onClick={() => {
+              shopDelete(props.items.id, props.itemsRefresh);
+            }}
+          >
+            Delete
+          </Button>
           <p className="footer-icon color-orange">
             <Link
               className="far fa-edit color-white iconFooter editButton"
               style={{ textDecoration: "none" }}
-              to="/item-edit"
+              to={{
+                pathname: "/item-edit",
+                state: {
+                  name: props.items.name,
+                  statOne: props.items.statOne,
+                  statTwo: props.items.statTwo,
+                  description: props.items.description,
+                  image: props.items.image,
+                  itemRarityId: props.items.itemRarityId,
+                  itemTypeId: props.items.itemTypeId,
+                  value: props.items.value,
+                  legal: props.items.legal,
+                  id: props.items.id
+                }
+              }}
             />
           </p>
         </CardActions>

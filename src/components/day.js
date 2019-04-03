@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
 class Day extends Component {
   render() {
     return (
@@ -13,7 +12,8 @@ class Day extends Component {
         </p>
       <div className="comingSoon">
 
-        <h2>Coming Soon!</h2>
+        <h2>Coming Soon! That you for your patience.</h2>
+        <p>Coming in version 1.0.0.0</p>
       </div></div>
     );
   }

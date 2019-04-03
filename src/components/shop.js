@@ -5,6 +5,7 @@ import ShopWeapons from "./shop/shopWeapons";
 import ShopFood from "./shop/shopFood";
 import ShopClothing from "./shop/shopClothing";
 import shopBuy from "./shop/shopBuy";
+import ShopLargeItems from "./shop/shopLargeItems";
 
 class Shop extends Component {
   state = {
@@ -19,30 +20,34 @@ class Shop extends Component {
     shopBuy(id, value);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const fetchURL = "http://localhost:8080";
-    let currentUserId = localStorage.getItem("logged-in")
-    let newItemButton = ``
+    let currentUserId = localStorage.getItem("logged-in");
+    let newItemButton = ``;
     if (currentUserId !== null) {
       return fetch(`${fetchURL}/users/${currentUserId}`)
         .then(user => user.json())
         .then(user => {
           if (user.dm === true) {
-          newItemButton = (<p className="footer-icon color-orange">
-          <Link
-            className="fas fa-pen-square size2half color-white iconFooter"
-            style={{ textDecoration: "none" }}
-            to="/item-create"
-          />
-        </p>)
-          } else {}
-        }).then(()=> this.setState({newItemButton}));
+            newItemButton = (
+              <p className="footer-icon color-orange">
+                <Link
+                  className="fas fa-pen-square size2half color-white iconFooter"
+                  style={{ textDecoration: "none" }}
+                  to="/item-create"
+                />
+              </p>
+            );
+          } else {
+          }
+        })
+        .then(() => this.setState({ newItemButton }));
     }
-  };
+  }
 
   render() {
     return (
-      <div>
+      <div className="space-background">
         <p className="footer-item logout-btn">
           <Link
             className="fas fa-sign-out-alt size2half logout-btn"
@@ -51,16 +56,16 @@ class Shop extends Component {
           />
         </p>
         <div className="jumbotron shopDiv">
-          <h3 className="color-white">
+          <h3 className="color-black orange-background">
             {" "}
             {this.props.playerLocation} Shopping Center
           </h3>
-          <p className="lead color-orange">
+          <p className="lead color-orange grey-background">
             Current Funds = {this.props.funds} credits
           </p>
           {this.state.newItemButton}
           <hr className="my-4" />
-          <h4 className="color-white">Hardware Store</h4>
+          <h4 className="color-white blue-background">Hardware Store</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -71,11 +76,12 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Market</h4>
+          <h4 className="color-white blue-background">Market</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -86,11 +92,12 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Tailor</h4>
+          <h4 className="color-white blue-background">Tailor</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -101,11 +108,12 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>
           <hr className="my-4" />
-          <h4 className="color-white">Weapons Shop</h4>
+          <h4 className="color-white blue-background">Weapons Shop</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -116,6 +124,23 @@ class Shop extends Component {
                 items={items}
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
+              />
+            ))}
+          </div>
+          <hr className="my-4" />
+          <h4 className="color-white blue-background">Ship Lot and Realator</h4>
+          <p className="thin-line" />
+          <div className="items">
+            {this.props.items.map(items => (
+              <ShopLargeItems
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocation={this.props.playerLocation}
+                playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
               />
             ))}
           </div>

@@ -15,7 +15,9 @@ function shopBuy(id, value, location, refresh) {
         userId: localStorage.getItem("logged-in"),
         itemId: id,
         bought: location,
-        sold: null
+        boughtTime: Date.now(),
+        sold: null,
+        soldTime: null
       };
       if (Number(funds) >= Number(value)) {
         apiManager

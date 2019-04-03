@@ -3,7 +3,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="space-background-two">
       <div className="mainPage">
 
         <h2>Hello Scoundrels!</h2>
@@ -18,7 +18,12 @@ class Home extends Component {
           the shop and buy new items or sell ones you don't want! This is your
           datapad, use it however you please.
         </p>
-      </div></div>
+      </div>
+      <div id="three-container"></div>
+      <div id="instructions">
+      Search for planets, cities, items, or species.
+      </div>
+      </div>
     );
   }
 }

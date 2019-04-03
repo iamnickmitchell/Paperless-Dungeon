@@ -22,10 +22,10 @@ const styles = {
   }
 };
 
-function ShopTools(props) {
+function ShopLargeItems(props) {
   const { classes } = props;
   if (
-    Number(props.items.itemTypeId) === 2 &&
+    Number(props.items.itemTypeId) === 5 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) !== Number(localStorage.getItem("logged-in")) &&
     props.items.legal === true
@@ -71,7 +71,7 @@ function ShopTools(props) {
       </Card>
     );
   } else if (
-    Number(props.items.itemTypeId) === 2 &&
+    Number(props.items.itemTypeId) === 5 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) === Number(localStorage.getItem("logged-in")) &&
     props.items.legal === true
@@ -151,8 +151,8 @@ function ShopTools(props) {
   }
 }
 
-ShopTools.propTypes = {
+ShopLargeItems.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ShopTools);
+export default withStyles(styles)(ShopLargeItems);

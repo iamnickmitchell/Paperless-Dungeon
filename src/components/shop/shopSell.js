@@ -9,7 +9,6 @@ function shopSell(id, value, location, refresh) {
     .user()
     .then(parsedFunds => {
       const newFunds = parsedFunds.funds + value;
-      console.log(newFunds);
       return fetch(`${fetchURL}/users/${currentUserId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
@@ -21,6 +20,13 @@ function shopSell(id, value, location, refresh) {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sold: soldLocation })
+      })
+    )
+    .then(() =>
+      fetch(`${fetchURL}/userItems/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ soldTime: Date.now() })
       })
     )
     .then(() => refresh());

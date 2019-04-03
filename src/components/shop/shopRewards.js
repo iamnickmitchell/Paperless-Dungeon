@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 
 class ItemCreate extends Component {
   state = {
-    name: "",
-    statOne: "",
-    statTwo: "",
-    description: "https://www.starwars.com/",
-    image: "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-    itemTypeId: 1,
-    itemRarityId: 1,
-    value: 0,
-    legal: true,
-    error: "",
-    success: "",
+    userName: "",
+    itemName: "",
+    userId: "",
+    itemId: "",
+    rewardFunds: "",
+    itemSelect: "",
+    wealthSelect: "",
+    errorItem: "",
+    successItem: "",
+    errorUser: "",
+    successUser: "",
     shop: ``
   };
 
@@ -24,14 +24,15 @@ class ItemCreate extends Component {
     });
   };
 
+  // Update state whenever an input field is edited
   handleFieldChange = evt => {
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
     this.setState(stateToChange);
   };
 
-
-  handleLogin = e => {
+  // Simplistic handler for login submit
+  handleLoginItem = e => {
     e.preventDefault();
 
     const fetchURL = "http://localhost:8080";
@@ -39,14 +40,14 @@ class ItemCreate extends Component {
       .then(item => item.json())
       .then(item => {
         for (let i = 0; i < item.length; i++) {
-          if (item[i].name === this.state.name) {
-            const error =
-              "This item already exists! Try naming it something else.";
-            this.setState({ error });
+          if (item[i].name !== this.state.itemName) {
+            const errorItem =
+              "This item doesn't exists! Make sure you are tying the Item name exactly as it is in the shop.";
+            this.setState({ errorItem });
           } else {
-            const success =
-              "Congratulations, a new item has been made! You can view it in the shop.";
-            this.setState({ success });
+            const successItem =
+              "Item is able to be sent.";
+            this.setState({ successItem });
             const shop = (
               <p className="footer-item">
                 <Link
@@ -80,81 +81,73 @@ class ItemCreate extends Component {
 
   render() {
     return (
-      <div className="space-background createPage">
-      <form className="createItems" onSubmit={this.handleLogin}>
-        <h1 className="h3 mb-3 font-weight-normal color-orange">Create an Item</h1>
+      <form className="mainPage" onSubmit={this.handleLoginItem}>
+        <h1 className="h3 mb-3 font-weight-normal">Create an Item</h1>
         <p>
-          <label htmlFor="inputUsername"></label>
+          <label htmlFor="inputUsername">Name: </label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="name"
-            placeholder="Item Name"
+            placeholder="Datapad"
             required=""
             autoFocus=""
-            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword"></label>
+          <label htmlFor="inputPassword">First Stat: </label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statOne"
-            placeholder="Item's first stat"
+            placeholder="A space tablet"
             required=""
-            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword"></label>
+          <label htmlFor="inputPassword">Second Stat: </label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statTwo"
-            placeholder="Item's second stat"
+            placeholder="Able to get information."
             required=""
-            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword"></label>
+          <label htmlFor="inputPassword">Description: </label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="description"
-            placeholder="Description: Insert URL to external web page or leave blank."
+            placeholder="Insert URL to external web page or leave blank."
             required=""
-            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword"></label>
+          <label htmlFor="inputPassword">Image: </label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="image"
-            placeholder="Image: Insert URL to image or leave blank."
+            placeholder="Insert URL to image or leave blank."
             required=""
-            autoComplete="off"
           />
         </p>
         <p>
-          <label></label>
+          <label>Value: </label>
           <input
             onChange={this.handleFieldChange}
             type="number"
             id="value"
             placeholder="Item Cost"
             required=""
-            autoComplete="off"
           />
         </p>
         <p>
-        <label></label>
+        <label>Item Rarity: </label>
           <select id="itemRarityId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">--> Select Item Rarity:</option>
-            <option value="1">Common</option>
+            <option defaultValue="1">Common</option>
             <option value="2">Uncommon</option>
             <option value="3">Rare</option>
             <option value="4">Very-Rare</option>
@@ -162,10 +155,9 @@ class ItemCreate extends Component {
           </select>
         </p>
         <p>
-        <label></label>
+        <label>Item Type: </label>
           <select id="itemTypeId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">--> Select Item Type:</option>
-            <option value="1">Weapon</option>
+            <option defaultValue="1">Weapon</option>
             <option value="2">Tool</option>
             <option value="3">Food</option>
             <option value="4">Clothing</option>
@@ -181,11 +173,11 @@ class ItemCreate extends Component {
             onChange={this.toggleChange}
           />
         </p>
-        <button className="submit" type="submit">Create Item</button>
+        <button type="submit">Create Item</button>
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.shop}</h4>
-      </form></div>
+      </form>
     );
   }
 }
