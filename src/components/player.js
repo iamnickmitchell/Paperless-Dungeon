@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 class Characters extends Component {
   state = {};
-
   render() {
     return (
       <div className="hanger-background">
