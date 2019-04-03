@@ -3,7 +3,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="space-background-two">
       <div className="mainPage">
 
         <h2>Hello Scoundrels!</h2>

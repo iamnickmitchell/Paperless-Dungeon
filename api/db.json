@@ -121,7 +121,7 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 889508,
+      "funds": 876149,
       "groupId": 1
     },
     {
@@ -539,7 +539,7 @@
     },
     {
       "name": "Backpack",
-      "statOne": "Used to carry items.",
+      "statOne": "Used to carry smaller items.",
       "statTwo": "Can hold up to 50lbs.",
       "description": "https://www.starwars.com/",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
@@ -588,6 +588,19 @@
       "legal": true,
       "userId": "1",
       "id": 31
+    },
+    {
+      "name": "a",
+      "statOne": "",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": "2",
+      "itemRarityId": "1",
+      "value": 0,
+      "legal": false,
+      "userId": "1",
+      "id": 32
     }
   ],
   "userItems": [
@@ -995,6 +1008,69 @@
       "sold": "Coruscant",
       "soldTime": 1554220082691,
       "id": 45
+    },
+    {
+      "userId": "1",
+      "itemId": 6,
+      "bought": "Coruscant",
+      "boughtTime": 1554258334733,
+      "sold": null,
+      "soldTime": null,
+      "id": 46
+    },
+    {
+      "userId": "1",
+      "itemId": 4,
+      "bought": "Coruscant",
+      "boughtTime": 1554258336932,
+      "sold": null,
+      "soldTime": null,
+      "id": 47
+    },
+    {
+      "userId": "1",
+      "itemId": 5,
+      "bought": "Coruscant",
+      "boughtTime": 1554258337584,
+      "sold": null,
+      "soldTime": null,
+      "id": 48
+    },
+    {
+      "userId": "1",
+      "itemId": 6,
+      "bought": "Coruscant",
+      "boughtTime": 1554258338707,
+      "sold": null,
+      "soldTime": null,
+      "id": 49
+    },
+    {
+      "userId": "1",
+      "itemId": 22,
+      "bought": "Coruscant",
+      "boughtTime": 1554258386541,
+      "sold": null,
+      "soldTime": null,
+      "id": 50
+    },
+    {
+      "userId": "1",
+      "itemId": 23,
+      "bought": "Coruscant",
+      "boughtTime": 1554258387382,
+      "sold": null,
+      "soldTime": null,
+      "id": 51
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Coruscant",
+      "boughtTime": 1554258388427,
+      "sold": null,
+      "soldTime": null,
+      "id": 52
     }
   ],
   "planets": [

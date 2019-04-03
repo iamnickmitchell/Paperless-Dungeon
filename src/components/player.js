@@ -7,7 +7,7 @@ class Characters extends Component {
 
   render() {
     return (
-      <div>
+      <div className="hanger-background">
         <p className="footer-item logout-btn">
           <Link
             className="fas fa-sign-out-alt size2half logout-btn"
@@ -17,12 +17,12 @@ class Characters extends Component {
         </p>
         <div className="playerDiv">
           <div className="jumbotron">
-            <h1 className="display-4 color-white">{this.props.username}</h1>
-            <p className="lead color-orange">
+            <h1 className="display-4 color-white orange-background-player">{this.props.username}</h1>
+            <p className="lead color-orange grey-background-player">
               Current Funds = {this.props.funds} credits
             </p>
             <hr className="my-4" />
-            <h4 className="color-white">Items</h4>
+            <h4 className="color-white blue-background-player">Items</h4>
             <p className="thin-line" />
             <div className="items">
               {this.props.userItems.map(item => (
