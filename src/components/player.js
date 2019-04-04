@@ -6,7 +6,7 @@ class Characters extends Component {
   state = {};
   render() {
     return (
-      <div className="hanger-background">
+      <div className="playerPage">
         <p className="footer-item logout-btn">
           <Link
             className="fas fa-sign-out-alt size2half logout-btn"

@@ -15,12 +15,15 @@
   --color-light-green: #8ee4af;
   --color-orange: rgb(247, 180, 56);
   background-color: transparent;
-  background-image: url("C:/Users/Newforce/Nick-Files/paperless-dungeon/kennel/src/backgroundImages/background-space4.jpg");
+  /* background-image: url("https://cdnb.artstation.com/p/assets/images/images/001/227/905/large/jorge-jacinto-archway-by-jjcanvas-d8mu38k.jpg?1442572611");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; */
 }
 
 /* Sets the footers parameters */
 .footer {
-  background-color: var(--color-grey-slate);
+  background-color: rgba(71, 151, 97, 50%);
   display: flex;
   justify-content: space-evenly;
   /* Adjusts the footers position */
@@ -31,7 +34,7 @@
   border: 2px solid white;
   flex-wrap: wrap;
   padding-bottom: 35px;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* The area that player symbols are shown */
@@ -239,22 +242,32 @@ body {
 
 /* main area styling */
 .mainPage {
-  background-color: transparent;
+  background-color: rgba(71, 151, 97, 25%);
   color: white;
   padding-bottom: 10px;
   text-align: center;
   border: 2px solid white;
-  max-height: 80%;
-  min-height: 80%;
+  max-height: 35%;
+  min-height: 35%;
+}
+.mainPage2 {
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+  max-height: 35%;
+  min-height: 35%;
 }
 .createItems {
-  background-color: rgba(85, 122, 149, 70%);
+  margin-top: 1vh;
+  background-color: #47976098;
   color: white;
   padding-bottom: 0px;
   text-align: center;
   border: 2px solid white;
   max-width: 75vw;
   min-width: 75vw;
+  min-height: 50vh;
+  max-height: 80vh;
 }
 .createPage {
   display: flex;
@@ -270,7 +283,7 @@ body {
 
 /* coming soon ribbon */
 .comingSoon {
-  background-color: var(--color-ocean-blue);
+  background-color: rgba(247, 180, 56, 50%);
   width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -342,24 +355,53 @@ input {
 }
 
 .space-background {
-  background-image: url("https://i.imgur.com/AHwPKud.jpg");
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/000/788/884/medium/daniel-thomas-calypso-s-shop-2.jpg?1433168266");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: center;
   background-attachment: fixed;
+  height: 100vh;
 }
 
 .space-background-two {
-  background-image: url("file:///C:/Users/Newforce/Nick-Files/paperless-dungeon/kennel/public/Images/backgroundImages/background-space4.jpg");
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/001/227/905/large/jorge-jacinto-archway-by-jjcanvas-d8mu38k.jpg?1442572611");
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
+  height: 100vh;
+  z-index: -1;
 }
 
-.hanger-background {
-  background-image: url("https://4.bp.blogspot.com/-BwU9EdXPgrY/UDez80IPdoI/AAAAAAABTr4/e6mxXDvmFRw/s1600/Star%2BWars%2B1313%2BAug%2B2.jpg");
+.mapPage {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/006/742/781/large/niall-pearce-dnd-map.jpg?1500934098");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-attachment: fixed;
+  height: 100vh;
+  z-index: -1;
+}
+.dayPage {
+  background-image: url("https://i.pinimg.com/originals/d7/d3/8a/d7d38a779db52c84f6fb3da715458da9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: -1;
+}
+.playerPage {
+  background-image: url("https://www.myidealhome.us/wp-content/uploads/2017/06/medieval-kitchen5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: -1;
+}
+
+.hanger-background {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/000/234/511/medium/wiebke-scholz-sts-between-worlds-bg01.jpg?1412414034");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .grey-background {
@@ -395,7 +437,7 @@ input {
 }
 
 .orange-background {
-  background-color: rgba(247, 180, 56, 50%);
+  background-color: rgba(247, 180, 56, 55%);
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
@@ -403,7 +445,7 @@ input {
   border-top-right-radius: 10px;
 }
 .orange-background-player {
-  background-color: rgba(247, 180, 56, 80%);
+  background-color: rgba(247, 180, 56, 55%);
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
@@ -414,106 +456,106 @@ input {
 #name{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 50vw;
   max-width: 50vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #statOne{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 50vw;
   max-width: 50vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #statTwo{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 50vw;
   max-width: 50vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #description{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 50vw;
   max-width: 50vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #image{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 50vw;
   max-width: 50vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #value{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 20vw;
   max-width: 20vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #itemRarityId{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 20vw;
   max-width: 20vw;
   min-height: 4.5vh;
   max-height: 4.5vh;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 option{
@@ -524,34 +566,34 @@ option{
 
 .submit{
   text-align: center;
-  color: rgba(247, 180, 56, 100%);
+  color: white;
   font-size: 1.25rem;
-  background-color: rgba(85, 122, 149, 50%);
+  background-color: #4797606b;
   min-width: 60vw;
   max-width: 60vw;
   border-radius: 10px;
-  border-right: 2px solid rgba(29, 70, 99);
-  border-bottom: 2px solid rgba(29, 70, 99);
-  border-left: 2px solid rgba(94, 142, 175);
-  border-top: 2px solid rgba(94, 142, 175);
+  border-right: 2px solid #1a4b2998;
+  border-bottom: 2px solid #1a4b2998;
+  border-left: 2px solid #47976098;
+  border-top: 2px solid #47976098;
 }
 
 button:hover{
-  background-color: rgba(16, 47, 70, 50%);
-  color: rgba(247, 180, 56, 50%);
+  background-color: #1a4b2998;
+  color: rgba(255, 255, 255, 0.685);
 }
 
 #itemTypeId{
   text-align: center;
   color: white;
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: #4797606b;
   min-width: 20vw;
   max-width: 20vw;
   border-radius: 10px;
-  border-right: 2px solid rgb(94, 142, 175);
-  border-bottom: 2px solid rgb(94, 142, 175);
-  border-left: 2px solid rgb(29, 70, 99);
-  border-top: 2px solid rgb(29, 70, 99);
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 ::placeholder{

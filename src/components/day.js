@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 class Day extends Component {
   render() {
     return (
-      <div> <p className="footer-item logout-btn">
+      <div className="playerPage">
+        <p className="footer-item logout-btn">
           <Link
             className="fas fa-sign-out-alt size2half logout-btn"
             style={{ textDecoration: "none" }}
@@ -14,7 +15,8 @@ class Day extends Component {
 
         <h2>Coming Soon! That you for your patience.</h2>
         <p>Coming in version 1.0.0.0</p>
-      </div></div>
+      </div>
+      </div>
     );
   }
 }

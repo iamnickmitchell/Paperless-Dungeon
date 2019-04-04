@@ -82,7 +82,7 @@ class ItemCreate extends Component {
     return (
       <div className="space-background createPage">
       <form className="createItems" onSubmit={this.handleLogin}>
-        <h1 className="h3 mb-3 font-weight-normal color-orange">Create an Item</h1>
+        <h1 className="h3 mb-3 font-weight-normal color-white">Create an Item</h1>
         <p>
           <label htmlFor="inputUsername"></label>
           <input
