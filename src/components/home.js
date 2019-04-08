@@ -5,7 +5,6 @@ class Home extends Component {
     return (
       <div className="space-background-two">
       <div className="mainPage">
-
         <h2>Hello Adventurers!</h2>
         <p className="lead">
           This tool is intended to help automate the grunt work of your
@@ -13,19 +12,15 @@ class Home extends Component {
         </p>
         <hr className="my-4" />
         <p>
-          View other players characters or check out the local map. Login to
-          see your characters stats, current items, funds,and location. Go to
-          the shop and buy new items or sell ones you don't want! This is your
-          datapad, use it however you please.
+        As a player you can: Purchase, view, and sell items. View your current location's overview map and some basic stats about it. See the days weather and what day your group is currently on.
         </p>
       </div>
-      <div id="three-container"></div>
+      {/* <div id="three-container"></div>
       <div id="instructions">
       Search for locations, cities, items, or species.
-      </div>
+      </div> */}
       </div>
     );
   }
 }
-
 export default Home;

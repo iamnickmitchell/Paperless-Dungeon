@@ -29,11 +29,25 @@
   /* Adjusts the footers position */
   position: fixed;
   left: 0px;
+  bottom: 10px;
+  width: 100%;
+  /* border: 2px solid white; */
+  flex-wrap: wrap;
+  padding-bottom: 0px;
+  z-index: 0;
+}
+
+.footerLogo {
+  background-color: #bc986a;
+  /* Adjusts the footers position */
+  color: black;
+  position: fixed;
+  left: 0px;
   bottom: 0px;
   width: 100%;
-  border: 2px solid white;
-  flex-wrap: wrap;
-  padding-bottom: 35px;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 0px;
   z-index: 0;
 }
 
@@ -126,12 +140,12 @@ body {
 }
 
 .mapsDiv {
-  height: 76.5vh;
+  height: 76vh;
   overflow-y: scroll;
 }
 
 .playerDiv {
-  height: 78.5vh;
+  height: 83vh;
   overflow-y: scroll;
 }
 
@@ -146,7 +160,7 @@ body {
 }
 
 .shopDiv {
-  height: 78.5vh;
+  height: 83vh;
   overflow-y: scroll;
   z-index: 0;
   padding-bottom: 0px;
@@ -246,16 +260,17 @@ body {
   color: white;
   padding-bottom: 10px;
   text-align: center;
-  border: 2px solid white;
-  max-height: 35%;
-  min-height: 35%;
+  /* border: 2px solid white; */
+  max-height: 40%;
+  min-height: 40%;
 }
 .mainPage2 {
   color: white;
-  padding-bottom: 10px;
+  padding-bottom: opx;
   text-align: center;
-  max-height: 35%;
-  min-height: 35%;
+  height: 83%;
+  overflow-y: scroll;
+  z-index: -1;
 }
 .createItems {
   margin-top: 1vh;
@@ -377,7 +392,6 @@ input {
   background-position: center bottom;
   background-attachment: fixed;
   height: 100vh;
-  z-index: -1;
 }
 .dayPage {
   background-image: url("https://i.pinimg.com/originals/d7/d3/8a/d7d38a779db52c84f6fb3da715458da9.jpg");
@@ -420,6 +434,19 @@ input {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.tan-background {
+  background-color: #bc986aa8;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.green-background {
+  background-color: #47976098;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
 
 .blue-background {
   background-color: rgba(85, 122, 149, 50%);
@@ -434,6 +461,10 @@ input {
   padding-bottom: 5px;
   margin-bottom: 0px;
   border-radius: 10px;
+}
+
+.zoom {
+  zoom: 50%;
 }
 
 .orange-background {
@@ -453,7 +484,7 @@ input {
   border-top-right-radius: 10px;
 }
 
-#name{
+#name {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -468,7 +499,7 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-#statOne{
+#statOne {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -483,7 +514,7 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-#statTwo{
+#statTwo {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -498,7 +529,7 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-#description{
+#description {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -513,7 +544,7 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-#image{
+#image {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -528,7 +559,7 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-#value{
+#value {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -543,7 +574,7 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-#itemRarityId{
+#itemRarityId {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -558,13 +589,46 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
-option{
+#locationCode {
+  text-align: center;
+  color: white;
+  background-color: #479760da;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#changeLocationButton {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #479760d3;
+  min-width: 60vw;
+  max-width: 60vw;
+  border-radius: 10px;
+  border-right: 2px solid #1a4b2998;
+  border-bottom: 2px solid #1a4b2998;
+  border-left: 2px solid #47976098;
+  border-top: 2px solid #47976098;
+}
+
+#changeLocationButton:hover {
+  background-color: #1a4b2998;
+  color: white;
+}
+
+option {
   background-color: rgba(93, 92, 97, 100%);
   text-align: center;
 }
 
-
-.submit{
+.submit {
   text-align: center;
   color: white;
   font-size: 1.25rem;
@@ -578,12 +642,12 @@ option{
   border-top: 2px solid #47976098;
 }
 
-button:hover{
+button:hover {
   background-color: #1a4b2998;
-  color: rgba(255, 255, 255, 0.685);
+  color: white;
 }
 
-#itemTypeId{
+#itemTypeId {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -596,29 +660,29 @@ button:hover{
   border-top: 2px solid #1a4b2998;
 }
 
-::placeholder{
-  color: rgba(255,255,255, 50%);
+::placeholder {
+  color: rgba(255, 255, 255, 50%);
 }
 
 /* ######################################################################## */
 /* ##################### Three Image Transition ########################### */
 
 body {
-	margin: 0;
-	overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 canvas {
-	background-image: radial-gradient(#666, #333);
+  background-image: radial-gradient(#666, #333);
 }
 
 #instructions {
-	position: absolute;
-	color: #fff;
-	bottom: 100px;
-	padding-bottom: 6px;
-	font-family: sans-serif;
-	width: 100%;
-	text-align: center;
-	pointer-events: none;
+  position: absolute;
+  color: #fff;
+  bottom: 100px;
+  padding-bottom: 6px;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
 }

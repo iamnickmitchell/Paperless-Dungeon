@@ -11,14 +11,8 @@ class Day extends Component {
             to="/logout"
           />
         </p>
-      <div className="comingSoon">
-
-        <h2>Coming Soon! That you for your patience.</h2>
-        <p>Coming in version 1.0.0.0</p>
-      </div>
       </div>
     );
   }
 }
-
 export default Day;

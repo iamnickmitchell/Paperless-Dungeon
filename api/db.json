@@ -2,117 +2,21 @@
   "groups": [
     {
       "id": 1,
-      "name": "Galactic Empire",
-      "day": 34634,
-      "url": ""
+      "name": "Tombstone",
+      "day": 38,
+      "funds": 34000
     },
     {
       "id": 2,
-      "name": "Rebel Alliance",
-      "day": 24454,
-      "url": ""
+      "name": "Red Scare",
+      "day": 65,
+      "funds": 100000
     },
     {
       "id": 3,
-      "name": "Black Sun",
-      "day": 2839572395,
-      "url": ""
-    },
-    {
-      "id": 4,
-      "name": "Red Key",
-      "day": 30234,
-      "url": ""
-    },
-    {
-      "id": 5,
-      "name": "Clan Fett",
-      "day": 2387479,
-      "url": ""
-    },
-    {
-      "id": 6,
-      "name": "Commerce Guild",
-      "day": 23442324,
-      "url": ""
-    },
-    {
-      "id": 7,
-      "name": "Confederacy of Independant Systems",
-      "day": 34230,
-      "url": ""
-    },
-    {
-      "id": 8,
-      "name": "Corperate Alliance",
-      "day": 29834,
-      "url": ""
-    },
-    {
-      "id": 9,
-      "name": "Death Watch",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 10,
-      "name": "First Order",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 11,
-      "name": "Free Ryloth Movement",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 12,
-      "name": "Galactic Republic",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 13,
-      "name": "Gungan Grand Army",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 14,
-      "name": "Hutt Cartel",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 15,
-      "name": "Intergalactic Banking Clan",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 16,
-      "name": "Jedi Order",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 17,
-      "name": "Lothal Rebel Group",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 18,
-      "name": "Shadow Collective",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 19,
-      "name": "Techno Union",
-      "day": 0,
-      "url": ""
+      "name": "MNM",
+      "day": 73164,
+      "funds": 250000
     }
   ],
   "users": [
@@ -121,23 +25,23 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 876149,
-      "groupId": 1
+      "funds": 876401,
+      "groupId": 3
     },
     {
       "id": 2,
-      "name": "Megan",
+      "name": "Akantha",
       "dm": false,
       "password": "megan",
-      "funds": 890107.5,
-      "groupId": 1
+      "funds": 890107,
+      "groupId": 3
     },
     {
       "id": 3,
-      "name": "Cam",
+      "name": "Cythera",
       "dm": false,
-      "password": "cam",
-      "funds": 1000000,
+      "password": "megan",
+      "funds": 10000,
       "groupId": 2
     }
   ],
@@ -546,7 +450,7 @@
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "25",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 28
     },
@@ -1023,8 +927,8 @@
       "itemId": 4,
       "bought": "Coruscant",
       "boughtTime": 1554258336932,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Usalred",
+      "soldTime": 1554752882692,
       "id": 47
     },
     {
@@ -1050,8 +954,8 @@
       "itemId": 22,
       "bought": "Coruscant",
       "boughtTime": 1554258386541,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Moret Town",
+      "soldTime": 1554746133028,
       "id": 50
     },
     {
@@ -1071,24 +975,33 @@
       "sold": null,
       "soldTime": null,
       "id": 52
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Moret Town",
+      "boughtTime": 1554746112126,
+      "sold": "Moret Town",
+      "soldTime": 1554746120348,
+      "id": 53
     }
   ],
-  "planets": [
+  "countries": [
     {
       "id": 1,
-      "name": "Tatooine"
+      "name": "Thay"
     },
     {
       "id": 2,
-      "name": "Hoth"
+      "name": "Amn"
     },
     {
       "id": 3,
-      "name": "Coruscant"
+      "name": "Unther"
     },
     {
       "id": 4,
-      "name": "Mustafar"
+      "name": "Halruaa"
     }
   ],
   "citySizes": [
@@ -1116,38 +1029,145 @@
   "locations": [
     {
       "id": 1,
-      "planetId": 1,
-      "cityName": "Mos Eisley",
-      "citySizeId": 2,
-      "governmentType": "Dictatorship",
-      "ruler": "Jabba the Hutt",
-      "biome": "Desert",
+      "countryId": 1,
+      "cityName": "Moret Town",
+      "citySizeId": 1,
+      "ownedBy": "Monarchy",
+      "ruler": "Count Moret",
+      "biome": "Plains",
       "weatherId": 1,
       "locationCode": "mp73os",
+      "image": "./Images/locationImages/MoretTown.png",
       "userId": 1
     },
     {
       "id": 2,
-      "planetId": 1,
-      "cityName": "Mos Espa",
-      "citySizeId": 2,
-      "governmentType": "Dictatorship",
+      "countryId": 1,
+      "cityName": "Brose-Totain",
+      "citySizeId": 3,
+      "ownedBy": "Dictatorship",
       "ruler": "Jabba the Hutt",
       "biome": "Desert",
       "weatherId": 1,
-      "locationCode": "mp73os",
+      "locationCode": "gr35j8",
+      "image": "./Images/locationImages/Brose-Totain.png",
       "userId": 1
     },
     {
       "id": 3,
-      "planetId": 3,
-      "cityName": "Coruscant",
+      "countryId": 3,
+      "cityName": "Usalred",
       "citySizeId": 5,
-      "governmentType": "Empire",
+      "ownedBy": "Empire",
       "ruler": "Emperor Shiev Palpatine",
       "biome": "City",
       "weatherId": 1,
       "locationCode": "cor123",
+      "image": "./Images/locationImages/Usalred.png",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "countryId": 1,
+      "cityName": "Ica",
+      "citySizeId": 4,
+      "ownedBy": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "h4kjs8",
+      "image": "./Images/locationImages/Ica.png",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "countryId": 1,
+      "cityName": "Highsong",
+      "citySizeId": 1,
+      "ownedBy": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "j4dh8s",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "countryId": 1,
+      "cityName": "Green Meadow",
+      "citySizeId": 2,
+      "ownedBy": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "hid825",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 11,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
       "userId": 1
     }
   ],

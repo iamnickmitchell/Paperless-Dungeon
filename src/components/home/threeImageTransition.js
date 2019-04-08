@@ -1,3 +1,4 @@
+import { TimelineMax, TweenMax, Power0 } from "gsap/all";
 var THREE = require('three');
 
 window.onload = init;

@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 class NavBar extends Component {
     render() {
         return (
+            <div>
             <footer className="footer">
                     <p className="footer-icon">
                         <Link className="fas fa-home size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/"></Link>
@@ -22,6 +23,8 @@ class NavBar extends Component {
                         <Link className="fas fa-store size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/shop"></Link>
                     </p>
             </footer>
+            <p className="footerLogo logo"> Paperless Dungeon v.0.18.0.0  &#169;2019</p>
+            </div>
         )
     }
 }
