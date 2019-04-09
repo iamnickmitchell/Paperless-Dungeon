@@ -47,9 +47,9 @@ class NavigationElements extends Component {
   itemsRefresh = () => {
     const newState = {};
     return fetch(`${fetchURL}/items`)
-      .then(location => location.json())
-      .then(location => {
-        newState.playerLocation = location;
+      .then(items => items.json())
+      .then(items => {
+        newState.items = items;
       })
       .then(() => this.setState(newState));
   };
@@ -67,32 +67,25 @@ class NavigationElements extends Component {
 
   refresh = () => {
     const newState = {};
-    const currentUserId = localStorage.getItem("logged-in");
-    return fetch(`${fetchURL}/users/${currentUserId}`)
-      .then(user => user.json())
+    return apiManager
+      .user()
       .then(parsedUser => {
         newState.username = parsedUser.name;
       })
       .then(() =>
-        fetch(`${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`)
-          .then(userItems => userItems.json())
-          .then(parsedUserItems => {
-            newState.userItems = parsedUserItems;
-          })
+        apiManager.userItems().then(parsedUserItems => {
+          newState.userItems = parsedUserItems;
+        })
       )
       .then(() =>
-        fetch(`${fetchURL}/users/${currentUserId}`)
-          .then(user => user.json())
-          .then(parsedFunds => {
-            newState.funds = parsedFunds.funds;
-          })
+        apiManager.user().then(parsedFunds => {
+          newState.funds = parsedFunds.funds;
+        })
       )
       .then(() =>
-        fetch(`${fetchURL}/items`)
-          .then(items => items.json())
-          .then(parsedItems => {
-            newState.items = parsedItems;
-          })
+        apiManager.items().then(parsedItems => {
+          newState.items = parsedItems;
+        })
       )
       .then(() =>
         apiManager.playerLocations().then(parsedplayerLocation => {
@@ -239,7 +232,7 @@ class NavigationElements extends Component {
         <Route
           path="/item-create"
           render={props => {
-            return <ItemCreate itemsRefresh={this.itemsRefresh} />;
+            return <ItemCreate {...props} itemsRefresh={this.itemsRefresh} />;
           }}
         />
         <Route

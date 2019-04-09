@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import apiManager from "../apiManager";
-import { Link } from "react-router-dom";
+import { isNullOrUndefined } from "util";
 
 class ItemCreate extends Component {
   state = {
@@ -43,23 +43,13 @@ class ItemCreate extends Component {
             const error =
               "This item already exists! Try naming it something else.";
             this.setState({ error });
-          } else {
+          } else if(item[i].name === this.state.name){
             const success =
               "Congratulations, a new item has been made! You can view it in the shop.";
             this.setState({ success });
-            const shop = (
-              <p className="footer-item">
-                <Link
-                  className="far fa-shopping-cart size2half color-orange"
-                  style={{ textDecoration: "none" }}
-                  to="/shop"
-                />
-              </p>
-            );
-            this.setState({ shop });
           }
         }
-      });
+      })
     const createItem = {
       name: this.state.name,
       statOne: this.state.statOne,
@@ -72,9 +62,10 @@ class ItemCreate extends Component {
       legal: this.state.legal,
       userId: localStorage.getItem("logged-in")
     };
-    if (this.state.success !== null) {
+    if (this.state.success !== isNullOrUndefined) {
       apiManager.itemCreate(createItem)
       .then(()=>this.props.itemsRefresh())
+      .then(()=>this.props.history.push("/shop"))
     }
   };
 
