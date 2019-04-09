@@ -27,7 +27,8 @@ function ShopWeapons(props) {
   if (
     Number(props.items.itemTypeId) === 1 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
-    Number(props.items.userId) !== Number(localStorage.getItem("logged-in"))
+    Number(props.items.userId) !== Number(localStorage.getItem("logged-in")) &&
+    props.items.legal === true
   ) {
     return (
       <Card id="item" className={classes.card}>
@@ -72,7 +73,8 @@ function ShopWeapons(props) {
   }else if (
     Number(props.items.itemTypeId) === 1 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
-    Number(props.items.userId) === Number(localStorage.getItem("logged-in"))
+    Number(props.items.userId) === Number(localStorage.getItem("logged-in")) &&
+    props.items.legal === true
   ) {
     return (
       <Card id="item" className={classes.card}>

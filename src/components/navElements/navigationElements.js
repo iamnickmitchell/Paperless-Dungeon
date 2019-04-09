@@ -5,8 +5,8 @@ import Shop from "../shop";
 import Characters from "../player";
 import Maps from "../maps";
 import Day from "../day";
-import ItemCreate from "../shop/shopCreateItem"
-import ItemEdit from "../shop/shopEditItem"
+import ItemCreate from "../shop/shopCreateItem";
+import ItemEdit from "../shop/shopEditItem";
 import Login from "../login-register/login";
 import Logout from "../login-register/logout";
 import Register from "../login-register/register";
@@ -22,12 +22,13 @@ class NavigationElements extends Component {
     funds: [],
     items: [],
     playerLocation: [],
-    playerLocationSize: []
+    playerLocationSize: [],
+    playerLocationMap: ""
   };
 
   shopBuySellRefresh = () => {
     const newState = {};
-    const currentUserId = localStorage.getItem("logged-in")
+    const currentUserId = localStorage.getItem("logged-in");
     return fetch(`${fetchURL}/userItems?userId=${currentUserId}&_expand=item`)
       .then(userItems => userItems.json())
       .then(parsedUserItems => {
@@ -45,50 +46,54 @@ class NavigationElements extends Component {
 
   itemsRefresh = () => {
     const newState = {};
-    return fetch(`${fetchURL}/items`).then(item => item.json())
-    .then(items => {
-      newState.items = items
+    return fetch(`${fetchURL}/items`)
+      .then(items => items.json())
+      .then(items => {
+        newState.items = items;
+      })
+      .then(() => this.setState(newState));
+  };
+
+  locationRefresh = () => {
+    const newState = {}
+    apiManager.playerLocations().then(parsedplayerLocation => {
+      newState.playerLocation = parsedplayerLocation.location.cityName;
+      newState.playerLocationSize =
+        parsedplayerLocation.location.citySizeId;
+      newState.playerLocationMap = parsedplayerLocation.location.image;
     })
-    .then(() => this.setState(newState))
-  }
+  .then(() => this.setState(newState));
+  };
 
   refresh = () => {
     const newState = {};
-    const currentUserId = localStorage.getItem("logged-in");
-    return fetch(`${fetchURL}/users/${currentUserId}`)
-      .then(user => user.json())
+    return apiManager
+      .user()
       .then(parsedUser => {
         newState.username = parsedUser.name;
       })
       .then(() =>
-        fetch(`${fetchURL}/userItems?userId=${currentUserId}&&_expand=item`)
-          .then(userItems => userItems.json())
-          .then(parsedUserItems => {
-            newState.userItems = parsedUserItems;
-          })
+        apiManager.userItems().then(parsedUserItems => {
+          newState.userItems = parsedUserItems;
+        })
       )
       .then(() =>
-        fetch(`${fetchURL}/users/${currentUserId}`)
-          .then(user => user.json())
-          .then(parsedFunds => {
-            newState.funds = parsedFunds.funds;
-          })
+        apiManager.user().then(parsedFunds => {
+          newState.funds = parsedFunds.funds;
+        })
       )
       .then(() =>
-        fetch(`${fetchURL}/items`)
-          .then(items => items.json())
-          .then(parsedItems => {
-            newState.items = parsedItems;
-          })
+        apiManager.items().then(parsedItems => {
+          newState.items = parsedItems;
+        })
       )
       .then(() =>
-        fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`)
-          .then(location => location.json())
-          .then(parsedplayerLocation => {
-            newState.playerLocation = parsedplayerLocation.location.cityName;
-            newState.playerLocationSize =
-              parsedplayerLocation.location.citySizeId;
-          })
+        apiManager.playerLocations().then(parsedplayerLocation => {
+          newState.playerLocation = parsedplayerLocation.location.cityName;
+          newState.playerLocationSize =
+            parsedplayerLocation.location.citySizeId;
+          newState.playerLocationMap = parsedplayerLocation.location.image;
+        })
       )
       .then(() => this.setState(newState));
   };
@@ -120,6 +125,7 @@ class NavigationElements extends Component {
           newState.playerLocation = parsedplayerLocation.location.cityName;
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
+          newState.playerLocationMap = parsedplayerLocation.location.image;
         })
       )
       .then(() => this.setState(newState));
@@ -141,7 +147,14 @@ class NavigationElements extends Component {
           path="/maps"
           render={props => {
             if (this.isAuthenticated()) {
-              return <Maps />;
+              return (
+                <Maps
+                  playerLocationMap={this.state.playerLocationMap}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  locationRefresh={this.locationRefresh}
+                />
+              );
             } else {
               return <PleaseLogin />;
             }
@@ -219,13 +232,20 @@ class NavigationElements extends Component {
         <Route
           path="/item-create"
           render={props => {
-            return <ItemCreate itemsRefresh={this.itemsRefresh}  />;
+            return <ItemCreate {...props} itemsRefresh={this.itemsRefresh} />;
           }}
         />
         <Route
           path="/item-edit"
           render={props => {
-            return <ItemEdit {...this.props} {...props} itemsRefresh={this.itemsRefresh} editItems={this.props.editItems} />;
+            return (
+              <ItemEdit
+                {...this.props}
+                {...props}
+                itemsRefresh={this.itemsRefresh}
+                editItems={this.props.editItems}
+              />
+            );
           }}
         />
       </div>

@@ -2,117 +2,21 @@
   "groups": [
     {
       "id": 1,
-      "name": "Galactic Empire",
-      "day": 34634,
-      "url": ""
+      "name": "Tombstone",
+      "day": 38,
+      "funds": 34000
     },
     {
       "id": 2,
-      "name": "Rebel Alliance",
-      "day": 24454,
-      "url": ""
+      "name": "Red Scare",
+      "day": 65,
+      "funds": 100000
     },
     {
       "id": 3,
-      "name": "Black Sun",
-      "day": 2839572395,
-      "url": ""
-    },
-    {
-      "id": 4,
-      "name": "Red Key",
-      "day": 30234,
-      "url": ""
-    },
-    {
-      "id": 5,
-      "name": "Clan Fett",
-      "day": 2387479,
-      "url": ""
-    },
-    {
-      "id": 6,
-      "name": "Commerce Guild",
-      "day": 23442324,
-      "url": ""
-    },
-    {
-      "id": 7,
-      "name": "Confederacy of Independant Systems",
-      "day": 34230,
-      "url": ""
-    },
-    {
-      "id": 8,
-      "name": "Corperate Alliance",
-      "day": 29834,
-      "url": ""
-    },
-    {
-      "id": 9,
-      "name": "Death Watch",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 10,
-      "name": "First Order",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 11,
-      "name": "Free Ryloth Movement",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 12,
-      "name": "Galactic Republic",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 13,
-      "name": "Gungan Grand Army",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 14,
-      "name": "Hutt Cartel",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 15,
-      "name": "Intergalactic Banking Clan",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 16,
-      "name": "Jedi Order",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 17,
-      "name": "Lothal Rebel Group",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 18,
-      "name": "Shadow Collective",
-      "day": 0,
-      "url": ""
-    },
-    {
-      "id": 19,
-      "name": "Techno Union",
-      "day": 0,
-      "url": ""
+      "name": "MNM",
+      "day": 73164,
+      "funds": 250000
     }
   ],
   "users": [
@@ -121,23 +25,23 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 876149,
-      "groupId": 1
+      "funds": 879400,
+      "groupId": 3
     },
     {
       "id": 2,
-      "name": "Megan",
+      "name": "Akantha",
       "dm": false,
       "password": "megan",
-      "funds": 890107.5,
-      "groupId": 1
+      "funds": 890107,
+      "groupId": 3
     },
     {
       "id": 3,
-      "name": "Cam",
+      "name": "Cythera",
       "dm": false,
-      "password": "cam",
-      "funds": 1000000,
+      "password": "megan",
+      "funds": 8500,
       "groupId": 2
     }
   ],
@@ -196,8 +100,8 @@
       "statTwo": "Damage: 2d6",
       "itemRarityId": 2,
       "value": 3000,
-      "legal": false,
-      "userId": 1
+      "legal": true,
+      "userId": 2
     },
     {
       "id": 2,
@@ -248,7 +152,7 @@
       "statTwo": "Damage: 1d4+1",
       "itemRarityId": 1,
       "value": 300,
-      "legal": true,
+      "legal": false,
       "userId": 1
     },
     {
@@ -377,7 +281,7 @@
       "itemTypeId": 1,
       "itemRarityId": 1,
       "value": 2000,
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 15
     },
@@ -429,7 +333,7 @@
       "itemTypeId": 4,
       "itemRarityId": 1,
       "value": 5,
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 19
     },
@@ -442,7 +346,7 @@
       "itemTypeId": 3,
       "itemRarityId": 1,
       "value": "1",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 20
     },
@@ -468,7 +372,7 @@
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "4",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 22
     },
@@ -481,7 +385,7 @@
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "4",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 23
     },
@@ -494,7 +398,7 @@
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "1",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 24
     },
@@ -520,7 +424,7 @@
       "itemTypeId": "3",
       "itemRarityId": 1,
       "value": "5",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 26
     },
@@ -546,7 +450,7 @@
       "itemTypeId": "2",
       "itemRarityId": 1,
       "value": "25",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 28
     },
@@ -559,7 +463,7 @@
       "itemTypeId": "4",
       "itemRarityId": 1,
       "value": "1",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 29
     },
@@ -572,12 +476,25 @@
       "itemTypeId": "4",
       "itemRarityId": 1,
       "value": "10",
-      "legal": true,
+      "legal": false,
       "userId": "1",
       "id": 30
     },
     {
-      "name": "",
+      "name": "Longsword",
+      "statOne": "1d8",
+      "statTwo": "3 lbs.",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": "1",
+      "itemRarityId": "1",
+      "value": "15",
+      "legal": false,
+      "userId": "1",
+      "id": 31
+    },
+    {
+      "name": "Dagger",
       "statOne": "",
       "statTwo": "",
       "description": "https://www.starwars.com/",
@@ -585,22 +502,74 @@
       "itemTypeId": 1,
       "itemRarityId": 1,
       "value": 0,
-      "legal": true,
+      "legal": false,
       "userId": "1",
-      "id": 31
+      "id": 32
     },
     {
-      "name": "a",
+      "name": "Pizza",
       "statOne": "",
       "statTwo": "",
       "description": "https://www.starwars.com/",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "itemTypeId": "2",
-      "itemRarityId": "1",
+      "itemTypeId": 1,
+      "itemRarityId": 1,
       "value": 0,
       "legal": false,
       "userId": "1",
-      "id": 32
+      "id": 33
+    },
+    {
+      "name": "Dagger",
+      "statOne": "",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": 1,
+      "itemRarityId": 1,
+      "value": 0,
+      "legal": false,
+      "userId": "1",
+      "id": 34
+    },
+    {
+      "name": "Igloo",
+      "statOne": "",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": 1,
+      "itemRarityId": 1,
+      "value": 0,
+      "legal": false,
+      "userId": "1",
+      "id": 35
+    },
+    {
+      "name": "Dagger",
+      "statOne": "",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": 1,
+      "itemRarityId": 1,
+      "value": 0,
+      "legal": false,
+      "userId": "1",
+      "id": 36
+    },
+    {
+      "name": "Dagger",
+      "statOne": "",
+      "statTwo": "",
+      "description": "https://www.starwars.com/",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "itemTypeId": 1,
+      "itemRarityId": 1,
+      "value": 0,
+      "legal": false,
+      "userId": "1",
+      "id": 37
     }
   ],
   "userItems": [
@@ -1023,8 +992,8 @@
       "itemId": 4,
       "bought": "Coruscant",
       "boughtTime": 1554258336932,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Usalred",
+      "soldTime": 1554752882692,
       "id": 47
     },
     {
@@ -1041,8 +1010,8 @@
       "itemId": 6,
       "bought": "Coruscant",
       "boughtTime": 1554258338707,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Usalred",
+      "soldTime": 1554818631155,
       "id": 49
     },
     {
@@ -1050,8 +1019,8 @@
       "itemId": 22,
       "bought": "Coruscant",
       "boughtTime": 1554258386541,
-      "sold": null,
-      "soldTime": null,
+      "sold": "Moret Town",
+      "soldTime": 1554746133028,
       "id": 50
     },
     {
@@ -1071,24 +1040,78 @@
       "sold": null,
       "soldTime": null,
       "id": 52
+    },
+    {
+      "userId": "1",
+      "itemId": 17,
+      "bought": "Moret Town",
+      "boughtTime": 1554746112126,
+      "sold": "Moret Town",
+      "soldTime": 1554746120348,
+      "id": 53
+    },
+    {
+      "userId": "1",
+      "itemId": 24,
+      "bought": "Moret Town",
+      "boughtTime": 1554754816095,
+      "sold": "Moret Town",
+      "soldTime": 1554754830536,
+      "id": 54
+    },
+    {
+      "userId": "1",
+      "itemId": 29,
+      "bought": "Moret Town",
+      "boughtTime": 1554754820220,
+      "sold": "Moret Town",
+      "soldTime": 1554754828322,
+      "id": 55
+    },
+    {
+      "userId": "3",
+      "itemId": 2,
+      "bought": "Usalred",
+      "boughtTime": 1554818230249,
+      "sold": "Usalred",
+      "soldTime": 1554818252574,
+      "id": 56
+    },
+    {
+      "userId": "3",
+      "itemId": 4,
+      "bought": "Usalred",
+      "boughtTime": 1554818231052,
+      "sold": "Usalred",
+      "soldTime": 1554818251560,
+      "id": 57
+    },
+    {
+      "userId": "3",
+      "itemId": 17,
+      "bought": "Usalred",
+      "boughtTime": 1554818244501,
+      "sold": "Usalred",
+      "soldTime": 1554818249113,
+      "id": 58
     }
   ],
-  "planets": [
+  "countries": [
     {
       "id": 1,
-      "name": "Tatooine"
+      "name": "Thay"
     },
     {
       "id": 2,
-      "name": "Hoth"
+      "name": "Amn"
     },
     {
       "id": 3,
-      "name": "Coruscant"
+      "name": "Unther"
     },
     {
       "id": 4,
-      "name": "Mustafar"
+      "name": "Halruaa"
     }
   ],
   "citySizes": [
@@ -1116,38 +1139,145 @@
   "locations": [
     {
       "id": 1,
-      "planetId": 1,
-      "cityName": "Mos Eisley",
-      "citySizeId": 2,
-      "governmentType": "Dictatorship",
-      "ruler": "Jabba the Hutt",
-      "biome": "Desert",
+      "countryId": 1,
+      "cityName": "Moret Town",
+      "citySizeId": 1,
+      "ownedBy": "Monarchy",
+      "ruler": "Count Moret",
+      "biome": "Plains",
       "weatherId": 1,
       "locationCode": "mp73os",
+      "image": "./Images/locationImages/MoretTown.png",
       "userId": 1
     },
     {
       "id": 2,
-      "planetId": 1,
-      "cityName": "Mos Espa",
-      "citySizeId": 2,
-      "governmentType": "Dictatorship",
+      "countryId": 1,
+      "cityName": "Brose-Totain",
+      "citySizeId": 3,
+      "ownedBy": "Dictatorship",
       "ruler": "Jabba the Hutt",
       "biome": "Desert",
       "weatherId": 1,
-      "locationCode": "mp73os",
+      "locationCode": "gr35j8",
+      "image": "./Images/locationImages/Brose-Totain.png",
       "userId": 1
     },
     {
       "id": 3,
-      "planetId": 3,
-      "cityName": "Coruscant",
+      "countryId": 3,
+      "cityName": "Usalred",
       "citySizeId": 5,
-      "governmentType": "Empire",
+      "ownedBy": "Empire",
       "ruler": "Emperor Shiev Palpatine",
       "biome": "City",
       "weatherId": 1,
       "locationCode": "cor123",
+      "image": "./Images/locationImages/Usalred.png",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "countryId": 1,
+      "cityName": "Ica",
+      "citySizeId": 4,
+      "ownedBy": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "h4kjs8",
+      "image": "./Images/locationImages/Ica.png",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "countryId": 1,
+      "cityName": "Highsong",
+      "citySizeId": 1,
+      "ownedBy": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "j4dh8s",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "countryId": 1,
+      "cityName": "Green Meadow",
+      "citySizeId": 2,
+      "ownedBy": "Empire",
+      "ruler": "Emperor Shiev Palpatine",
+      "biome": "City",
+      "weatherId": 1,
+      "locationCode": "hid825",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
+      "userId": 1
+    },
+    {
+      "id": 11,
+      "countryId": 1,
+      "cityName": "",
+      "citySizeId": 2,
+      "ownedBy": "",
+      "ruler": "",
+      "biome": "",
+      "weatherId": 1,
+      "locationCode": "",
+      "image": "./Images/locationImages/Highsong.png",
       "userId": 1
     }
   ],
@@ -1172,7 +1302,7 @@
     {
       "id": 3,
       "userId": "3",
-      "locationId": 2
+      "locationId": 3
     },
     {
       "id": 4,
