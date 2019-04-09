@@ -33,17 +33,14 @@ class Maps extends Component {
               className="zoom"
             />
           </div>
-          <h2 className="grey-background">{this.props.playerLocation}</h2>
-          <p className="tan-background">
-            Location Size: {this.props.playerLocationSizeName}
-          </p>
-          <p className="tan-background">
+          <h2 className="grey-background-player">{this.props.playerLocation}</h2>
+          <p className="tan-background color-black">
             Environment: {this.props.playerLocationBiome}
           </p>
-          <p className="tan-background">
+          <p className="tan-background color-black">
             Owned By: {this.props.playerLocationOwner}
           </p>
-          <p className="tan-background">
+          <p className="tan-background color-black">
             Ruled By: {this.props.playerLocationRuler}
           </p>
           <p className="blue-background">

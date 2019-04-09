@@ -3,7 +3,12 @@ import apiManager from "../apiManager";
 const fetchURL = "http://localhost:8080";
 
 function shopBuy(id, value, location, refresh) {
-  let funds = 0;
+  let funds = 0;var d = new Date(),
+  currentTime =
+    [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
+    " " +
+    [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
+
   const currentUserId = localStorage.getItem("logged-in");
   apiManager
     .shopBuyOne()
@@ -15,7 +20,7 @@ function shopBuy(id, value, location, refresh) {
         userId: localStorage.getItem("logged-in"),
         itemId: id,
         bought: location,
-        boughtTime: Date.now(),
+        boughtTime: currentTime,
         sold: null,
         soldTime: null
       };

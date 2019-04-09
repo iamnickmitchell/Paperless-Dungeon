@@ -55,14 +55,15 @@ class NavigationElements extends Component {
   };
 
   locationRefresh = () => {
-    const newState = {}
-    apiManager.playerLocations().then(parsedplayerLocation => {
-      newState.playerLocation = parsedplayerLocation.location.cityName;
-      newState.playerLocationSize =
-        parsedplayerLocation.location.citySizeId;
-      newState.playerLocationMap = parsedplayerLocation.location.image;
-    })
-  .then(() => this.setState(newState));
+    const newState = {};
+    apiManager
+      .playerLocations()
+      .then(parsedplayerLocation => {
+        newState.playerLocation = parsedplayerLocation.location.cityName;
+        newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
+        newState.playerLocationMap = parsedplayerLocation.location.image;
+      })
+      .then(() => this.setState(newState));
   };
 
   refresh = () => {
@@ -93,6 +94,12 @@ class NavigationElements extends Component {
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
           newState.playerLocationMap = parsedplayerLocation.location.image;
+          newState.playerLocationSizeName =
+            parsedplayerLocation.location.citySizeId;
+          newState.playerLocationBiome = parsedplayerLocation.location.biome;
+          newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
+          newState.playerLocationRuler = parsedplayerLocation.location.ruler;
+          newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
         })
       )
       .then(() => this.setState(newState));
@@ -126,6 +133,12 @@ class NavigationElements extends Component {
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
           newState.playerLocationMap = parsedplayerLocation.location.image;
+          newState.playerLocationSizeName =
+            parsedplayerLocation.location.citySizeId;
+          newState.playerLocationBiome = parsedplayerLocation.location.biome;
+          newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
+          newState.playerLocationRuler = parsedplayerLocation.location.ruler;
+          newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
         })
       )
       .then(() => this.setState(newState));
@@ -152,6 +165,11 @@ class NavigationElements extends Component {
                   playerLocationMap={this.state.playerLocationMap}
                   playerLocation={this.state.playerLocation}
                   playerLocationSize={this.state.playerLocationSize}
+                  playerLocationSizeName={this.state.playerLocationSizeName}
+                  playerLocationBiome={this.state.playerLocationBiome}
+                  playerLocationOwner={this.state.playerLocationOwner}
+                  playerLocationRuler={this.state.playerLocationRuler}
+                  playerLocationArrival={this.state.playerLocationArrival}
                   locationRefresh={this.locationRefresh}
                 />
               );
