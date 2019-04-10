@@ -182,7 +182,20 @@ body {
 
 #item {
   margin: 5px !important;
-  background-color: var(--color-grey-slate);
+  background-color: rgba(93, 92, 97, 0.733);
+}
+
+#itemImage {
+  opacity: 1;
+  zoom: 110%;
+}
+
+.font-maps-p{
+
+}
+
+.font-maps-h5{
+
 }
 
 /* lines to be used throughout app */
@@ -383,6 +396,7 @@ input {
   background-position: right top;
   background-attachment: fixed;
   height: 100vh;
+  zoom: 110%;
   z-index: -1;
 }
 
@@ -419,7 +433,7 @@ input {
 }
 
 .grey-background {
-  background-color: rgba(93, 92, 97, 50%);
+  background-color: rgba(93, 92, 97, 70%);
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
@@ -427,7 +441,7 @@ input {
   border-bottom-right-radius: 10px;
 }
 .grey-background-player {
-  background-color: rgba(93, 92, 97, 80%);
+  background-color: rgba(93, 92, 97, 70%);
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
@@ -435,28 +449,28 @@ input {
   border-bottom-right-radius: 10px;
 }
 .tan-background {
-  background-color: #bc986aa8;
+  background-color: #bc986ac9;
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
 }
 
 .green-background {
-  background-color: #47976098;
+  background-color: #479760c7;
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
 }
 
 .blue-background {
-  background-color: rgba(85, 122, 149, 50%);
+  background-color: rgba(85, 122, 149, 70%);
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;
   border-radius: 10px;
 }
 .blue-background-player {
-  background-color: rgba(85, 122, 149, 80%);
+  background-color: rgba(85, 122, 149, 70%);
   padding-top: 3px;
   padding-bottom: 5px;
   margin-bottom: 0px;

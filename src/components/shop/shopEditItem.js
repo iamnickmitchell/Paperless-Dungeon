@@ -151,7 +151,8 @@ class ItemEdit extends Component {
         <p>
         <label></label>
           <select value={this.state.itemRarityId} id="itemRarityId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">Common</option>
+          <option defaultValue="1">--> Select Item Rarity:</option>
+            <option value="1">Common</option>
             <option value="2">Uncommon</option>
             <option value="3">Rare</option>
             <option value="4">Very-Rare</option>
@@ -161,11 +162,18 @@ class ItemEdit extends Component {
         <p>
         <label></label>
           <select value={this.state.itemTypeId} id="itemTypeId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">Weapon</option>
+          <option defaultValue="1">--> Select Item Type:</option>
+            <option value="1">Weapon</option>
             <option value="2">Tool</option>
             <option value="3">Food</option>
             <option value="4">Clothing</option>
-            <option value="5">Hirelings, Vehicles, and Property</option>
+            <option value="5">Transportation</option>
+            <option value="6">Property</option>
+            <option value="7">Hirelings</option>
+            <option value="8">Medicine</option>
+            <option value="9">Scrolls, Tomes, and Books</option>
+            <option value="10">Animals</option>
+            <option value="11">Armor</option>
           </select>
         </p>
         <p>

@@ -1,21 +1,25 @@
-A website designed to create an easy to use economy and shop system for a Star Wars DnD table top game.
+A website designed to create an easy to use economy, map, and shop system for DnD table top games.
 
-<h1>The Smugglers Datapad</h1>
+<h1>Paperless Dungeon</h1>
 <p>version 0.0.0.0 pre-Alpha Release (current release)</p>
-<p>version 0.16.0.0 pre-Alpha Release (pre-release)</p>
+<p>version 0.18.12.2 pre-Alpha Release (pre-release)</p>
 
 
 # To view current release:
-1) Go to https://thesmugglersdatapad.000webhostapp.com
+1) Go to https://paperlessdungeon.000webhostapp.com
 
 # To view pre-release:
-1) Fork a copy of the pre-release code at https://github.com/iamnickmitchell/The-Smugglers-Datapad.
+1) Fork a copy of the pre-release code at https://github.com/iamnickmitchell/Paperless-Dungeon.
 2) Go into the kennel subfolder using the terminal of your choice (I currently use GitBash).
 3) Start a localhost server and run npm start (you must have node.js installed).
 
 # To use the app (current release):
 
+Coming Soon...
+
 # To use the app (pre-release):
+
+Coming Soon...
 
 
 # Built using:
@@ -25,7 +29,7 @@ Programming Languages:
 * CSS3
 * Javascript
 
-Frameworks:
+Frameworks/Libraries:
 ----------------
 * react.js
 * redux
@@ -45,7 +49,7 @@ Styling Libraries:
 * google fonts - text fonts
 * materializeui - card presets
 
-Software Programs:
+External Software Used:
 ----------------
 * Microsoft Visual Code - coding terminal
 * GitBash/ GitHub - terminal
@@ -69,4 +73,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 -----------
 -- Ayrshire Technologies 2019 --
 
-Latest update: 3/27/2019
+Latest update: 4/10/2019

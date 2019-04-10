@@ -7,7 +7,7 @@ class ItemCreate extends Component {
     name: "",
     statOne: "",
     statTwo: "",
-    description: "https://www.starwars.com/",
+    description: "https://www.dndbeyond.com/",
     image: "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
     itemTypeId: 1,
     itemRarityId: 1,
@@ -160,7 +160,13 @@ class ItemCreate extends Component {
             <option value="2">Tool</option>
             <option value="3">Food</option>
             <option value="4">Clothing</option>
-            <option value="5">Hirelings, Vehicles, and Property</option>
+            <option value="5">Transportation</option>
+            <option value="6">Property</option>
+            <option value="7">Hirelings</option>
+            <option value="8">Medicine</option>
+            <option value="9">Scrolls, Tomes, and Books</option>
+            <option value="10">Animals</option>
+            <option value="11">Armor</option>
           </select>
         </p>
         <p>

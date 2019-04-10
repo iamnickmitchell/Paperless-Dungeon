@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import apiManager from "../apiManager";
-import { Link } from "react-router-dom";
+import { isNullOrUndefined } from "util";
 
 class ItemCreate extends Component {
   state = {
-    userName: "",
-    itemName: "",
-    userId: "",
-    itemId: "",
-    rewardFunds: "",
-    itemSelect: "",
-    wealthSelect: "",
-    errorItem: "",
-    successItem: "",
-    errorUser: "",
-    successUser: "",
+    name: "",
+    statOne: "",
+    statTwo: "",
+    description: "https://www.dndbeyond.com/",
+    image: "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+    itemTypeId: 1,
+    itemRarityId: 1,
+    value: 0,
+    legal: true,
+    error: "",
+    success: "",
     shop: ``
   };
 
@@ -24,15 +24,14 @@ class ItemCreate extends Component {
     });
   };
 
-  // Update state whenever an input field is edited
   handleFieldChange = evt => {
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
     this.setState(stateToChange);
   };
 
-  // Simplistic handler for login submit
-  handleLoginItem = e => {
+
+  handleLogin = e => {
     e.preventDefault();
 
     const fetchURL = "http://localhost:8080";
@@ -40,27 +39,17 @@ class ItemCreate extends Component {
       .then(item => item.json())
       .then(item => {
         for (let i = 0; i < item.length; i++) {
-          if (item[i].name !== this.state.itemName) {
-            const errorItem =
-              "This item doesn't exists! Make sure you are tying the Item name exactly as it is in the shop.";
-            this.setState({ errorItem });
-          } else {
-            const successItem =
-              "Item is able to be sent.";
-            this.setState({ successItem });
-            const shop = (
-              <p className="footer-item">
-                <Link
-                  className="far fa-shopping-cart size2half color-orange"
-                  style={{ textDecoration: "none" }}
-                  to="/shop"
-                />
-              </p>
-            );
-            this.setState({ shop });
+          if (item[i].name === this.state.name) {
+            const error =
+              "This item already exists! Try naming it something else.";
+            this.setState({ error });
+          } else if(item[i].name === this.state.name){
+            const success =
+              "Congratulations, a new item has been made! You can view it in the shop.";
+            this.setState({ success });
           }
         }
-      });
+      })
     const createItem = {
       name: this.state.name,
       statOne: this.state.statOne,
@@ -73,81 +62,90 @@ class ItemCreate extends Component {
       legal: this.state.legal,
       userId: localStorage.getItem("logged-in")
     };
-    if (this.state.success !== null) {
+    if (this.state.success !== isNullOrUndefined) {
       apiManager.itemCreate(createItem)
       .then(()=>this.props.itemsRefresh())
+      .then(()=>this.props.history.push("/shop"))
     }
   };
 
   render() {
     return (
-      <form className="mainPage" onSubmit={this.handleLoginItem}>
-        <h1 className="h3 mb-3 font-weight-normal">Create an Item</h1>
+      <div className="space-background createPage">
+      <form className="createItems" onSubmit={this.handleLogin}>
+        <h1 className="h3 mb-3 font-weight-normal color-white">Create an Item</h1>
         <p>
-          <label htmlFor="inputUsername">Name: </label>
+          <label htmlFor="inputUsername"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="name"
-            placeholder="Datapad"
+            placeholder="Item Name"
             required=""
             autoFocus=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">First Stat: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statOne"
-            placeholder="A space tablet"
+            placeholder="Item's first stat"
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Second Stat: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="statTwo"
-            placeholder="Able to get information."
+            placeholder="Item's second stat"
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Description: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="description"
-            placeholder="Insert URL to external web page or leave blank."
+            placeholder="Description: Insert URL to external web page or leave blank."
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Image: </label>
+          <label htmlFor="inputPassword"></label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="image"
-            placeholder="Insert URL to image or leave blank."
+            placeholder="Image: Insert URL to image or leave blank."
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-          <label>Value: </label>
+          <label></label>
           <input
             onChange={this.handleFieldChange}
             type="number"
             id="value"
             placeholder="Item Cost"
             required=""
+            autoComplete="off"
           />
         </p>
         <p>
-        <label>Item Rarity: </label>
+        <label></label>
           <select id="itemRarityId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">Common</option>
+            <option defaultValue="1">--> Select Item Rarity:</option>
+            <option value="1">Common</option>
             <option value="2">Uncommon</option>
             <option value="3">Rare</option>
             <option value="4">Very-Rare</option>
@@ -155,13 +153,20 @@ class ItemCreate extends Component {
           </select>
         </p>
         <p>
-        <label>Item Type: </label>
+        <label></label>
           <select id="itemTypeId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">Weapon</option>
+            <option defaultValue="1">--> Select Item Type:</option>
+            <option value="1">Weapon</option>
             <option value="2">Tool</option>
             <option value="3">Food</option>
             <option value="4">Clothing</option>
-            <option value="5">Hirelings, Vehicles, and Property</option>
+            <option value="5">Transportation</option>
+            <option value="6">Property</option>
+            <option value="7">Hirelings</option>
+            <option value="8">Medicine</option>
+            <option value="9">Scrolls, Tomes, and Books</option>
+            <option value="10">Animals</option>
+            <option value="11">Armor</option>
           </select>
         </p>
         <p>
@@ -173,11 +178,11 @@ class ItemCreate extends Component {
             onChange={this.toggleChange}
           />
         </p>
-        <button type="submit">Create Item</button>
+        <button className="submit" type="submit">Create Item</button>
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.shop}</h4>
-      </form>
+      </form></div>
     );
   }
 }

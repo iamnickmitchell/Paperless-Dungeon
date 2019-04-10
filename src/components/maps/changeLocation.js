@@ -1,6 +1,11 @@
 function changeLocation(locationCode, locationRefresh) {
   const fetchURL = "http://localhost:8080";
   const currentUserId = localStorage.getItem("logged-in");
+  var d = new Date(),
+    currentTime =
+      [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
+      " " +
+      [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
 
   fetch(`${fetchURL}/locations`)
     .then(location => location.json())
@@ -11,8 +16,15 @@ function changeLocation(locationCode, locationRefresh) {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ locationId: location[i].id })
-          });
-        } else {}
+          }).then(() =>
+            fetch(`${fetchURL}/playerLocations/${currentUserId}`, {
+              method: "PATCH",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ arrivalTime: currentTime })
+            })
+          );
+        } else {
+        }
       }
     })
     .then(() => locationRefresh());
