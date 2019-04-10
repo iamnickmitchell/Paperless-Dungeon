@@ -25,7 +25,7 @@
       "name": "Apollyon",
       "dm": true,
       "password": "admin",
-      "funds": 877800.5,
+      "funds": 780800.5,
       "groupId": 3
     },
     {
@@ -64,7 +64,31 @@
     },
     {
       "id": 5,
-      "category": "Vehicles, Buildings, Property, and Hirelings"
+      "category": "Transportation"
+    },
+    {
+      "id": 6,
+      "category": "Property"
+    },
+    {
+      "id": 7,
+      "category": "Hirelings"
+    },
+    {
+      "id": 8,
+      "category": "Medicine"
+    },
+    {
+      "id": 9,
+      "category": "Scrolls, Tomes, and Books"
+    },
+    {
+      "id": 10,
+      "category": "Animals"
+    },
+    {
+      "id": 11,
+      "category": "Armor"
     }
   ],
   "itemRarities": [
@@ -92,7 +116,7 @@
   "items": [
     {
       "id": 1,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Adamantine Armor",
       "description": "https://www.dndbeyond.com/magic-items/adamantine-armor",
       "itemRarityId": 2,
@@ -100,7 +124,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -113,7 +137,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -126,7 +150,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -139,7 +163,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -152,12 +176,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 6,
-      "itemTypeId": 2,
+      "itemTypeId": 11,
       "name": "Animated Shield",
       "description": "https://www.dndbeyond.com/legal-items/animated-shield",
       "itemRarityId": 4,
@@ -165,7 +189,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -178,12 +202,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 8,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Armor of Invulnerability",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -191,12 +215,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 9,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Armor of Resistance",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -204,7 +228,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -217,12 +241,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/114/315/315/636284705050167886.jpeg",
       "userId": 1
     },
     {
       "id": 11,
-      "itemTypeId": 2,
+      "itemTypeId": 11,
       "name": "Arrow Catching Shield",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -230,7 +254,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -243,7 +267,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -256,7 +280,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -269,7 +293,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -282,7 +306,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -295,7 +319,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -308,7 +332,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -321,7 +345,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -334,7 +358,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -347,7 +371,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -360,7 +384,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -373,7 +397,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -386,7 +410,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -399,12 +423,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 25,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Bronze Griffon",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -412,7 +436,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -425,7 +449,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -438,12 +462,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 28,
-      "itemTypeId": 2,
+      "itemTypeId": 5,
       "name": "Broom of Flying",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -451,7 +475,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -464,7 +488,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -477,12 +501,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 31,
-      "itemTypeId": 2,
+      "itemTypeId": 5,
       "name": "Carpet of Flying",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -490,7 +514,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -503,7 +527,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -516,7 +540,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -529,7 +553,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -542,7 +566,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -555,7 +579,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -568,7 +592,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -581,7 +605,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -594,7 +618,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -607,7 +631,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -620,7 +644,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -633,7 +657,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -646,7 +670,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -659,12 +683,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 45,
-      "itemTypeId": 5,
+      "itemTypeId": 6,
       "name": "Daern's Instant Fortress",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -672,7 +696,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -685,7 +709,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -698,7 +722,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -711,7 +735,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -724,7 +748,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -737,7 +761,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -750,12 +774,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 52,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Dragon Scale Mail",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -763,7 +787,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -776,7 +800,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -789,7 +813,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -802,7 +826,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -815,7 +839,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -828,12 +852,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 58,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Dwarven Plate",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -841,12 +865,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 59,
-      "itemTypeId": 4,
+      "itemTypeId": 1,
       "name": "Dwarven Thrower",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -854,12 +878,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 60,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Ebony Fly",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -867,12 +891,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 61,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Efreeti Chain",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -880,7 +904,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -893,12 +917,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 63,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Elixir of Health",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -906,12 +930,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 64,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Elven Chain",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -919,7 +943,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -932,7 +956,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -945,7 +969,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -958,7 +982,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -971,7 +995,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -984,7 +1008,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -997,7 +1021,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1010,7 +1034,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1023,7 +1047,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1036,7 +1060,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1049,7 +1073,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1062,12 +1086,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 76,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Glamoured Studded Leather",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1075,7 +1099,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1088,7 +1112,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1101,7 +1125,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1114,7 +1138,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1127,12 +1151,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 81,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Golden Lion",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1140,7 +1164,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1153,7 +1177,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1166,7 +1190,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1179,7 +1203,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1192,7 +1216,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1205,7 +1229,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1218,7 +1242,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1231,7 +1255,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1244,12 +1268,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 90,
-      "itemTypeId": 2,
+      "itemTypeId": 5,
       "name": "Horseshoes of Speed",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1257,12 +1281,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 91,
-      "itemTypeId": 2,
+      "itemTypeId": 5,
       "name": "Horseshoes of the Zephyr",
       "description": "https://www.dndbeyond.com/legal-items/horseshoes-of-a-zephyr",
       "itemRarityId": 4,
@@ -1270,7 +1294,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1283,7 +1307,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1296,7 +1320,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1309,7 +1333,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1322,7 +1346,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1335,7 +1359,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1348,7 +1372,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1361,7 +1385,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1374,7 +1398,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1387,7 +1411,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1400,7 +1424,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1413,7 +1437,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1426,7 +1450,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1439,7 +1463,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1452,7 +1476,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1465,7 +1489,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1478,7 +1502,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1491,7 +1515,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1504,7 +1528,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1517,7 +1541,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1530,7 +1554,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1543,7 +1567,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1556,7 +1580,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1569,7 +1593,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1582,12 +1606,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 116,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Ivory Goat (Terror)",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1595,12 +1619,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 117,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Ivory Goat (Travail)",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1608,12 +1632,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 118,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Ivory Goat (Traveling)",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1621,7 +1645,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1634,7 +1658,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1647,7 +1671,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1660,7 +1684,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1673,7 +1697,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1686,7 +1710,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1699,7 +1723,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1712,7 +1736,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1725,12 +1749,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 127,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Marble Elephant",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1738,12 +1762,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 128,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Mariner's Armor",
       "description": "https://www.aidedd.org/dnd/om.php?vo=mariner-s-armor",
       "itemRarityId": 2,
@@ -1751,7 +1775,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1764,7 +1788,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1777,12 +1801,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 131,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Mithral Armor",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -1790,7 +1814,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1803,7 +1827,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1816,7 +1840,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1829,7 +1853,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1842,7 +1866,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1855,7 +1879,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1868,7 +1892,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1881,7 +1905,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1894,7 +1918,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1907,7 +1931,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1920,12 +1944,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 142,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Obsidian Steed",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -1933,7 +1957,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1946,7 +1970,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1959,7 +1983,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1972,12 +1996,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 146,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Onyx Dog",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -1985,7 +2009,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -1998,7 +2022,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2011,7 +2035,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2024,7 +2048,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2037,12 +2061,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 151,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Philter of Love",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -2050,7 +2074,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2063,7 +2087,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2076,12 +2100,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 154,
-      "itemTypeId": 4,
+      "itemTypeId": 11,
       "name": "Plate Armor of Etherealness",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -2089,12 +2113,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 155,
-      "itemTypeId": 5,
+      "itemTypeId": 6,
       "name": "Portable Hole",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -2102,12 +2126,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 156,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Animal Friendship",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -2115,12 +2139,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 157,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Clairvoyance",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -2128,12 +2152,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 158,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Climbing",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-climbing",
       "itemRarityId": 1,
@@ -2141,12 +2165,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 159,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Dimunution",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -2154,12 +2178,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 160,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Fire Breath",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -2167,12 +2191,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 161,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Flying",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -2180,12 +2204,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 162,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Gaseous Form",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -2193,12 +2217,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 163,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Greater Healing",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-healing",
       "itemRarityId": 2,
@@ -2206,12 +2230,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 164,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Growth",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -2219,12 +2243,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 165,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Healing",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-healing",
       "itemRarityId": 1,
@@ -2232,12 +2256,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 166,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Heroism",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -2245,12 +2269,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 167,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Invisibility",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -2258,12 +2282,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 168,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Invulnerability",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -2271,12 +2295,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 169,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Longevity",
       "description": "https://www.aidedd.org/dnd/om.php?vo=potion-of-longevity",
       "itemRarityId": 4,
@@ -2284,12 +2308,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 170,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Mind Reading",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-mind-reading",
       "itemRarityId": 3,
@@ -2297,12 +2321,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 171,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Poison",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -2310,12 +2334,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 172,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Resistance",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-resistance",
       "itemRarityId": 2,
@@ -2323,12 +2347,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 173,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Speed",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -2336,12 +2360,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 174,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Superior Healing",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-healing",
       "itemRarityId": 4,
@@ -2349,12 +2373,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 175,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Supreme Healing",
       "description": "https://www.dndbeyond.com/legal-items/potion-of-healing",
       "itemRarityId": 4,
@@ -2362,12 +2386,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 176,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Vitality",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -2375,12 +2399,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 177,
-      "itemTypeId": 3,
+      "itemTypeId": 8,
       "name": "Potion of Water Breathing",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -2388,7 +2412,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2401,7 +2425,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2414,7 +2438,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2427,7 +2451,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2440,7 +2464,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2453,7 +2477,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2466,7 +2490,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2479,7 +2503,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2492,7 +2516,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2505,7 +2529,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2518,7 +2542,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2531,7 +2555,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2544,7 +2568,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2557,7 +2581,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2570,7 +2594,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2583,7 +2607,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2596,7 +2620,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2609,7 +2633,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2622,7 +2646,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2635,7 +2659,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2648,7 +2672,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2661,7 +2685,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2674,7 +2698,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2687,7 +2711,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2700,7 +2724,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2713,7 +2737,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2726,7 +2750,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2739,7 +2763,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2752,7 +2776,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2765,7 +2789,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2778,7 +2802,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2791,7 +2815,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2804,7 +2828,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2817,7 +2841,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2830,7 +2854,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2843,7 +2867,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2856,7 +2880,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2869,7 +2893,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2882,7 +2906,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2895,7 +2919,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2908,7 +2932,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2921,7 +2945,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2934,7 +2958,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2947,7 +2971,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2960,7 +2984,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2973,7 +2997,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2986,7 +3010,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -2999,7 +3023,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3012,7 +3036,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3025,7 +3049,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3038,12 +3062,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 228,
-      "itemTypeId": 2,
+      "itemTypeId": 5,
       "name": "Saddle of the Cavelier",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3051,7 +3075,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3064,7 +3088,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3077,12 +3101,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 231,
-      "itemTypeId": 2,
+      "itemTypeId": 9,
       "name": "Scroll of Protection",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3090,12 +3114,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 232,
-      "itemTypeId": 2,
+      "itemTypeId": 5,
       "name": "Sending Stones",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3103,12 +3127,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 233,
-      "itemTypeId": 2,
+      "itemTypeId": 11,
       "name": "Sentinel Shield",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3116,12 +3140,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 234,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Serpentine Owl",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3129,12 +3153,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 235,
-      "itemTypeId": 2,
+      "itemTypeId": 11,
       "name": "Shield of Missile Attraction",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3142,7 +3166,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3155,12 +3179,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 237,
-      "itemTypeId": 5,
+      "itemTypeId": 10,
       "name": "Silver Raven",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3168,7 +3192,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3181,7 +3205,7 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
@@ -3194,12 +3218,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 240,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 0",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -3207,12 +3231,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 241,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 1",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -3220,12 +3244,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 242,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 2",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3233,12 +3257,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 243,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 3",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3246,12 +3270,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 244,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 4",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3259,12 +3283,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 245,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 5",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3272,12 +3296,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 246,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 6",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3285,12 +3309,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 247,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 7",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3298,12 +3322,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 248,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 8",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3311,12 +3335,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 249,
-      "itemTypeId": 0,
+      "itemTypeId": 9,
       "name": "Spell Scroll Level 9",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -3324,12 +3348,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 250,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Spellguard Shield",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3337,12 +3361,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 251,
-      "itemTypeId": 0,
+      "itemTypeId": 2,
       "name": "Sphere of Annihilation",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -3350,12 +3374,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 252,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Charming",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3363,12 +3387,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 253,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Fire",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3376,12 +3400,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 254,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Frost",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3389,12 +3413,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 255,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Healing",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3402,12 +3426,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 256,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Power",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3415,12 +3439,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 257,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Striking",
       "description": "https://www.dndbeyond.com/legal-items/staff-of-striking",
       "itemRarityId": 4,
@@ -3428,12 +3452,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 258,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Swarming Insects",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3441,12 +3465,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 259,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of the Adder",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3454,12 +3478,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 260,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of the Python",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3467,12 +3491,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 261,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of the Woodlands",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3480,12 +3504,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 262,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Thunder and Lightning",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3493,12 +3517,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 263,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Staff of Withering",
       "description": "https://www.dndbeyond.com/legal-items/staff-of-withering",
       "itemRarityId": 3,
@@ -3506,12 +3530,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 264,
-      "itemTypeId": 0,
+      "itemTypeId": 2,
       "name": "Stone of Controlling Earth Elementals",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3519,12 +3543,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 265,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Sunblade",
       "description": "https://www.dndbeyond.com/legal-items/sun-blade",
       "itemRarityId": 3,
@@ -3532,12 +3556,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 266,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Sword of Answering",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -3545,12 +3569,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 267,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Sword of Life Stealing",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3558,12 +3582,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 268,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Sword of Sharpness",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3571,12 +3595,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 269,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Sword of Wounding",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3584,12 +3608,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 270,
-      "itemTypeId": 0,
+      "itemTypeId": 4,
       "name": "Talisman of Pure Good",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -3597,12 +3621,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 271,
-      "itemTypeId": 0,
+      "itemTypeId": 4,
       "name": "Talisman of the Sphere",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -3610,12 +3634,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 272,
-      "itemTypeId": 0,
+      "itemTypeId": 4,
       "name": "Talisman of Ultimate Evil",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 5,
@@ -3623,12 +3647,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 273,
-      "itemTypeId": 0,
+      "itemTypeId": 2,
       "name": "Tentacle Rod",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3636,12 +3660,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 274,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Trident of Fish Command",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3649,12 +3673,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 275,
-      "itemTypeId": 0,
+      "itemTypeId": 2,
       "name": "Universal Solvent",
       "description": "https://www.dndbeyond.com/legal-items/universal-solvent",
       "itemRarityId": 5,
@@ -3662,12 +3686,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 276,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Vicious Weapon",
       "description": "https://www.dndbeyond.com/legal-items/vicious-weapon",
       "itemRarityId": 3,
@@ -3675,12 +3699,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 277,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Vorpal Sword",
       "description": "https://www.dndbeyond.com/legal-items/vorpal-sword",
       "itemRarityId": 5,
@@ -3688,12 +3712,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 278,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Binding",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3701,12 +3725,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 279,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Enemy Detection",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3714,12 +3738,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 280,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Fear",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3727,12 +3751,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 281,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Fireballs",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3740,12 +3764,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 282,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Lightning Bolts",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3753,12 +3777,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 283,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of legal Detection",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3766,12 +3790,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 284,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of legal Missiles",
       "description": "https://www.dndbeyond.com/legal-items/wand-of-legal-missiles",
       "itemRarityId": 2,
@@ -3779,12 +3803,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 285,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Paralysis",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3792,12 +3816,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 286,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Polymorph",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3805,12 +3829,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 287,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Secrets",
       "description": "https://www.dndbeyond.com/legal-items/wand-of-secrets",
       "itemRarityId": 2,
@@ -3818,12 +3842,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 288,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of the War Mage +1",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3831,12 +3855,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 289,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of the War Mage +2",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3844,12 +3868,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 290,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of the War Mage +3",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3857,12 +3881,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 291,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Wand of Web",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 2,
@@ -3870,12 +3894,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 292,
-      "itemTypeId": 0,
+      "itemTypeId": 1,
       "name": "Weapon of Warning",
       "description": "https://aversten.obsidianportal.com/wiki_pages/weapon-of-warning",
       "itemRarityId": 2,
@@ -3883,12 +3907,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 293,
-      "itemTypeId": 0,
+      "itemTypeId": 2,
       "name": "Wind Fan",
       "description": "https://www.dndbeyond.com/legal-items/wind-fan",
       "itemRarityId": 2,
@@ -3896,12 +3920,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 294,
-      "itemTypeId": 0,
+      "itemTypeId": 4,
       "name": "Winged Boots",
       "description": "https://www.dndbeyond.com/legal-items/winged-boots",
       "itemRarityId": 2,
@@ -3909,12 +3933,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 295,
-      "itemTypeId": 0,
+      "itemTypeId": 4,
       "name": "Wings of Flying",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3922,12 +3946,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 296,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Studded Leather",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3935,12 +3959,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 297,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Chain Shirt",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -3948,12 +3972,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 298,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Scale Mail",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -3961,12 +3985,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 299,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Breastplate",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -3974,12 +3998,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 300,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Half Plate",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -3987,12 +4011,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 301,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Ring Mail",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -4000,12 +4024,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 302,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Chain Mail",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -4013,12 +4037,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 303,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Splint",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 3,
@@ -4026,12 +4050,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 304,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Plate",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
@@ -4039,12 +4063,12 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 305,
-      "itemTypeId": 0,
+      "itemTypeId": 11,
       "name": "Shield",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 1,
@@ -4052,202 +4076,33 @@
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 306,
-      "itemTypeId": 0,
-      "name": "",
+      "itemTypeId": 3,
+      "name": "Bread",
       "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
+      "itemRarityId": 1,
+      "value": 1,
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     },
     {
       "id": 307,
-      "itemTypeId": 0,
-      "name": "",
+      "itemTypeId": 3,
+      "name": "Milk",
       "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
+      "itemRarityId": 1,
+      "value": 1,
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 308,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 309,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 310,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 311,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 312,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 313,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 314,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 315,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 316,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 317,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 318,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 319,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "id": 320,
-      "itemTypeId": 0,
-      "name": "",
-      "description": "https://www.dndbeyond.com/",
-      "itemRarityId": 0,
-      "value": 0,
-      "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image":"https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
+      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
       "userId": 1
     }
   ],
@@ -4260,6 +4115,51 @@
       "sold": "Moret Town",
       "soldTime": "4/9/2019 15:9:59",
       "id": 1
+    },
+    {
+      "userId": "1",
+      "itemId": 10,
+      "bought": "Usalred",
+      "boughtTime": "4/10/2019 14:56:23",
+      "sold": null,
+      "soldTime": null,
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "itemId": 75,
+      "bought": "Usalred",
+      "boughtTime": "4/10/2019 14:56:26",
+      "sold": null,
+      "soldTime": null,
+      "id": 3
+    },
+    {
+      "userId": "1",
+      "itemId": 2,
+      "bought": "Usalred",
+      "boughtTime": "4/10/2019 14:56:30",
+      "sold": null,
+      "soldTime": null,
+      "id": 4
+    },
+    {
+      "userId": "1",
+      "itemId": 23,
+      "bought": "Usalred",
+      "boughtTime": "4/10/2019 14:56:32",
+      "sold": null,
+      "soldTime": null,
+      "id": 5
+    },
+    {
+      "userId": "1",
+      "itemId": 45,
+      "bought": "Usalred",
+      "boughtTime": "4/10/2019 14:56:35",
+      "sold": null,
+      "soldTime": null,
+      "id": 6
     }
   ],
   "countries": [
@@ -4459,7 +4359,7 @@
       "id": 1,
       "userId": "1",
       "locationId": 3,
-      "arrivalTime": "4/9/2019 15:10:45"
+      "arrivalTime": "4/10/2019 9:46:42"
     },
     {
       "id": 2,

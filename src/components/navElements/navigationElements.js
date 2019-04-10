@@ -12,6 +12,17 @@ import Logout from "../login-register/logout";
 import Register from "../login-register/register";
 import PleaseLogin from "../login-register/please-login";
 import apiManager from "../apiManager";
+import ShopBlacksmith from "../shop/shopBlacksmith";
+import ShopShop from "../shop/shopShop";
+import ShopRestaurant from "../shop/shopRestaurant";
+import ShopClothing2 from "../shop/shopClothing2";
+import ShopTransportation from "../shop/shopTransportation";
+import ShopBank2 from "../shop/shopBank2";
+import ShopTavern2 from "../shop/shopTavern2";
+import ShopHospital2 from "../shop/shopHospital2";
+import ShopLibrary2 from "../shop/shopLibrary2";
+import ShopFarm2 from "../shop/shopFarm2";
+import ShopArmorer2 from "../shop/shopArmorer2";
 
 const fetchURL = "http://localhost:8080";
 
@@ -62,6 +73,10 @@ class NavigationElements extends Component {
         newState.playerLocation = parsedplayerLocation.location.cityName;
         newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
         newState.playerLocationMap = parsedplayerLocation.location.image;
+        newState.playerLocationBiome = parsedplayerLocation.location.biome;
+        newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
+        newState.playerLocationRuler = parsedplayerLocation.location.ruler;
+        newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
       })
       .then(() => this.setState(newState));
   };
@@ -94,8 +109,6 @@ class NavigationElements extends Component {
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
           newState.playerLocationMap = parsedplayerLocation.location.image;
-          newState.playerLocationSizeName =
-            parsedplayerLocation.location.citySizeId;
           newState.playerLocationBiome = parsedplayerLocation.location.biome;
           newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
           newState.playerLocationRuler = parsedplayerLocation.location.ruler;
@@ -133,8 +146,6 @@ class NavigationElements extends Component {
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
           newState.playerLocationMap = parsedplayerLocation.location.image;
-          newState.playerLocationSizeName =
-            parsedplayerLocation.location.citySizeId;
           newState.playerLocationBiome = parsedplayerLocation.location.biome;
           newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
           newState.playerLocationRuler = parsedplayerLocation.location.ruler;
@@ -220,6 +231,238 @@ class NavigationElements extends Component {
           }}
         />
         <Route
+          path="/Shop-blacksmith"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopBlacksmith
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-shop"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopShop
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-restaurant"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopRestaurant
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-clothing"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopClothing2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-transportation"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopTransportation
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-bank"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopBank2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-tavern"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopTavern2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-hospital"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopHospital2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-library"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopLibrary2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-farm"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopFarm2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+        <Route
+          path="/Shop-armorer"
+          render={props => {
+            if (this.isAuthenticated()) {
+              return (
+                <ShopArmorer2
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                />
+              );
+            } else {
+              return <PleaseLogin />;
+            }
+          }}
+        />
+
+        <Route
           path="/Day"
           render={props => {
             if (this.isAuthenticated()) {
@@ -249,6 +492,12 @@ class NavigationElements extends Component {
         />
         <Route
           path="/item-create"
+          render={props => {
+            return <ItemCreate {...props} itemsRefresh={this.itemsRefresh} />;
+          }}
+        />
+        <Route
+          path="/reward-create"
           render={props => {
             return <ItemCreate {...props} itemsRefresh={this.itemsRefresh} />;
           }}

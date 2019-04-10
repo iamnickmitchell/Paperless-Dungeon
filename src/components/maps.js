@@ -13,8 +13,6 @@ class Maps extends Component {
     this.setState(stateToChange);
   };
 
-
-
   render() {
     return (
       <div className="mapPage">
@@ -33,22 +31,28 @@ class Maps extends Component {
               className="zoom"
             />
           </div>
-          <h2 className="grey-background-player">{this.props.playerLocation}</h2>
-          <p className="tan-background color-black">
+          <h2 className="grey-background-player">
+            {this.props.playerLocation}
+          </h2>
+          <p className="tan-background color-black font-maps-p">
             Environment: {this.props.playerLocationBiome}
           </p>
-          <p className="tan-background color-black">
+          <p className="tan-background color-black font-maps-p">
             Owned By: {this.props.playerLocationOwner}
           </p>
-          <p className="tan-background color-black">
+          <p className="tan-background color-black font-maps-p">
             Ruled By: {this.props.playerLocationRuler}
           </p>
-          <p className="blue-background">
-            Player Arrival Date: {this.props.playerLocationArrival}
+          <h5 className="blue-background font-maps-h5">
+            Player Arrival Date:
+          </h5>
+          <p className="blue-background font-maps-p">Game Day: {this.props.groupDay}</p>
+          <p className="blue-background font-maps-p">
+            Real Time: {this.props.playerLocationArrival}
           </p>
 
           <div className="green-background">
-           <p className="thin-line" />
+            <p className="thin-line" />
             <form className="">
               <p>
                 <label htmlFor="inputLocationCode" />

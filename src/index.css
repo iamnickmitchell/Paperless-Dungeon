@@ -182,7 +182,20 @@ body {
 
 #item {
   margin: 5px !important;
-  background-color: var(--color-grey-slate);
+  background-color: rgba(93, 92, 97, 0.733);
+}
+
+#itemImage {
+  opacity: 1;
+  zoom: 110%;
+}
+
+.font-maps-p{
+
+}
+
+.font-maps-h5{
+
 }
 
 /* lines to be used throughout app */
@@ -383,6 +396,7 @@ input {
   background-position: right top;
   background-attachment: fixed;
   height: 100vh;
+  zoom: 110%;
   z-index: -1;
 }
 

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import shopBuy from "./shop/shopBuy";
+import ShopFood from "./shopFood";
+import shopBuy from "./shopBuy";
 
-class Shop extends Component {
+class ShopRestaurant extends Component {
   state = {
     playerLocation: this.props.playerLocation,
     playerLocationSize: this.props.playerLocationSize,
@@ -68,6 +69,12 @@ class Shop extends Component {
           </p>
 
           <p className="footer-icon color-orange">
+            <Link
+              className="far fa-arrow-alt-circle-left size2half color-white iconFooter"
+              style={{ textDecoration: "none" }}
+              title="Back"
+              to="/Shop"
+            />
             {this.state.newItemButton}
             {this.state.newRewardButton}
             <Link
@@ -137,10 +144,26 @@ class Shop extends Component {
               to="/Shop-armorer"
             />
           </p>
+          <hr className="my-4" />
+          <h4 className="color-white blue-background">{this.props.restaurantNames}</h4>
+          <p className="thin-line" />
+          <div className="items">
+            {this.props.items.map(items => (
+              <ShopFood
+                shopBuySellRefresh={this.props.shopBuySellRefresh}
+                itemShopBuy={this.itemShopBuy}
+                key={items.id}
+                items={items}
+                playerLocation={this.props.playerLocation}
+                playerLocationSize={this.props.playerLocationSize}
+                itemsRefresh={this.props.itemsRefresh}
+              />
+            ))}
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default Shop;
+export default ShopRestaurant;

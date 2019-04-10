@@ -22,10 +22,10 @@ const styles = {
   }
 };
 
-function ShopWeapons(props) {
+function ShopArmorer(props) {
   const { classes } = props;
   if (
-    Number(props.items.itemTypeId) === 1 &&
+    Number(props.items.itemTypeId) === 11 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) !== Number(localStorage.getItem("logged-in")) &&
     props.items.legal === true
@@ -70,8 +70,8 @@ function ShopWeapons(props) {
         </CardActions>
       </Card>
     );
-  }else if (
-    Number(props.items.itemTypeId) === 1 &&
+  } else if (
+    Number(props.items.itemTypeId) === 11 &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) === Number(localStorage.getItem("logged-in")) &&
     props.items.legal === true
@@ -85,7 +85,6 @@ function ShopWeapons(props) {
         >
           <CardMedia
             className={classes.media}
-            id="itemImage"
             image={props.items.image}
             title={props.items.description}
           />
@@ -152,8 +151,8 @@ function ShopWeapons(props) {
   }
 }
 
-ShopWeapons.propTypes = {
+ShopArmorer.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ShopWeapons);
+export default withStyles(styles)(ShopArmorer);
