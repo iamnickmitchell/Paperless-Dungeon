@@ -1,6 +1,6 @@
 import apiManager from "../apiManager";
 
-const fetchURL = "http://localhost:8080";
+const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
 function shopSell(id, value, location, refresh) {
   let soldLocation = location;

@@ -1,4 +1,4 @@
-const fetchURL = "http://localhost:8080";
+const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
 function shopDelete(id, refresh) {
  return fetch(`${fetchURL}/items/${id}`, {

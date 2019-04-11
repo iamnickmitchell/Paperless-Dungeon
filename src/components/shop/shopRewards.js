@@ -34,7 +34,7 @@ class ItemCreate extends Component {
   handleLogin = e => {
     e.preventDefault();
 
-    const fetchURL = "http://localhost:8080";
+    const fetchURL = "https://dnd-web-tool.herokuapp.com";
     fetch(`${fetchURL}/items`)
       .then(item => item.json())
       .then(item => {

@@ -18,7 +18,7 @@ class ShopHospital2 extends Component {
   }
 
   componentDidMount() {
-    const fetchURL = "http://localhost:8080";
+    const fetchURL = "https://dnd-web-tool.herokuapp.com";
     let currentUserId = localStorage.getItem("logged-in");
     let newItemButton = ``;
     let newRewardButton = ``;
