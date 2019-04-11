@@ -24,7 +24,7 @@ import ShopLibrary2 from "../shop/shopLibrary2";
 import ShopFarm2 from "../shop/shopFarm2";
 import ShopArmorer2 from "../shop/shopArmorer2";
 
-const fetchURL = "http://localhost:8080";
+const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
 class NavigationElements extends Component {
   state = {

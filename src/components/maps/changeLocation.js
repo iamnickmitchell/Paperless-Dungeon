@@ -1,5 +1,5 @@
 function changeLocation(locationCode, locationRefresh) {
-  const fetchURL = "http://localhost:8080";
+  const fetchURL = "https://dnd-web-tool.herokuapp.com";
   const currentUserId = localStorage.getItem("logged-in");
   var d = new Date(),
     currentTime =

@@ -3,7 +3,7 @@ if (currentUserId === null) {
   currentUserId = 1;
 }
 
-const fetchURL = "http://localhost:8080"
+const fetchURL = "https://dnd-web-tool.herokuapp.com"
 
 const apiManager = {
   user: () =>
