@@ -2,12 +2,13 @@ import apiManager from "../apiManager";
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
-function shopBuy(id, value, location, refresh) {
-  let funds = 0;var d = new Date(),
-  currentTime =
-    [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
-    " " +
-    [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
+function shopBuy(id, value, location, weight, refresh, carryRefresh) {
+  let funds = 0;
+  var d = new Date(),
+    currentTime =
+      [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
+      " " +
+      [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
 
   const currentUserId = localStorage.getItem("logged-in");
   apiManager
@@ -24,6 +25,7 @@ function shopBuy(id, value, location, refresh) {
         sold: null,
         soldTime: null
       };
+
       if (Number(funds) >= Number(value)) {
         apiManager
           .user()
@@ -35,16 +37,26 @@ function shopBuy(id, value, location, refresh) {
               body: JSON.stringify({ funds: newFunds })
             });
           })
-          .then(()=>
+          .then(() =>
             fetch(`${fetchURL}/userItems`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(newItem)
             })
           )
-          .then(() =>
-            refresh()
-          );
+          .then(() => {
+            apiManager.user()
+            .then(user => {
+              const newWeight = user.currentWeight + weight;
+              return fetch(`${fetchURL}/users/${currentUserId}`, {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ currentWeight: newWeight })
+              });
+            });
+          })
+          .then(() => refresh())
+          .then(() => carryRefresh());
       } else {
         alert("Error: Insufficient Funds");
       }

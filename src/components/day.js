@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 class Day extends Component {
   render() {
     return (
-      <div className="playerPage">
+      <div className="dayPage">
         <p className="footer-item logout-btn">
           <Link
             className="fas fa-sign-out-alt size2half logout-btn"

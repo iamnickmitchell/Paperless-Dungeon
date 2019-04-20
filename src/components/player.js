@@ -18,10 +18,10 @@ class Characters extends Component {
           <div className="jumbotron">
             <h1 className="display-4 color-white orange-background-player">{this.props.username}</h1>
             <p className="lead color-orange grey-background-player">
-              Current Funds = {this.props.funds} credits
+              Current Funds = {this.props.funds} gold
             </p>
             <hr className="my-4" />
-            <h4 className="color-white blue-background-player">Items</h4>
+            <h4 className="color-white blue-background-player">Items <p>(Weight: {this.props.currentWeight}/{this.props.maxCarry} lbs.)</p></h4>
             <p className="thin-line" />
             <div className="items">
               {this.props.userItems.map(item => (
@@ -30,6 +30,7 @@ class Characters extends Component {
                   item={item}
                   playerLocation={this.props.playerLocation}
                   shopBuySellRefresh={this.props.shopBuySellRefresh}
+                  carryRefresh={this.props.carryRefresh}
                 />
               ))}
             </div>

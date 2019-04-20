@@ -62,10 +62,10 @@ class ShopArmorer2 extends Component {
         <div className="jumbotron shopDiv">
           <h3 className="color-black orange-background">
             {" "}
-            {this.props.playerLocation} Shopping Center
+            {this.props.playerLocation} Armorer
           </h3>
           <p className="lead color-orange grey-background">
-            Current Funds = {this.props.funds} credits
+            Current Funds = {this.props.funds} gold
           </p>
 
           <p className="footer-icon color-orange">
@@ -157,6 +157,7 @@ class ShopArmorer2 extends Component {
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
                 itemsRefresh={this.props.itemsRefresh}
+                carryRefresh={this.props.carryRefresh}
               />
             ))}
           </div>

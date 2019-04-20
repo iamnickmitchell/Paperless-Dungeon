@@ -2,7 +2,7 @@ import apiManager from "../apiManager";
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
-function shopSell(id, value, location, refresh) {
+function shopSell(id, value, location,weight, refresh, carryRefresh) {
   let soldLocation = location;
   var d = new Date(),
     currentTime =
@@ -33,7 +33,18 @@ function shopSell(id, value, location, refresh) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ soldTime: currentTime })
       })
-    )
-    .then(() => refresh());
+    ).then(() => {
+      apiManager.user()
+      .then(user => {
+        const newWeight = user.currentWeight - weight;
+        return fetch(`${fetchURL}/users/${currentUserId}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ currentWeight: newWeight })
+        });
+      });
+    })
+    .then(() => refresh())
+    .then(() => carryRefresh())
 }
 export default shopSell;
