@@ -54,7 +54,9 @@ function CharacterItems(props) {
                 props.item.id,
                 props.item.item.value / 2,
                 props.playerLocation,
-                props.shopBuySellRefresh
+                props.item.item.weight,
+                props.shopBuySellRefresh,
+                props.carryRefresh
               );
             }}
           >

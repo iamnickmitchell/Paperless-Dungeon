@@ -12,6 +12,7 @@ class ItemEdit extends Component {
     itemRarityId: this.props.location.state.itemRarityId,
     value: this.props.location.state.value,
     legal: this.props.location.state.legal,
+    weight: this.props.location.state.weight,
     error: "",
     success: "",
     shop: ``
@@ -60,7 +61,8 @@ class ItemEdit extends Component {
       itemRarityId: this.state.itemRarityId,
       value: this.state.value,
       legal: this.state.legal,
-      userId: localStorage.getItem("logged-in")
+      userId: localStorage.getItem("logged-in"),
+      weight: this.state.weight
     };
     const id = this.props.location.state.id
     if (this.state.success !== null) {
@@ -146,6 +148,16 @@ class ItemEdit extends Component {
             required=""
             autoComplete="off"
             value={this.state.value}
+          />
+          <label></label>
+          <input
+            onChange={this.handleFieldChange}
+            type="number"
+            id="weight"
+            placeholder="Item Weight"
+            required=""
+            autoComplete="off"
+            value={this.state.weight}
           />
         </p>
         <p>

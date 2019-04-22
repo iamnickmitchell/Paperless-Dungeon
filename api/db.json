@@ -26,7 +26,9 @@
       "dm": true,
       "password": "admin",
       "funds": 828822.5,
-      "groupId": 3
+      "groupId": 3,
+      "maxCarry": 400,
+      "currentWeight": 0
     },
     {
       "id": 2,
@@ -34,7 +36,9 @@
       "dm": false,
       "password": "megan",
       "funds": 890107,
-      "groupId": 3
+      "groupId": 3,
+      "maxCarry": 250,
+      "currentWeight": 0
     },
     {
       "id": 3,
@@ -42,7 +46,9 @@
       "dm": false,
       "password": "megan",
       "funds": 8500,
-      "groupId": 2
+      "groupId": 2,
+      "maxCarry": 300,
+      "currentWeight": 0
     }
   ],
   "itemTypes": [
@@ -122,10 +128,11 @@
       "itemRarityId": 2,
       "value": 500,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "AC: 13-18",
+      "statTwo": "Medium/Heavy",
+      "image": "http://dungeon.su/gallery/items/1_1_1539735286.png",
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 2,
@@ -135,10 +142,11 @@
       "itemRarityId": 2,
       "value": 6000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Holds any liquid",
+      "statTwo": "Magic",
+      "image": "https://www.aidedd.org/dnd/images-om/alchemy-jug.jpg",
+      "userId": 1,
+      "weight": 12
     },
     {
       "id": 3,
@@ -148,36 +156,39 @@
       "itemRarityId": 3,
       "value": 8000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Sets Const. score to 19",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/55/315/315/636283830597675547.jpeg",
+      "userId": 1,
+      "weight": 0.5
     },
     {
       "id": 4,
       "itemTypeId": 4,
       "name": "Amulet of Proof Against Detection and Location",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.aidedd.org/dnd/om.php?vo=amulet-of-proof-against-detection-and-location",
       "itemRarityId": 2,
       "value": 20000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Hides location",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/102/1000/1000/636284695629121668.jpeg",
+      "userId": 1,
+      "weight": 0.5
     },
     {
       "id": 5,
       "itemTypeId": 4,
       "name": "Amulet of the Planes",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/amulet-of-the-planes",
       "itemRarityId": 4,
       "value": 160000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Can cast Plane Shift spell",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/104/1000/1000/636284696312553001.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 6,
@@ -187,75 +198,81 @@
       "itemRarityId": 4,
       "value": 6000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "+2 AC",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/106/1000/1000/636284696650513804.jpeg",
+      "userId": 1,
+      "weight": 6
     },
     {
       "id": 7,
       "itemTypeId": 5,
       "name": "Apparatus of Kwalish",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.aidedd.org/dnd/om.php?vo=apparatus-of-kwalish",
       "itemRarityId": 5,
       "value": 10000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Armored Vehicles",
+      "statTwo": "Magic",
+      "image": "https://vignette.wikia.nocookie.net/forgottenrealms/images/3/39/Apparatus_of_kwalish-5e.jpg/revision/latest?cb=20181007020940",
+      "userId": 1,
+      "weight": 500
     },
     {
       "id": 8,
       "itemTypeId": 11,
       "name": "Armor of Invulnerability",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.aidedd.org/dnd/om.php?vo=armor-of-invulnerability",
       "itemRarityId": 5,
       "value": 18000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Makes user resistant to non-magicical damage",
+      "statTwo": "Heavy",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/110/1000/1000/636284703543037516.jpeg",
+      "userId": 1,
+      "weight": 65
     },
     {
       "id": 9,
       "itemTypeId": 11,
       "name": "Armor of Resistance",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.aidedd.org/dnd/om.php?vo=armor-of-resistance",
       "itemRarityId": 3,
       "value": 6000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Makes user resistance to one type of damage",
+      "statTwo": "Light/Medium/Heavy",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/112/1000/1000/636284703865068888.jpeg",
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 10,
       "itemTypeId": 1,
       "name": "Arrow of Slaying",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/arrow-of-slaying",
       "itemRarityId": 4,
       "value": 600,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/114/315/315/636284705050167886.jpeg",
-      "userId": 1
+      "statOne": "6d10/piercing",
+      "statTwo": "150/600",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/114/1000/1000/636284705050167886.jpeg",
+      "userId": 1,
+      "weight": 0.25
     },
     {
       "id": 11,
       "itemTypeId": 11,
       "name": "Arrow Catching Shield",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/arrow-catching-shield",
       "itemRarityId": 3,
       "value": 6000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "+2 AC",
+      "statTwo": "Shield",
+      "image": "http://dungeon.su/gallery/items/123_1_1539685657.jpeg",
+      "userId": 1,
+      "weight": 6
     },
     {
       "id": 12,
@@ -265,23 +282,25 @@
       "itemRarityId": 2,
       "value": 4000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Holds any items",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/120/1000/1000/636284708068284913.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 13,
       "itemTypeId": 4,
       "name": "Bead of Force",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/bead-of-force",
       "itemRarityId": 3,
       "value": 960,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "5d4/force",
+      "statTwo": "Magic",
+      "image": "http://dungeon.su/gallery/items/10_1_1539678599.jpg",
+      "userId": 1,
+      "weight": 0.01
     },
     {
       "id": 14,
@@ -291,127 +310,137 @@
       "itemRarityId": 3,
       "value": 6000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Gives user +2 Const.",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/126/315/315/636284710052387600.jpeg",
+      "userId": 1,
+      "weight": 0.5
     },
     {
       "id": 15,
       "itemTypeId": 4,
       "name": "Boots of Elvenkind",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/boots-of-elvenkind",
       "itemRarityId": 2,
       "value": 2500,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "While wearing user makes no sound",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/134/1000/1000/636284714003984245.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 16,
       "itemTypeId": 4,
       "name": "Boots of Levitation",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/boots-of-levitation",
       "itemRarityId": 3,
       "value": 4000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Can cast the levitate spell",
+      "statTwo": "Magic",
+      "image": "http://www.talesfromthefireside.com/galleryitems/boots-of-levitation-0.jpg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 17,
       "itemTypeId": 4,
       "name": "Boots of Speed",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/boots-of-speed",
       "itemRarityId": 3,
       "value": 4000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Doubles users speed",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/136/1000/1000/636284714256851023.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 18,
       "itemTypeId": 4,
       "name": "Boots of Striding and Sprinting",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/boots-of-striding-and-springing",
       "itemRarityId": 2,
       "value": 5000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "While wearing user cannot be encumbered and can jump 3x as far",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/138/1000/1000/636284714659292153.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 19,
       "itemTypeId": 4,
       "name": "Boots of the Winterlands",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/boots-of-the-winterlands",
       "itemRarityId": 2,
       "value": 10000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Resistant to cold while wearing",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/140/1000/1000/636284715069548972.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 20,
       "itemTypeId": 2,
       "name": "Bowl of Commanding Water Elementals",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/bowl-of-commanding-water-elementals",
       "itemRarityId": 3,
       "value": 8000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Can summon a water elemental",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/142/1000/1000/636284715502549798.jpeg",
+      "userId": 1,
+      "weight": 1
     },
     {
       "id": 21,
       "itemTypeId": 4,
-      "name": "Bracers of Archery",
-      "description": "https://www.dndbeyond.com/",
+      "name": "Bracers of Defense",
+      "description": "https://www.dndbeyond.com/magic-items/bracers-of-defense",
       "itemRarityId": 2,
       "value": 1500,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "+2 AC if not wearing armor",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/146/1000/1000/636284716655660478.jpeg",
+      "userId": 1,
+      "weight": 2
     },
     {
       "id": 22,
       "itemTypeId": 4,
-      "name": "Bracers of Defense",
-      "description": "https://www.dndbeyond.com/",
+      "name": "Bracers of Archery",
+      "description": "https://www.dndbeyond.com/magic-items/bracers-of-archery",
       "itemRarityId": 3,
       "value": 6000,
       "legal": true,
-      "statOne": "",
-      "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "statOne": "Proficiency with bows, +2 bonus to damage",
+      "statTwo": "Magic",
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/144/1000/1000/636284715992548759.jpeg",
+      "userId": 1,
+      "weight": 2
     },
     {
       "id": 23,
       "itemTypeId": 2,
       "name": "Brass Horn of Valhalla",
-      "description": "https://www.dndbeyond.com/",
+      "description": "https://www.dndbeyond.com/magic-items/horn-of-valhalla",
       "itemRarityId": 3,
       "value": 8400,
       "legal": true,
       "statOne": "",
       "statTwo": "",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/259/1000/1000/636284740704653038.jpeg",
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 24,
@@ -424,7 +453,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 25,
@@ -437,12 +467,13 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 26,
       "itemTypeId": 2,
-      "name": "Brass Horn of Valhalla",
+      "name": "Bronze Horn of Valhalla",
       "description": "https://www.dndbeyond.com/",
       "itemRarityId": 4,
       "value": 11200,
@@ -450,7 +481,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 27,
@@ -463,7 +495,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 28,
@@ -476,7 +509,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 29,
@@ -489,7 +523,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 30,
@@ -502,7 +537,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 31,
@@ -515,7 +551,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 32,
@@ -528,7 +565,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 33,
@@ -541,7 +579,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 34,
@@ -554,7 +593,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 35,
@@ -567,7 +607,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 36,
@@ -580,7 +621,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 37,
@@ -593,7 +635,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 38,
@@ -606,7 +649,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 39,
@@ -619,7 +663,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 40,
@@ -632,7 +677,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 41,
@@ -645,7 +691,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 42,
@@ -658,7 +705,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 43,
@@ -671,7 +719,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 44,
@@ -684,7 +733,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 45,
@@ -697,7 +747,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 46,
@@ -710,7 +761,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 47,
@@ -723,7 +775,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 48,
@@ -736,7 +789,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 49,
@@ -749,7 +803,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 50,
@@ -762,7 +817,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 51,
@@ -775,7 +831,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 52,
@@ -788,7 +845,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 53,
@@ -801,7 +859,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 54,
@@ -814,7 +873,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 55,
@@ -827,7 +887,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 56,
@@ -840,7 +901,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 57,
@@ -853,7 +915,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 58,
@@ -866,7 +929,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 59,
@@ -879,7 +943,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 60,
@@ -892,7 +957,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 61,
@@ -905,7 +971,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 62,
@@ -918,7 +985,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 63,
@@ -931,7 +999,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 64,
@@ -944,7 +1013,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 65,
@@ -957,7 +1027,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 66,
@@ -970,7 +1041,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 67,
@@ -983,7 +1055,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 68,
@@ -996,7 +1069,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 69,
@@ -1009,7 +1083,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 70,
@@ -1022,7 +1097,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 71,
@@ -1035,7 +1111,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 72,
@@ -1048,7 +1125,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 73,
@@ -1061,7 +1139,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 74,
@@ -1074,7 +1153,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 75,
@@ -1087,7 +1167,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 76,
@@ -1100,7 +1181,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 77,
@@ -1113,7 +1195,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 78,
@@ -1126,7 +1209,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 79,
@@ -1139,7 +1223,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 80,
@@ -1152,7 +1237,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 81,
@@ -1165,7 +1251,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 82,
@@ -1178,7 +1265,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 83,
@@ -1191,7 +1279,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 84,
@@ -1204,7 +1293,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 85,
@@ -1217,7 +1307,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 86,
@@ -1230,7 +1321,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 87,
@@ -1243,7 +1335,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 88,
@@ -1256,7 +1349,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 89,
@@ -1269,7 +1363,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 90,
@@ -1282,7 +1377,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 91,
@@ -1295,7 +1391,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 92,
@@ -1308,7 +1405,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 93,
@@ -1321,7 +1419,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 94,
@@ -1334,7 +1433,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 95,
@@ -1347,7 +1447,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 96,
@@ -1360,7 +1461,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 97,
@@ -1373,7 +1475,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 98,
@@ -1386,7 +1489,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 99,
@@ -1399,7 +1503,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 100,
@@ -1412,7 +1517,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 101,
@@ -1425,7 +1531,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 102,
@@ -1438,7 +1545,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 103,
@@ -1451,7 +1559,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 104,
@@ -1464,7 +1573,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 105,
@@ -1477,7 +1587,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 106,
@@ -1490,7 +1601,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 107,
@@ -1503,7 +1615,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 108,
@@ -1516,7 +1629,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 109,
@@ -1529,7 +1643,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 110,
@@ -1542,7 +1657,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 111,
@@ -1555,7 +1671,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 112,
@@ -1568,7 +1685,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 113,
@@ -1581,7 +1699,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 114,
@@ -1594,7 +1713,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 115,
@@ -1607,7 +1727,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 116,
@@ -1620,7 +1741,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 117,
@@ -1633,7 +1755,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 118,
@@ -1646,7 +1769,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 119,
@@ -1659,7 +1783,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 120,
@@ -1672,7 +1797,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 121,
@@ -1685,7 +1811,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 122,
@@ -1698,7 +1825,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 123,
@@ -1711,7 +1839,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 124,
@@ -1724,7 +1853,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 125,
@@ -1737,7 +1867,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 126,
@@ -1750,7 +1881,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 127,
@@ -1763,7 +1895,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 128,
@@ -1776,7 +1909,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 129,
@@ -1789,7 +1923,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 130,
@@ -1802,7 +1937,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 131,
@@ -1815,7 +1951,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 132,
@@ -1828,7 +1965,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 133,
@@ -1841,7 +1979,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 134,
@@ -1854,7 +1993,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 135,
@@ -1867,7 +2007,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 136,
@@ -1880,7 +2021,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 137,
@@ -1893,7 +2035,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 138,
@@ -1906,7 +2049,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 139,
@@ -1919,7 +2063,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 140,
@@ -1932,7 +2077,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 141,
@@ -1945,7 +2091,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 142,
@@ -1958,7 +2105,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 143,
@@ -1971,7 +2119,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 144,
@@ -1984,7 +2133,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 145,
@@ -1997,7 +2147,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 146,
@@ -2010,7 +2161,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 147,
@@ -2023,7 +2175,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 148,
@@ -2036,7 +2189,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 149,
@@ -2049,7 +2203,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 150,
@@ -2062,7 +2217,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 151,
@@ -2075,7 +2231,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 152,
@@ -2088,7 +2245,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 153,
@@ -2101,7 +2259,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 154,
@@ -2114,7 +2273,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 155,
@@ -2127,7 +2287,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 156,
@@ -2140,7 +2301,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 157,
@@ -2153,7 +2315,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 158,
@@ -2166,7 +2329,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 159,
@@ -2179,7 +2343,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 160,
@@ -2192,7 +2357,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 161,
@@ -2205,7 +2371,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 162,
@@ -2218,7 +2385,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 163,
@@ -2231,7 +2399,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 164,
@@ -2244,7 +2413,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 165,
@@ -2257,7 +2427,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 166,
@@ -2270,7 +2441,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 167,
@@ -2283,7 +2455,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 168,
@@ -2296,7 +2469,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 169,
@@ -2309,7 +2483,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 170,
@@ -2322,7 +2497,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 171,
@@ -2335,7 +2511,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 172,
@@ -2348,7 +2525,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 173,
@@ -2361,7 +2539,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 174,
@@ -2374,7 +2553,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 175,
@@ -2387,7 +2567,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 176,
@@ -2400,7 +2581,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 177,
@@ -2413,7 +2595,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 178,
@@ -2426,7 +2609,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 179,
@@ -2439,7 +2623,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 180,
@@ -2452,7 +2637,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 181,
@@ -2465,7 +2651,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 182,
@@ -2478,7 +2665,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 183,
@@ -2491,7 +2679,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 184,
@@ -2504,7 +2693,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 185,
@@ -2517,7 +2707,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 186,
@@ -2530,7 +2721,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 187,
@@ -2543,7 +2735,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 188,
@@ -2556,7 +2749,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 189,
@@ -2569,7 +2763,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 190,
@@ -2582,7 +2777,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 191,
@@ -2595,7 +2791,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 192,
@@ -2608,7 +2805,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 193,
@@ -2621,7 +2819,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 194,
@@ -2634,7 +2833,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 195,
@@ -2647,7 +2847,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 196,
@@ -2660,7 +2861,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 197,
@@ -2673,7 +2875,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 198,
@@ -2686,7 +2889,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 199,
@@ -2699,7 +2903,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 200,
@@ -2712,7 +2917,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 201,
@@ -2725,7 +2931,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 202,
@@ -2738,7 +2945,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 203,
@@ -2751,7 +2959,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 204,
@@ -2764,7 +2973,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 205,
@@ -2777,7 +2987,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 206,
@@ -2790,7 +3001,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 207,
@@ -2803,7 +3015,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 208,
@@ -2816,7 +3029,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 209,
@@ -2829,7 +3043,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 210,
@@ -2842,7 +3057,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 211,
@@ -2855,7 +3071,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 212,
@@ -2868,7 +3085,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 213,
@@ -2881,7 +3099,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 214,
@@ -2894,7 +3113,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 215,
@@ -2907,7 +3127,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 216,
@@ -2920,7 +3141,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 217,
@@ -2933,7 +3155,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 218,
@@ -2946,7 +3169,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 219,
@@ -2959,7 +3183,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 220,
@@ -2972,7 +3197,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 221,
@@ -2985,7 +3211,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 222,
@@ -2998,7 +3225,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 223,
@@ -3011,7 +3239,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 224,
@@ -3024,7 +3253,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 225,
@@ -3037,7 +3267,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 226,
@@ -3050,7 +3281,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 227,
@@ -3063,7 +3295,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 228,
@@ -3076,7 +3309,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 229,
@@ -3089,7 +3323,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 230,
@@ -3102,7 +3337,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 231,
@@ -3115,7 +3351,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 232,
@@ -3128,7 +3365,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 233,
@@ -3141,7 +3379,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 234,
@@ -3154,7 +3393,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 235,
@@ -3167,7 +3407,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 236,
@@ -3180,7 +3421,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 237,
@@ -3193,7 +3435,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 238,
@@ -3206,7 +3449,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 239,
@@ -3219,7 +3463,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 240,
@@ -3232,7 +3477,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 241,
@@ -3245,7 +3491,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 242,
@@ -3258,7 +3505,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 243,
@@ -3271,7 +3519,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 244,
@@ -3284,7 +3533,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 245,
@@ -3297,7 +3547,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 246,
@@ -3310,7 +3561,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 247,
@@ -3323,7 +3575,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 248,
@@ -3336,7 +3589,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 249,
@@ -3349,7 +3603,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 250,
@@ -3362,7 +3617,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 251,
@@ -3375,7 +3631,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 252,
@@ -3388,7 +3645,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 253,
@@ -3401,7 +3659,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 254,
@@ -3414,7 +3673,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 255,
@@ -3427,7 +3687,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 256,
@@ -3440,7 +3701,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 257,
@@ -3453,7 +3715,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 258,
@@ -3466,7 +3729,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 259,
@@ -3479,7 +3743,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 260,
@@ -3492,7 +3757,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 261,
@@ -3505,7 +3771,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 262,
@@ -3518,7 +3785,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 263,
@@ -3531,7 +3799,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 264,
@@ -3544,7 +3813,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 265,
@@ -3557,7 +3827,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 266,
@@ -3570,7 +3841,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 267,
@@ -3583,7 +3855,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 268,
@@ -3596,7 +3869,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 269,
@@ -3609,7 +3883,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 270,
@@ -3622,7 +3897,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 271,
@@ -3635,7 +3911,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 272,
@@ -3648,7 +3925,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 273,
@@ -3661,7 +3939,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 274,
@@ -3674,7 +3953,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 275,
@@ -3687,7 +3967,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 276,
@@ -3700,7 +3981,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 277,
@@ -3713,7 +3995,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 278,
@@ -3726,7 +4009,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 279,
@@ -3739,7 +4023,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 280,
@@ -3752,7 +4037,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 281,
@@ -3765,7 +4051,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 282,
@@ -3778,7 +4065,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 283,
@@ -3791,7 +4079,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 284,
@@ -3804,7 +4093,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 285,
@@ -3817,7 +4107,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 286,
@@ -3830,7 +4121,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 287,
@@ -3843,7 +4135,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 288,
@@ -3856,7 +4149,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 289,
@@ -3869,7 +4163,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 290,
@@ -3882,7 +4177,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 291,
@@ -3895,7 +4191,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 292,
@@ -3908,7 +4205,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 293,
@@ -3921,7 +4219,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 294,
@@ -3934,7 +4233,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 295,
@@ -3947,7 +4247,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 296,
@@ -3960,7 +4261,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 297,
@@ -3973,7 +4275,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 298,
@@ -3986,7 +4289,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 299,
@@ -3999,7 +4303,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 300,
@@ -4012,7 +4317,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 301,
@@ -4025,7 +4331,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 302,
@@ -4038,7 +4345,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 303,
@@ -4051,7 +4359,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 304,
@@ -4064,20 +4373,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
-    },
-    {
-      "name": "Shield",
-      "statOne": "What?",
-      "statTwo": "",
-      "description": "https://www.dndbeyond.com/",
-      "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "itemTypeId": 11,
-      "itemRarityId": 1,
-      "value": 10,
-      "legal": false,
-      "userId": "1",
-      "id": 305
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 306,
@@ -4090,7 +4387,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 307,
@@ -4103,7 +4401,8 @@
       "statOne": "",
       "statTwo": "",
       "image": "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "name": "Footman (Guard)",
@@ -4115,155 +4414,13 @@
       "itemRarityId": "1",
       "value": "12",
       "legal": true,
-      "userId": "1",
+      "userId": 1,
+      "weight": 0,
       "id": 308
     }
   ],
   "userItems": [
-    {
-      "userId": "1",
-      "itemId": 17,
-      "bought": "Moret Town",
-      "boughtTime": "4/9/2019 15:9:53",
-      "sold": "Moret Town",
-      "soldTime": "4/9/2019 15:9:59",
-      "id": 1
-    },
-    {
-      "userId": "1",
-      "itemId": 10,
-      "bought": "Usalred",
-      "boughtTime": "4/10/2019 14:56:23",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:1:3",
-      "id": 2
-    },
-    {
-      "userId": "1",
-      "itemId": 75,
-      "bought": "Usalred",
-      "boughtTime": "4/10/2019 14:56:26",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:1:2",
-      "id": 3
-    },
-    {
-      "userId": "1",
-      "itemId": 2,
-      "bought": "Usalred",
-      "boughtTime": "4/10/2019 14:56:30",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:1:0",
-      "id": 4
-    },
-    {
-      "userId": "1",
-      "itemId": 23,
-      "bought": "Usalred",
-      "boughtTime": "4/10/2019 14:56:32",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:59",
-      "id": 5
-    },
-    {
-      "userId": "1",
-      "itemId": 45,
-      "bought": "Usalred",
-      "boughtTime": "4/10/2019 14:56:35",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:58",
-      "id": 6
-    },
-    {
-      "userId": "1",
-      "itemId": 307,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:0:34",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:56",
-      "id": 7
-    },
-    {
-      "userId": "1",
-      "itemId": 307,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:0:37",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:55",
-      "id": 8
-    },
-    {
-      "userId": "1",
-      "itemId": 307,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:0:38",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:54",
-      "id": 9
-    },
-    {
-      "userId": "1",
-      "itemId": 307,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:0:39",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:54",
-      "id": 10
-    },
-    {
-      "userId": "1",
-      "itemId": 307,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:0:39",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:53",
-      "id": 11
-    },
-    {
-      "userId": "1",
-      "itemId": 306,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:0:42",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:0:52",
-      "id": 12
-    },
-    {
-      "userId": "1",
-      "itemId": 299,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:2:36",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:2:49",
-      "id": 13
-    },
-    {
-      "userId": "1",
-      "itemId": 302,
-      "bought": "Moret Town",
-      "boughtTime": "4/10/2019 17:2:38",
-      "sold": "Moret Town",
-      "soldTime": "4/10/2019 17:2:50",
-      "id": 14
-    },
-    {
-      "userId": "1",
-      "itemId": 302,
-      "bought": "Moret Town",
-      "boughtTime": "4/11/2019 9:22:43",
-      "sold": "Moret Town",
-      "soldTime": "4/11/2019 9:22:48",
-      "id": 15
-    },
-    {
-      "userId": "1",
-      "itemId": 299,
-      "bought": "Moret Town",
-      "boughtTime": "4/11/2019 9:22:44",
-      "sold": "Moret Town",
-      "soldTime": "4/11/2019 9:22:48",
-      "id": 16
-    }
+
   ],
   "countries": [
     {
@@ -4317,7 +4474,8 @@
       "weatherId": 1,
       "locationCode": "mp73os",
       "image": "./Images/locationImages/MoretTown.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 2,
@@ -4330,7 +4488,8 @@
       "weatherId": 1,
       "locationCode": "gr35j8",
       "image": "./Images/locationImages/Brose-Totain.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 3,
@@ -4343,7 +4502,8 @@
       "weatherId": 1,
       "locationCode": "cor123",
       "image": "./Images/locationImages/Usalred.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 4,
@@ -4356,7 +4516,8 @@
       "weatherId": 1,
       "locationCode": "h4kjs8",
       "image": "./Images/locationImages/Ica.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 5,
@@ -4369,7 +4530,8 @@
       "weatherId": 1,
       "locationCode": "j4dh8s",
       "image": "./Images/locationImages/Highsong.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 6,
@@ -4382,7 +4544,8 @@
       "weatherId": 1,
       "locationCode": "hid825",
       "image": "./Images/locationImages/Highsong.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 7,
@@ -4395,7 +4558,8 @@
       "weatherId": 1,
       "locationCode": "",
       "image": "./Images/locationImages/Highsong.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 8,
@@ -4408,7 +4572,8 @@
       "weatherId": 1,
       "locationCode": "",
       "image": "./Images/locationImages/Highsong.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 9,
@@ -4421,7 +4586,8 @@
       "weatherId": 1,
       "locationCode": "",
       "image": "./Images/locationImages/Highsong.png",
-      "userId": 1
+      "userId": 1,
+      "weight": 0
     },
     {
       "id": 10,

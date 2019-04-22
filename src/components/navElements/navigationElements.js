@@ -34,7 +34,9 @@ class NavigationElements extends Component {
     items: [],
     playerLocation: [],
     playerLocationSize: [],
-    playerLocationMap: ""
+    playerLocationMap: "",
+    maxCarry: "",
+    currentWeight: ""
   };
 
   shopBuySellRefresh = () => {
@@ -52,6 +54,16 @@ class NavigationElements extends Component {
             newState.funds = parsedFunds.funds;
           })
       )
+      .then(() => this.setState(newState));
+  };
+
+  carryRefresh = () => {
+    const newState = {};
+    return apiManager.user()
+      .then(user => {
+        newState.maxCarry = user.maxCarry;
+        newState.currentWeight = user.currentWeight;
+      })
       .then(() => this.setState(newState));
   };
 
@@ -87,6 +99,8 @@ class NavigationElements extends Component {
       .user()
       .then(parsedUser => {
         newState.username = parsedUser.name;
+        newState.maxCarry = parsedUser.maxCarry;
+        newState.currentWeight = parsedUser.currentWeight;
       })
       .then(() =>
         apiManager.userItems().then(parsedUserItems => {
@@ -124,6 +138,8 @@ class NavigationElements extends Component {
       .user()
       .then(parsedUser => {
         newState.username = parsedUser.name;
+        newState.maxCarry = parsedUser.maxCarry;
+        newState.currentWeight = parsedUser.currentWeight;
       })
       .then(() =>
         apiManager.userItems().then(parsedUserItems => {
@@ -202,6 +218,9 @@ class NavigationElements extends Component {
                   funds={this.state.funds}
                   playerLocation={this.state.playerLocation}
                   shopBuySellRefresh={this.shopBuySellRefresh}
+                  carryRefresh={this.carryRefresh}
+                  maxCarry={this.state.maxCarry}
+                  currentWeight={this.state.currentWeight}
                 />
               );
             } else {
@@ -454,6 +473,7 @@ class NavigationElements extends Component {
                   refresh={this.refresh}
                   shopBuySellRefresh={this.shopBuySellRefresh}
                   itemsRefresh={this.itemsRefresh}
+                  carryRefresh={this.carryRefresh}
                 />
               );
             } else {

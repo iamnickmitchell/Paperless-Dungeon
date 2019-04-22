@@ -62,10 +62,10 @@ class ShopShop extends Component {
         <div className="jumbotron shopDiv">
           <h3 className="color-black orange-background">
             {" "}
-            {this.props.playerLocation} Shopping Center
+            {this.props.playerLocation} Shoppe
           </h3>
           <p className="lead color-orange grey-background">
-            Current Funds = {this.props.funds} credits
+            Current Funds = {this.props.funds} gold
           </p>
 
           <p className="footer-icon color-orange">

@@ -1,25 +1,25 @@
 A website designed to create an easy to use economy, map, and shop system for DnD table top games.
 
 <h1>Paperless Dungeon</h1>
-<p>version 0.0.0.0 pre-Alpha Release (current release)</p>
-<p>version 0.18.12.2 pre-Alpha Release (pre-release)</p>
+<p>version 1.0.2.2_alpha Release (current release)</p>
+<p>version 1.0.2.2_alpha Release (current snapshot)</p>
 
 
 # To view current release:
-1) Go to https://paperlessdungeon.000webhostapp.com
+1) Go to https://paperlessdungeon.netlify.com
 
-# To view pre-release:
+<!-- # To view snapshot:
 1) Fork a copy of the pre-release code at https://github.com/iamnickmitchell/Paperless-Dungeon.
 2) Go into the kennel subfolder using the terminal of your choice (I currently use GitBash).
-3) Start a localhost server and run npm start (you must have node.js installed).
+3) Start a localhost server and run npm start (you must have node.js installed). -->
 
 # To use the app (current release):
 
 Coming Soon...
 
-# To use the app (pre-release):
+<!-- # To use the app (snapshot):
 
-Coming Soon...
+Coming Soon... -->
 
 
 # Built using:
@@ -55,7 +55,7 @@ External Software Used:
 * GitBash/ GitHub - terminal
 * Heroku - API storage
 
-# ERD:
+# ERD: !Note: ERD is currently out of date, updates are coming soon.
 ![Error: Image not found!](public/Images/README_images/ERD.png)
 
 # Authors:

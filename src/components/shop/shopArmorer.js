@@ -107,7 +107,9 @@ function ShopArmorer(props) {
                 props.items.id,
                 props.items.value,
                 props.playerLocation,
-                props.shopBuySellRefresh
+                props.items.weight,
+                props.shopBuySellRefresh,
+                props.carryRefresh
               );
             }}
           >
@@ -138,7 +140,8 @@ function ShopArmorer(props) {
                   itemTypeId: props.items.itemTypeId,
                   value: props.items.value,
                   legal: props.items.legal,
-                  id: props.items.id
+                  id: props.items.id,
+                  weight: props.items.weight
                 }
               }}
             />

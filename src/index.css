@@ -408,15 +408,16 @@ input {
   height: 100vh;
 }
 .dayPage {
-  background-image: url("https://i.pinimg.com/originals/d7/d3/8a/d7d38a779db52c84f6fb3da715458da9.jpg");
+  background-image: url("./backgroundImages/ruined_temple.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
   z-index: -1;
 }
+
 .playerPage {
-  background-image: url("https://www.myidealhome.us/wp-content/uploads/2017/06/medieval-kitchen5.jpg");
+  background-image: url("./backgroundImages/castle-on-waterfall.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -574,6 +575,21 @@ input {
 }
 
 #value {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#weight {
   text-align: center;
   color: white;
   background-color: #4797606b;
