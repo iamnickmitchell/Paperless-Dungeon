@@ -1,4 +1,5 @@
 import apiManager from "../apiManager";
+import itemBuyIcon from "./shopItemBuyIcon"
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
@@ -56,7 +57,8 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
             });
           })
           .then(() => refresh())
-          .then(() => carryRefresh());
+          .then(() => carryRefresh())
+          // .then(() => itemBuyIcon())
       } else {
         alert("Error: Insufficient Funds");
       }
