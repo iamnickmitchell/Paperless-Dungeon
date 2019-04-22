@@ -13,6 +13,7 @@ class ItemCreate extends Component {
     itemRarityId: 1,
     value: 0,
     legal: true,
+    weight: "",
     error: "",
     success: "",
     shop: ``
@@ -60,7 +61,8 @@ class ItemCreate extends Component {
       itemRarityId: this.state.itemRarityId,
       value: this.state.value,
       legal: this.state.legal,
-      userId: localStorage.getItem("logged-in")
+      userId: localStorage.getItem("logged-in"),
+      weight: this.state.weight
     };
     if (this.state.success !== isNullOrUndefined) {
       apiManager.itemCreate(createItem)
@@ -137,6 +139,15 @@ class ItemCreate extends Component {
             type="number"
             id="value"
             placeholder="Item Cost"
+            required=""
+            autoComplete="off"
+          />
+          <label></label>
+          <input
+            onChange={this.handleFieldChange}
+            type="number"
+            id="weight"
+            placeholder="Item Weight"
             required=""
             autoComplete="off"
           />

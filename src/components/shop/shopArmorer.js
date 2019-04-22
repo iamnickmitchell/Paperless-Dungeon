@@ -140,7 +140,8 @@ function ShopArmorer(props) {
                   itemTypeId: props.items.itemTypeId,
                   value: props.items.value,
                   legal: props.items.legal,
-                  id: props.items.id
+                  id: props.items.id,
+                  weight: props.items.weight
                 }
               }}
             />

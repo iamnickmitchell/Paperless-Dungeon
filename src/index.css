@@ -589,6 +589,21 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
+#weight {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
 #itemRarityId {
   text-align: center;
   color: white;
