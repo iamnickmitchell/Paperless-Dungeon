@@ -1,5 +1,5 @@
 import apiManager from "../apiManager";
-import itemBuyIcon from "./shopItemBuyIcon"
+// import itemBuyIcon from "./shopItemBuyIcon"
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 

@@ -9,8 +9,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import shopBuy from "./shopBuy";
-import {Link} from "react-router-dom"
-import shopDelete from "./shopDelete"
+import { Link } from "react-router-dom";
+import shopDelete from "./shopDelete";
 
 const styles = {
   card: {
@@ -47,12 +47,12 @@ function ShopArmorer(props) {
               {props.items.name}
             </Typography>
             <Typography component="div">
-              <p className="shopPtag">{props.items.statOne}</p>
-              <p className="shopPtag">{props.items.statTwo}</p>
+              <p className="shopPtagOne">{props.items.statOne}</p>
+              <p className="shopPtagTwo">{props.items.statTwo}</p>
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions id="cardButtons">
           <Button
             size="small"
             id="shopBuyButton"
@@ -93,12 +93,12 @@ function ShopArmorer(props) {
               {props.items.name}
             </Typography>
             <Typography component="div">
-              <p className="shopPtag">{props.items.statOne}</p>
-              <p className="shopPtag">{props.items.statTwo}</p>
+              <p className="shopPtagOne">{props.items.statOne}</p>
+              <p className="shopPtagTwo">{props.items.statTwo}</p>
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions id="cardButtons">
           <Button
             size="small"
             id="shopBuyButton"

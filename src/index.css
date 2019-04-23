@@ -153,6 +153,29 @@ body {
   margin: 0px;
   color: white;
 }
+.shopPtagOne {
+  margin: 0px;
+  color: white;
+}
+.shopPtagTwo {
+  margin: 0px;
+  color: #8ee4af;
+  margin-bottom: 60px;
+}
+.shopH5tag {
+  margin: 0px;
+  color: var(--color-orange);
+}
+
+#cardButtons{
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 0px;
+}
 
 #shopBuyButton {
   color: var(--color-orange);
@@ -183,6 +206,7 @@ body {
 #item {
   margin: 5px !important;
   background-color: rgba(93, 92, 97, 0.733);
+  position: relative;
 }
 
 #itemImage {
@@ -341,6 +365,7 @@ body {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+  display: flex;
 }
 
 #loginMain {
@@ -378,12 +403,11 @@ input {
 }
 
 .editButton {
-  display: flex;
-  justify-content: flex-end;
+  font-size: 1.5rem;
 }
 
 .space-background {
-  background-image: url("https://cdna.artstation.com/p/assets/images/images/000/788/884/medium/daniel-thomas-calypso-s-shop-2.jpg?1433168266");
+  background-image: url("https://i.pinimg.com/originals/05/53/f2/0553f20e27fe47a8027e5f12c2b93002.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
