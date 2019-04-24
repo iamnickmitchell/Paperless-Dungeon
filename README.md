@@ -1,7 +1,7 @@
 A website designed to create an easy to use economy, map, and shop system for DnD table top games.
 
 <h1>Paperless Dungeon</h1>
-<p>version 1.0.3.4_alpha Release (current release)</p>
+<p>version 1.0.3.5_alpha Release (current release)</p>
 <p>version 1.1.0.0_alpha Release (current snapshot)</p>
 
 

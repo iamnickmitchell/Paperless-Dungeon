@@ -1,6 +1,9 @@
 <h5>Last update: 04/24/19</h5>
 <h1>Release Notes</h1>
 
+<h5>v.1.0.3.5_alpha</h5>
+<p>*.*.*.5 - Fixed bug with weights while using non DM accounts.</p>
+
 <h5>v.1.0.3.4_alpha</h5>
 <p>*.*.*.4 - Reversed RELEASENOTES.md order to make it easier to see recent changes.</p>
 
