@@ -13,7 +13,7 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
 
   const currentUserId = localStorage.getItem("logged-in");
   apiManager
-    .shopBuyOne()
+    .shopBuyOne(currentUserId)
     .then(parsedFunds => {
       funds = parsedFunds.funds;
     })
@@ -29,7 +29,7 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
 
       if (Number(funds) >= Number(value)) {
         apiManager
-          .user()
+          .user(currentUserId)
           .then(parsedFunds => {
             const newFunds = parsedFunds.funds - value;
             return fetch(`${fetchURL}/users/${currentUserId}`, {
@@ -46,7 +46,7 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
             })
           )
           .then(() => {
-            apiManager.user()
+            apiManager.user(currentUserId)
             .then(user => {
               const newWeight = user.currentWeight + weight;
               return fetch(`${fetchURL}/users/${currentUserId}`, {
@@ -58,7 +58,6 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
           })
           .then(() => refresh())
           .then(() => carryRefresh())
-          // .then(() => itemBuyIcon())
       } else {
         alert("Error: Insufficient Funds");
       }

@@ -11,7 +11,7 @@ function shopSell(id, value, location,weight, refresh, carryRefresh) {
       [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
   const currentUserId = localStorage.getItem("logged-in");
   apiManager
-    .user()
+    .user(currentUserId)
     .then(parsedFunds => {
       const newFunds = parsedFunds.funds + value;
       return fetch(`${fetchURL}/users/${currentUserId}`, {
@@ -34,7 +34,7 @@ function shopSell(id, value, location,weight, refresh, carryRefresh) {
         body: JSON.stringify({ soldTime: currentTime })
       })
     ).then(() => {
-      apiManager.user()
+      apiManager.user(currentUserId)
       .then(user => {
         const newWeight = user.currentWeight - weight;
         return fetch(`${fetchURL}/users/${currentUserId}`, {

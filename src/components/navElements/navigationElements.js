@@ -59,8 +59,9 @@ class NavigationElements extends Component {
   };
 
   carryRefresh = () => {
+    const currentUserId = localStorage.getItem("logged-in")
     const newState = {};
-    return apiManager.user()
+    return apiManager.user(currentUserId)
       .then(user => {
         newState.maxCarry = user.maxCarry;
         newState.currentWeight = user.currentWeight;
@@ -89,9 +90,10 @@ class NavigationElements extends Component {
   };
 
   locationRefresh = () => {
+    const currentUserId = localStorage.getItem("logged-in")
     const newState = {};
     apiManager
-      .playerLocations()
+      .playerLocations(currentUserId)
       .then(parsedplayerLocation => {
         newState.playerLocation = parsedplayerLocation.location.cityName;
         newState.playerLocationSize = parsedplayerLocation.location.citySizeId;
@@ -105,21 +107,22 @@ class NavigationElements extends Component {
   };
 
   refresh = () => {
+    const currentUserId = localStorage.getItem("logged-in")
     const newState = {};
     return apiManager
-      .user()
+      .user(currentUserId)
       .then(parsedUser => {
         newState.username = parsedUser.name;
         newState.maxCarry = parsedUser.maxCarry;
         newState.currentWeight = parsedUser.currentWeight;
       })
       .then(() =>
-        apiManager.userItems().then(parsedUserItems => {
+        apiManager.userItems(currentUserId).then(parsedUserItems => {
           newState.userItems = parsedUserItems;
         })
       )
       .then(() =>
-        apiManager.user().then(parsedFunds => {
+        apiManager.user(currentUserId).then(parsedFunds => {
           newState.funds = parsedFunds.funds;
         })
       )
@@ -129,7 +132,7 @@ class NavigationElements extends Component {
         })
       )
       .then(() =>
-        apiManager.playerLocations().then(parsedplayerLocation => {
+        apiManager.playerLocations(currentUserId).then(parsedplayerLocation => {
           newState.playerLocation = parsedplayerLocation.location.cityName;
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
@@ -150,21 +153,22 @@ class NavigationElements extends Component {
   };
 
   componentDidMount() {
+    const currentUserId = localStorage.getItem("logged-in")
     const newState = {};
     return apiManager
-      .user()
+      .user(currentUserId)
       .then(parsedUser => {
         newState.username = parsedUser.name;
         newState.maxCarry = parsedUser.maxCarry;
         newState.currentWeight = parsedUser.currentWeight;
       })
       .then(() =>
-        apiManager.userItems().then(parsedUserItems => {
+        apiManager.userItems(currentUserId).then(parsedUserItems => {
           newState.userItems = parsedUserItems;
         })
       )
       .then(() =>
-        apiManager.user().then(parsedFunds => {
+        apiManager.user(currentUserId).then(parsedFunds => {
           newState.funds = parsedFunds.funds;
         })
       )
@@ -174,7 +178,7 @@ class NavigationElements extends Component {
         })
       )
       .then(() =>
-        apiManager.playerLocations().then(parsedplayerLocation => {
+        apiManager.playerLocations(currentUserId).then(parsedplayerLocation => {
           newState.playerLocation = parsedplayerLocation.location.cityName;
           newState.playerLocationSize =
             parsedplayerLocation.location.citySizeId;
