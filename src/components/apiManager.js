@@ -1,23 +1,19 @@
-let currentUserId = localStorage.getItem("logged-in");
-if (currentUserId === null) {
-  currentUserId = 1;
-}
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
 const apiManager = {
-  user: () =>
+  user: (currentUserId) =>
     fetch(`${fetchURL}/users/${currentUserId}`).then(user => user.json()),
   groups: () =>
     fetch(`${fetchURL}/groups`).then(groups => groups.json()),
-  userItems: () =>
+  userItems: (currentUserId) =>
     fetch(`${fetchURL}/userItems?userId=${currentUserId}&_expand=item`).then(
       userItems => userItems.json()
     ),
   items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
   location: () =>
     fetch(`${fetchURL}/locations`).then(location => location.json()),
-  playerLocations: () =>
+  playerLocations: (currentUserId) =>
     fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`).then(
       user => user.json()
     ),
@@ -43,7 +39,7 @@ const apiManager = {
       body: JSON.stringify(editItem)
     });
   },
-  shopBuyOne: () =>
+  shopBuyOne: (currentUserId) =>
     fetch(`${fetchURL}/users/${currentUserId}`).then(user => user.json())
 };
 export default apiManager;
