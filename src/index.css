@@ -167,7 +167,7 @@ body {
   color: var(--color-orange);
 }
 
-#cardButtons{
+#cardButtons {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
@@ -214,12 +214,10 @@ body {
   zoom: 110%;
 }
 
-.font-maps-p{
-
+.font-maps-p {
 }
 
-.font-maps-h5{
-
+.font-maps-h5 {
 }
 
 /* lines to be used throughout app */
@@ -406,6 +404,36 @@ input {
   font-size: 1.5rem;
 }
 
+.logout-btn2 {
+  text-align: center;
+  height: 40px;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #4797606b;
+  min-width: 60vw;
+  max-width: 60vw;
+  border-radius: 10px;
+  border-right: 2px solid #1a4b2998;
+  border-bottom: 2px solid #1a4b2998;
+  border-left: 2px solid #47976098;
+  border-top: 2px solid #47976098;
+}
+
+.createCharacterBtn {
+  text-align: center;
+  height: 40px;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #4797606b;
+  min-width: 60vw;
+  max-width: 60vw;
+  border-radius: 10px;
+  border-right: 2px solid #1a4b2998;
+  border-bottom: 2px solid #1a4b2998;
+  border-left: 2px solid #47976098;
+  border-top: 2px solid #47976098;
+}
+
 .space-background {
   background-image: url("https://i.pinimg.com/originals/05/53/f2/0553f20e27fe47a8027e5f12c2b93002.jpg");
   background-repeat: no-repeat;
@@ -521,6 +549,170 @@ input {
   margin-bottom: 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+#usernameCreate {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+/* Customize the label (the container) */
+/* .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* Hide the browser's default checkbox */
+/* .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+/* Create a custom checkbox */
+/* .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+} */
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+/* Show the checkmark when checked */
+/* .container input:checked ~ .checkmark:after {
+  display: block;
+} */
+
+/* Style the checkmark/indicator */
+/* .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+#passwordCreate {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#usernameLogin {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+.loginForm {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #47976070;
+}
+
+#passwordLogin {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#funds {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#maxCarry {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
 }
 
 #name {
@@ -643,6 +835,24 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
+.registerTitle{
+  padding-top: 20px;
+}
+
+#groupSelector {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
 #locationCode {
   text-align: center;
   color: white;
@@ -670,6 +880,26 @@ input {
   border-bottom: 2px solid #1a4b2998;
   border-left: 2px solid #47976098;
   border-top: 2px solid #47976098;
+}
+
+.signIn {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #479760d3;
+  min-width: 60vw;
+  max-width: 60vw;
+  border-radius: 10px;
+  border-right: 2px solid #1a4b2998;
+  border-bottom: 2px solid #1a4b2998;
+  border-left: 2px solid #47976098;
+  border-top: 2px solid #47976098;
+  margin-top: 50px;
+}
+
+.signIn:hover {
+  background-color: #1a4b2998;
+  color: white;
 }
 
 #changeLocationButton:hover {

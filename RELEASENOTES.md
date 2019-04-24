@@ -15,3 +15,12 @@
 
 <h5>v.1.0.2.2_alpha</h5>
 <p>*.*.*.2 - Added RELEASENOTES.md to keep track of versions after the official deployment of the app.</p>
+
+<h4>v.1.0.3.0_alpha</h4>
+<p>*.*.3 - Changed "please-login, login, register, and logout" page styling.</p>
+
+<h5>v.1.0.3.1_alpha</h5>
+<p>*.*.*.1 - Added _redirects file for single page app deployment.</p>
+
+<h5>v.1.0.3.2_alpha</h5>
+<p>*.*.*.2 - Fixed Database.</p>

@@ -3,23 +3,23 @@ if (currentUserId === null) {
   currentUserId = 1;
 }
 
-const fetchURL = "https://dnd-web-tool.herokuapp.com"
+const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
 const apiManager = {
   user: () =>
-    fetch(`${fetchURL}/users/${currentUserId}`).then(user =>
-      user.json()
-    ),
+    fetch(`${fetchURL}/users/${currentUserId}`).then(user => user.json()),
+  groups: () =>
+    fetch(`${fetchURL}/groups`).then(groups => groups.json()),
   userItems: () =>
-    fetch(
-      `${fetchURL}/userItems?userId=${currentUserId}&_expand=item`
-    ).then(userItems => userItems.json()),
+    fetch(`${fetchURL}/userItems?userId=${currentUserId}&_expand=item`).then(
+      userItems => userItems.json()
+    ),
   items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
   location: () =>
     fetch(`${fetchURL}/locations`).then(location => location.json()),
   playerLocations: () =>
-    fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`).then(user =>
-      user.json()
+    fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`).then(
+      user => user.json()
     ),
   login: () => fetch(`${fetchURL}/users`).then(login => login.json()),
   register: createUser => {
@@ -36,14 +36,14 @@ const apiManager = {
       body: JSON.stringify(createItem)
     });
   },
-  itemEdit: (editItem,id) => {
+  itemEdit: (editItem, id) => {
     return fetch(`${fetchURL}/items/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(editItem)
     });
   },
-  shopBuyOne: () => fetch(`${fetchURL}/users/${currentUserId}`)
-    .then(user => user.json())
+  shopBuyOne: () =>
+    fetch(`${fetchURL}/users/${currentUserId}`).then(user => user.json())
 };
 export default apiManager;

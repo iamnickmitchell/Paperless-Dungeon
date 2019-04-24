@@ -36,7 +36,8 @@ class NavigationElements extends Component {
     playerLocationSize: [],
     playerLocationMap: "",
     maxCarry: "",
-    currentWeight: ""
+    currentWeight: "",
+    groups: []
   };
 
   shopBuySellRefresh = () => {
@@ -73,6 +74,16 @@ class NavigationElements extends Component {
       .then(items => items.json())
       .then(items => {
         newState.items = items;
+      })
+      .then(() => this.setState(newState));
+  };
+
+  groupsRefresh = () => {
+    const newState = {};
+    return fetch(`${fetchURL}/groups`)
+      .then(groups => groups.json())
+      .then(groups => {
+        newState.groups = groups;
       })
       .then(() => this.setState(newState));
   };
@@ -129,6 +140,12 @@ class NavigationElements extends Component {
           newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
         })
       )
+      .then(()=>
+      apiManager.groups()
+      .then(groups => {
+        newState.groups = groups
+        })
+      )
       .then(() => this.setState(newState));
   };
 
@@ -166,6 +183,12 @@ class NavigationElements extends Component {
           newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
           newState.playerLocationRuler = parsedplayerLocation.location.ruler;
           newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
+        })
+      )
+      .then(()=>
+      apiManager.groups()
+      .then(groups => {
+        newState.groups = groups
         })
       )
       .then(() => this.setState(newState));
@@ -501,7 +524,7 @@ class NavigationElements extends Component {
         <Route
           path="/register"
           render={props => {
-            return <Register {...props} />;
+            return <Register {...props} groups={this.state.groups} refresh={this.refresh} />;
           }}
         />
         <Route

@@ -10,6 +10,8 @@ class Register extends Component {
     funds: 0,
     dm: false,
     groupId: 1,
+    maxCarry: "",
+    currentWeight: "",
     error: "",
     success: "",
     loginButton: ``
@@ -59,7 +61,9 @@ class Register extends Component {
       dm: this.state.dm,
       password: this.state.passwordCreate,
       funds: this.state.funds,
-      groupId: this.state.groupId
+      groupId: this.state.groupId,
+      maxCarry: this.state.maxCarry,
+      currentWeight: 0
     };
     if (this.state.success !== null) {
       apiManager.register(createUser);
@@ -68,49 +72,76 @@ class Register extends Component {
 
   render() {
     return (
-      <form className="mainPage" onSubmit={this.handleLogin}>
-        <h1 className="h3 mb-3 font-weight-normal">Create a Character</h1>
+      <form className="playerPage" onSubmit={this.handleLogin}>
+        <h1 className="h3 mb-3 font-weight-normal registerTitle">Create a Character</h1>
         <p>
-          <label htmlFor="inputUsername">Character Name: </label>
+          <label htmlFor="inputUsername" hidden={true}>
+            Character Name:{" "}
+          </label>
           <input
             onChange={this.handleFieldChange}
             type="text"
             id="usernameCreate"
-            placeholder="Username"
+            placeholder="Character Name"
             required=""
             autoFocus=""
+            autoComplete=""
           />
         </p>
         <p>
-          <label htmlFor="inputPassword">Password: </label>
+          <label htmlFor="inputPassword" hidden={true}>
+            Password:{" "}
+          </label>
           <input
             onChange={this.handleFieldChange}
             type="password"
             id="passwordCreate"
             placeholder="Password"
             required=""
+            autoComplete=""
           />
         </p>
         <p>
-        <label>Starting Funds:</label>
-        <input
-          onChange={this.handleFieldChange}
-          type="number"
-          id="funds"
-          placeholder="funds"
-          required=""
-        />
+          <label />
+          <select id="groupSelector" onChange={this.handleFieldChange}>
+            <option defaultValue="0">--> Select Group Name:</option>
+              {this.props.groups.map(group => (
+                <option value={group.id}>{group.name}</option>
+              ))}
+          </select>
         </p>
         <p>
-        <label>DM:</label>
+          <label hidden={true}>Starting Funds:</label>
+          <input
+            onChange={this.handleFieldChange}
+            type="number"
+            id="funds"
+            placeholder="Starting Funds"
+            required=""
+          />
+        </p>
+        <p>
+          <label hidden={true}>Maximum Carry Capacity:</label>
+          <input
+            onChange={this.handleFieldChange}
+            type="number"
+            id="maxCarry"
+            placeholder="Maximum Carry Capacity"
+            required=""
+          />
+        </p>
+        <p>
+          <label className="container">DM:
           <input
             name="dm"
+            className="DM-Btn"
             type="checkbox"
             checked={this.state.dm}
             onChange={this.toggleChange}
           />
-          </p>
-        <button type="submit">Create New Character</button>
+          <span className="checkmark"></span></label>
+        </p>
+        <button type="submit" className="createCharacterBtn">Create New Character</button>
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.loginButton}</h4>
