@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class PleaseLogin extends Component {
   render() {
     return (
-      <div className="mainPage">
+      <div className="playerPage">
         <h2>You aren't logged in!</h2>
         <p className="lead">
           Please log-in to an existing character account or create a new one.

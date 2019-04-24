@@ -10,10 +10,10 @@ class Logout extends Component {
 
   render() {
     return (
-      <form className="mainPage" onSubmit={this.handleLogout} >
+      <form className="playerPage" onSubmit={this.handleLogout} >
       <h1 className="h3 mb-3 font-weight-normal">Are you sure you want to logout?</h1>
-      <p className="logout-btn-page">
-      <button type="submit" className="logout-btn">Logout</button>
+      <p className="logout-btn-page2">
+      <button type="submit" className="logout-btn2">Logout</button>
     </p>
     </form>
     );

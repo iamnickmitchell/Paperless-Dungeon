@@ -21,7 +21,6 @@ class Login extends Component {
     e.preventDefault();
 
     apiManager.login().then(login => {
-
       for (let i = 0; i < login.length; i++) {
         if (
           login[i].name === this.state.usernameLogin &&
@@ -38,37 +37,45 @@ class Login extends Component {
           this.setState({ error });
         }
       }
-    });
+    })
   };
 
   render() {
     return (
-        <form className="mainPage" onSubmit={this.handleLogin}>
+      <div className="playerPage">
+        <form className="loginForm" onSubmit={this.handleLogin}>
           <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
           <p>
-          <label htmlFor="inputUsername">Username</label>
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="usernameLogin"
-            placeholder="Username"
-            required=""
-            autoFocus=""
-          />
+            <label htmlFor="inputUsername" hidden={true}>
+              Username
+            </label>
+            <input
+              onChange={this.handleFieldChange}
+              type="text"
+              id="usernameLogin"
+              placeholder="Username"
+              required=""
+              autoFocus=""
+            />
           </p>
           <p>
-          <label htmlFor="inputPassword">Password</label>
-          <input
-            onChange={this.handleFieldChange}
-            type="password"
-            id="passwordLogin"
-            placeholder="Password"
-            required=""
-          />
+            <label htmlFor="inputPassword" hidden={true}>
+              Password
+            </label>
+            <input
+              onChange={this.handleFieldChange}
+              type="password"
+              id="passwordLogin"
+              placeholder="Password"
+              required=""
+            />
           </p>
-          <button type="submit">Sign in</button>
+          <button type="submit" className="signIn">
+            Sign in
+          </button>
           <h4>{this.state.error}</h4>
         </form>
+      </div>
     );
   }
 }
