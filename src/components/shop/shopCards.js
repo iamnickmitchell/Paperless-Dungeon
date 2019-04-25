@@ -9,8 +9,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import shopBuy from "./shopBuy";
-import {Link} from "react-router-dom"
-import shopDelete from "./shopDelete"
+import { Link } from "react-router-dom";
+import shopDelete from "./shopDelete";
 
 const styles = {
   card: {
@@ -22,10 +22,10 @@ const styles = {
   }
 };
 
-function ShopWeapons(props) {
+function ShopCards(props) {
   const { classes } = props;
   if (
-    Number(props.items.itemTypeId) === 1 &&
+    Number(props.items.itemTypeId) === props.shopId &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) !== Number(localStorage.getItem("logged-in")) &&
     props.items.legal === true
@@ -47,12 +47,12 @@ function ShopWeapons(props) {
               {props.items.name}
             </Typography>
             <Typography component="div">
-              <p className="shopPtag">{props.items.statOne}</p>
-              <p className="shopPtag">{props.items.statTwo}</p>
+              <p className="shopPtagOne">{props.items.statOne}</p>
+              <p className="shopPtagTwo">{props.items.statTwo}</p>
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions id="cardButtons">
           <Button
             size="small"
             id="shopBuyButton"
@@ -61,7 +61,9 @@ function ShopWeapons(props) {
                 props.items.id,
                 props.items.value,
                 props.playerLocation,
-                props.shopBuySellRefresh
+                props.items.weight,
+                props.shopBuySellRefresh,
+                props.carryRefresh
               );
             }}
           >
@@ -70,8 +72,8 @@ function ShopWeapons(props) {
         </CardActions>
       </Card>
     );
-  }else if (
-    Number(props.items.itemTypeId) === 1 &&
+  } else if (
+    Number(props.items.itemTypeId) === props.shopId &&
     Number(props.items.itemRarityId) <= Number(props.playerLocationSize) &&
     Number(props.items.userId) === Number(localStorage.getItem("logged-in")) &&
     props.items.legal === true
@@ -85,7 +87,6 @@ function ShopWeapons(props) {
         >
           <CardMedia
             className={classes.media}
-            id="itemImage"
             image={props.items.image}
             title={props.items.description}
           />
@@ -94,12 +95,12 @@ function ShopWeapons(props) {
               {props.items.name}
             </Typography>
             <Typography component="div">
-              <p className="shopPtag">{props.items.statOne}</p>
-              <p className="shopPtag">{props.items.statTwo}</p>
+              <p className="shopPtagOne">{props.items.statOne}</p>
+              <p className="shopPtagTwo">{props.items.statTwo}</p>
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions id="cardButtons">
           <Button
             size="small"
             id="shopBuyButton"
@@ -108,7 +109,9 @@ function ShopWeapons(props) {
                 props.items.id,
                 props.items.value,
                 props.playerLocation,
-                props.shopBuySellRefresh
+                props.items.weight,
+                props.shopBuySellRefresh,
+                props.carryRefresh
               );
             }}
           >
@@ -139,7 +142,8 @@ function ShopWeapons(props) {
                   itemTypeId: props.items.itemTypeId,
                   value: props.items.value,
                   legal: props.items.legal,
-                  id: props.items.id
+                  id: props.items.id,
+                  weight: props.items.weight
                 }
               }}
             />
@@ -152,8 +156,8 @@ function ShopWeapons(props) {
   }
 }
 
-ShopWeapons.propTypes = {
+ShopCards.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(ShopWeapons);
+export default withStyles(styles)(ShopCards);
