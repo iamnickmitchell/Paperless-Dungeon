@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import ShopFood from "./shopFood";
+import ShopCards from "./shopCards";
 import shopBuy from "./shopBuy";
 
 class ShopRestaurant extends Component {
@@ -149,7 +149,7 @@ class ShopRestaurant extends Component {
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
-              <ShopFood
+              <ShopCards
                 shopBuySellRefresh={this.props.shopBuySellRefresh}
                 itemShopBuy={this.itemShopBuy}
                 key={items.id}
@@ -157,6 +157,7 @@ class ShopRestaurant extends Component {
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
                 itemsRefresh={this.props.itemsRefresh}
+                shopId={3}
               />
             ))}
           </div>

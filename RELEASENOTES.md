@@ -1,6 +1,9 @@
 <h5>Last update: 04/24/19</h5>
 <h1>Release Notes</h1>
 
+<h5>v.1.0.3.6_alpha</h5>
+<p>*.*.*.6 - Moved shop cards to a reusable function. Removed 11 outdated js files.</p>
+
 <h5>v.1.0.3.5_alpha</h5>
 <p>*.*.*.5 - Fixed bug with weights while using non DM accounts.</p>
 
