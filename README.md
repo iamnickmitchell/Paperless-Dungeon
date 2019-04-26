@@ -1,7 +1,7 @@
 A website designed to create an easy to use economy, map, and shop system for DnD table top games.
 
 <h1>Paperless Dungeon</h1>
-<p>version 1.0.3.8_alpha Release (current release)</p>
+<p>version 1.0.3.9_alpha Release (current release)[See RELEASENOTES.md for details]</p>
 <p>version 1.1.0.0_alpha Release (current snapshot)</p>
 
 
@@ -69,27 +69,27 @@ Styling Libraries:
 ----------------
 * fontawesome - icon fonts
 * bootstrap - style presets
-* google fonts - text fonts
-* materializeui - card presets
+* google fonts - text font styles
+* material-ui - card presets
 
 Other:
 ----------------
 * Microsoft Visual Code - coding terminal
-* GitBash/ GitHub - terminal
+* GitBash/ GitHub - terminal/ online backup and management
 * Heroku - API storage
 * Netlify - APP storage
 
-# ERD: !Note: ERD is currently out of date, updates are coming soon.
+# ERD:
 ![Error: Image not found!](public/Images/README_images/ERD.png)
 
 # Authors:
-<h3>Nick Mitchell - lead designer, lead coder<h3>
+<h3>Nick Mitchell - project lead<h3>
 
 # Licensing:
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 # Acknowledgments:
-* NewForce - for teaching me how to code (I think this is a pretty important part)
+* NewForce - for showing me how to code well (I think this is a pretty important part)
 * Friends - for giving me a reason to make this
 * Family - for supporting me with feedback as features are added
 * My Wonderful Fiance Megan - for being the one to carry the burden of listening to me rambling about code, cheering me up when I'm frustrated with code not working, and keeping me on track to reach my lofty goals and deadlines.

@@ -31,8 +31,8 @@ class Maps extends Component {
               className="zoom"
             />
           </div>
-          <h2 className="grey-background-player">
-            {this.props.playerLocation}
+          <h2 className="grey-background-player map-arrow-div">
+            <p>{this.props.playerLocation}</p><p><i className="fas fa-sort-up map-scroll-arrow"></i></p>
           </h2>
           <p className="tan-background color-black font-maps-p">
             Environment: {this.props.playerLocationBiome}

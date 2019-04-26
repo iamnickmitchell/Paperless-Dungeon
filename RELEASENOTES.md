@@ -1,5 +1,8 @@
-<h5>Last update: 04/24/19</h5>
+<h5>Last update: 04/25/19</h5>
 <h1>Release Notes</h1>
+
+<h5>v.1.0.3.9_alpha</h5>
+<p>*.*.*.9 - Styling changes to maps page details. Added link to github in footer.</p>
 
 <h5>v.1.0.3.8_alpha</h5>
 <p>*.*.*.8 - Updated ERD Image.</p>
