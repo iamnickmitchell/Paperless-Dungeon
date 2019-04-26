@@ -160,7 +160,7 @@
       "statTwo": "Magic",
       "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/55/315/315/636283830597675547.jpeg",
       "userId": 1,
-      "weight": 0.5
+      "weight": 1
     },
     {
       "id": 4,
@@ -174,7 +174,7 @@
       "statTwo": "Magic",
       "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/102/1000/1000/636284695629121668.jpeg",
       "userId": 1,
-      "weight": 0.5
+      "weight": 1
     },
     {
       "id": 5,
@@ -258,7 +258,7 @@
       "statTwo": "150/600",
       "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/114/1000/1000/636284705050167886.jpeg",
       "userId": 1,
-      "weight": 0.25
+      "weight": 1
     },
     {
       "id": 11,
@@ -300,7 +300,7 @@
       "statTwo": "Magic",
       "image": "http://dungeon.su/gallery/items/10_1_1539678599.jpg",
       "userId": 1,
-      "weight": 0.01
+      "weight": 0
     },
     {
       "id": 14,
@@ -314,7 +314,7 @@
       "statTwo": "Magic",
       "image": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/126/315/315/636284710052387600.jpeg",
       "userId": 1,
-      "weight": 0.5
+      "weight": 1
     },
     {
       "id": 15,

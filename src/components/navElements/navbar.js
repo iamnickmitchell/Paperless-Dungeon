@@ -23,7 +23,7 @@ class NavBar extends Component {
                         <Link className="fas fa-store size2half color-white iconFooter" style={{textDecoration: 'none'}} to="/shop"></Link>
                     </p>
             </footer>
-            <p className="footerLogo logo"> Paperless Dungeon v.1.0.3.6_alpha  &#169;2019</p>
+            <p className="footerLogo logo"> Paperless Dungeon <a href="https://github.com/iamnickmitchell/Paperless-Dungeon" target="_blank" rel="noopener noreferrer">v.1.0.3.9_alpha</a>  &#169;2019</p>
             </div>
         )
     }
