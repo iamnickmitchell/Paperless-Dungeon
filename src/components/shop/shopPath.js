@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ShopCards from "./shopCards";
 import shopBuy from "./shopBuy";
 
-class ShopFarm2 extends Component {
+class ShopPath extends Component {
   state = {
     playerLocation: this.props.playerLocation,
     playerLocationSize: this.props.playerLocationSize,
@@ -62,7 +62,7 @@ class ShopFarm2 extends Component {
         <div className="jumbotron shopDiv">
           <h3 className="color-black orange-background">
             {" "}
-            {this.props.playerLocation} Farm
+            {this.props.playerLocation} {this.props.match.params.shopName}
           </h3>
           <p className="lead color-orange grey-background">
             Current Funds = {this.props.funds} gold
@@ -81,71 +81,71 @@ class ShopFarm2 extends Component {
               className="fas fa-hammer size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Blacksmith"
-              to="/Shop-blacksmith"
+              to="/Shop/1/Blacksmith"
             />
             <Link
               className="fas fa-store-alt size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Shop"
-              to="/Shop-shop"
+              to="/Shop/2/Shop"
             />
             <Link
               className="fas fa-drumstick-bite size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Restaurant"
-              to="/Shop-restaurant"
+              to="/Shop/3/Restaurant"
             />
             <Link
               className="fas fa-hat-wizard size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Clothing"
-              to="/Shop-clothing"
+              to="/Shop/4/Clothing"
             />
             <Link
               className="fas fa-horse size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Transportation"
-              to="/Shop-transportation"
+              to="/Shop/5/Transportation"
             />
             <Link
               className="fas fa-building size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Bank"
-              to="/Shop-bank"
+              to="/Shop/6/Bank"
             />
             <Link
               className="fas fa-beer size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Tavern"
-              to="/Shop-tavern"
+              to="/Shop/7/Tavern"
             />
             <Link
               className="fas fa-briefcase-medical size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Hospital"
-              to="/Shop-hospital"
+              to="/Shop/8/Hospital"
             />
             <Link
               className="fas fa-book-open size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Library"
-              to="/Shop-library"
+              to="/Shop/9/Library"
             />
             <Link
               className="fas fa-dog size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Farm"
-              to="/Shop-farm"
+              to="/Shop/10/Farm"
             />
             <Link
               className="fas fa-shield-alt size2half color-white iconFooter"
               style={{ textDecoration: "none" }}
               title="Armorer"
-              to="/Shop-armorer"
+              to="/Shop/11/Armorer"
             />
           </p>
           <hr className="my-4" />
-          <h4 className="color-white blue-background">{this.props.farmNames}</h4>
+          <h4 className="color-white blue-background">{this.props.bankNames}</h4>
           <p className="thin-line" />
           <div className="items">
             {this.props.items.map(items => (
@@ -157,7 +157,8 @@ class ShopFarm2 extends Component {
                 playerLocation={this.props.playerLocation}
                 playerLocationSize={this.props.playerLocationSize}
                 itemsRefresh={this.props.itemsRefresh}
-                shopId={10}
+                carryRefresh={this.props.carryRefresh}
+                shopId={Number(this.props.match.params.shopId)}
               />
             ))}
           </div>
@@ -167,4 +168,4 @@ class ShopFarm2 extends Component {
   }
 }
 
-export default ShopFarm2;
+export default ShopPath;
