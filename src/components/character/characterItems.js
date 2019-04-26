@@ -40,12 +40,12 @@ function CharacterItems(props) {
               {props.item.item.name}
             </Typography>
             <Typography component="div">
-              <p className="shopPtag">{props.item.item.statOne}</p>
-              <p className="shopPtag">{props.item.item.statTwo}</p>
+              <p className="shopPtagOne">{props.item.item.statOne}</p>
+              <p className="shopPtagTwo">{props.item.item.statTwo}</p>
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions id="cardButtons">
           <Button
             size="small"
             id="shopBuyButton"

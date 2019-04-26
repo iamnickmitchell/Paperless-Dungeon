@@ -1,8 +1,13 @@
-<h5>Last update: 04/25/19</h5>
+<h5>Last update: 04/26/19</h5>
 <h1>Release Notes</h1>
 
-<h5>v.1.0.3.9_alpha</h5>
-<p>*.*.*.9 - Styling changes to maps page details. Added link to github in footer.</p>
+All future changes can be found at https://gist.github.com/iamnickmitchell/9a7182422e510ca68ce431e09bfa27cf
+
+<h5>v.1.0.4.1_alpha</h5>
+<p>*.*.*.1 - Moved RELEASENOTES.md to gist.</p>
+
+<h3>v.1.0.4.0_alpha</h3>
+<p>*.*.4 - Styling changes to maps page details. Added link to github in footer.</p>
 
 <h5>v.1.0.3.8_alpha</h5>
 <p>*.*.*.8 - Updated ERD Image.</p>
