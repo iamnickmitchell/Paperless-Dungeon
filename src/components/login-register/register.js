@@ -12,8 +12,9 @@ class Register extends Component {
     groupId: 1,
     maxCarry: "",
     currentWeight: "",
-    error: "",
-    success: "",
+    error: null,
+    success: null,
+    tryAgain: null,
     loginButton: ``
   };
 
@@ -39,7 +40,7 @@ class Register extends Component {
         if (login[i].name === this.state.usernameCreate) {
           const error = "This character already exists! Try a different name.";
           this.setState({ error });
-        } else {
+        } else if(login[i].name !== this.state.usernameCreate && this.state.error === null){
           const success =
             "Congratulations, a new account has been made! You can now log in.";
           this.setState({ success });
@@ -53,9 +54,14 @@ class Register extends Component {
             </p>
           );
           this.setState({ loginButton });
+        } else {
+          const tryAgain =
+            "Try again!";
+          this.setState({ tryAgain });
+          this.setState({ error: null });
         }
       }
-    });
+    }).then(()=>{
     const createUser = {
       name: this.state.usernameCreate,
       dm: this.state.dm,
@@ -65,9 +71,9 @@ class Register extends Component {
       maxCarry: this.state.maxCarry,
       currentWeight: 0
     };
-    if (this.state.success !== null) {
+    if (this.state.success !== null && this.state.error === null) {
       apiManager.register(createUser);
-    }
+    }})
   };
 
   render() {
@@ -103,7 +109,7 @@ class Register extends Component {
         </p>
         <p>
           <label />
-          <select id="groupSelector" onChange={this.handleFieldChange}>
+          <select id="groupId" onChange={this.handleFieldChange}>
             <option defaultValue="0">--> Select Group Name:</option>
               {this.props.groups.map(group => (
                 <option value={group.id}>{group.name}</option>
@@ -145,6 +151,7 @@ class Register extends Component {
         <h4>{this.state.error}</h4>
         <h4>{this.state.success}</h4>
         <h4>{this.state.loginButton}</h4>
+        <h4>{this.state.tryAgain}</h4>
       </form>
     );
   }

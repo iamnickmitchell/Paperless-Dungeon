@@ -13,6 +13,7 @@ import Register from "../login-register/register";
 import PleaseLogin from "../login-register/please-login";
 import apiManager from "../apiManager";
 import ShopPath from "../shop/shopPath"
+import RewardCreate from "../shop/shopRewards"
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
@@ -326,7 +327,7 @@ class NavigationElements extends Component {
         <Route
           path="/reward-create"
           render={props => {
-            return <ItemCreate {...props} itemsRefresh={this.itemsRefresh} />;
+            return <RewardCreate {...props} itemsRefresh={this.itemsRefresh} />;
           }}
         />
         <Route
