@@ -1,27 +1,17 @@
 import React, { Component } from "react";
 import apiManager from "../apiManager";
-import { isNullOrUndefined } from "util";
 
-class ItemCreate extends Component {
+class RewardCreate extends Component {
   state = {
-    name: "",
-    statOne: "",
-    statTwo: "",
-    description: "https://www.dndbeyond.com/",
-    image: "https://i1.wp.com/thefrontline.org.uk/wp-content/uploads/2018/10/placeholder.jpg?fit=1600%2C900&ssl=1",
-    itemTypeId: 1,
-    itemRarityId: 1,
-    value: 0,
-    legal: true,
+    itemName: "",
+    itemId: 0,
+    recipientsName: "",
+    recipientsId: 0,
+    rewardId: 0,
+    rewardType: "gold",
     error: "",
-    success: "",
-    shop: ``
-  };
-
-  toggleChange = () => {
-    this.setState({
-      legal: !this.state.legal
-    });
+    success: null,
+    print: ``
   };
 
   handleFieldChange = evt => {
@@ -30,8 +20,76 @@ class ItemCreate extends Component {
     this.setState(stateToChange);
   };
 
+  handleClick = e => {
+    e.preventDefault();
+    const gold = (
+      <p>
+        <label />
+        <select id="itemId" onChange={this.handleFieldChange}>
+          <option defaultValue="309">--> Select Reward Amount:</option>
+          <option value="309">1 Gold</option>
+          <option value="310">5 Gold</option>
+          <option value="311">100 Gold</option>
+          <option value="312">500 Gold</option>
+          <option value="313">1000 Gold</option>
+          <option value="314">2000 Gold</option>
+          <option value="315">5000 Gold</option>
+          <option value="316">10000 Gold</option>
+        </select>
+      </p>
+    );
+    const item = (
+      <p>
+        <label htmlFor="inputPassword" />
+        <input
+          onChange={this.handleFieldChange}
+          type="text"
+          id="itemName"
+          placeholder="Item's Name"
+          required=""
+          autoComplete="off"
+        />
+      </p>
+    );
+    const both = (
+      <div>
+        <p>
+          <label />
+          <select id="itemId" onChange={this.handleFieldChange}>
+            <option defaultValue="309">--> Select Reward Amount:</option>
+            <option value="309">1 Gold</option>
+            <option value="310">5 Gold</option>
+            <option value="311">100 Gold</option>
+            <option value="312">500 Gold</option>
+            <option value="313">1000 Gold</option>
+            <option value="314">2000 Gold</option>
+            <option value="315">5000 Gold</option>
+            <option value="316">10000 Gold</option>
+          </select>
+        </p>
+        <p>
+          <label htmlFor="inputPassword" />
+          <input
+            onChange={this.handleFieldChange}
+            type="text"
+            id="itemName"
+            placeholder="Item's Name"
+            required=""
+            autoComplete="off"
+          />
+        </p>
+      </div>
+    );
+    if (this.state.rewardType === "gold") {
+      this.setState({ print: gold });
+    } else if (this.state.rewardType === "item") {
+      this.setState({ print: item });
+    } else if (this.state.rewardType === "both") {
+      this.setState({ print: both });
+    }
+  };
 
-  handleLogin = e => {
+  handleSubmit = e => {
     e.preventDefault();
 
     const fetchURL = "https://dnd-web-tool.herokuapp.com";
@@ -39,152 +97,94 @@ class ItemCreate extends Component {
       .then(item => item.json())
       .then(item => {
         for (let i = 0; i < item.length; i++) {
-          if (item[i].name === this.state.name) {
-            const error =
-              "This item already exists! Try naming it something else.";
-            this.setState({ error });
-          } else if(item[i].name === this.state.name){
-            const success =
-              "Congratulations, a new item has been made! You can view it in the shop.";
-            this.setState({ success });
+          if (item[i].name === this.state.itemName) {
+            this.setState({ itemId: item[i].id });
+            console.log(item[i].id);
+            // this.setState({ success: "Item Sent" });
+          } else {
           }
         }
+      }).then(()=>
+      fetch(`${fetchURL}/users`)
+      .then(users => users.json())
+      .then(user => {
+        for (let i = 0; i < user.length; i++) {
+          if (user[i].name === this.state.recipientsName) {
+            this.setState({ recipientsId: user[i].id });
+            console.log(user[i].id);
+            this.setState({ success: "Item Sent" });
+          } else {}
+        }
       })
-    const createItem = {
-      name: this.state.name,
-      statOne: this.state.statOne,
-      statTwo: this.state.statTwo,
-      description: this.state.description,
-      image: this.state.image,
-      itemTypeId: this.state.itemTypeId,
-      itemRarityId: this.state.itemRarityId,
-      value: this.state.value,
-      legal: this.state.legal,
-      userId: localStorage.getItem("logged-in")
-    };
-    if (this.state.success !== isNullOrUndefined) {
-      apiManager.itemCreate(createItem)
-      .then(()=>this.props.itemsRefresh())
-      .then(()=>this.props.history.push("/shop"))
-    }
+      )
+      .then(() => {
+        var d = new Date(),
+          currentTime =
+            [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
+            " " +
+            [d.getHours(), d.getMinutes(), d.getSeconds()].join(":");
+        const giveItem = {
+          userId: this.state.recipientsId,
+          itemId: this.state.itemId,
+          boughtTime: currentTime,
+          bought: `Reward from userId:${localStorage.getItem(
+            "logged-in"
+          )}`,
+          soldTime: null,
+          sold: null
+        };
+        if (this.state.success !== null) {
+          console.log(giveItem);
+          apiManager
+            .rewardItemCreate(giveItem)
+            .then(() => this.props.itemsRefresh())
+            .then(() => this.props.history.push("/shop"));
+        }
+      });
   };
 
   render() {
     return (
       <div className="space-background createPage">
-      <form className="createItems" onSubmit={this.handleLogin}>
-        <h1 className="h3 mb-3 font-weight-normal color-white">Create an Item</h1>
-        <p>
-          <label htmlFor="inputUsername"></label>
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="name"
-            placeholder="Item Name"
-            required=""
-            autoFocus=""
-            autoComplete="off"
-          />
-        </p>
-        <p>
-          <label htmlFor="inputPassword"></label>
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="statOne"
-            placeholder="Item's first stat"
-            required=""
-            autoComplete="off"
-          />
-        </p>
-        <p>
-          <label htmlFor="inputPassword"></label>
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="statTwo"
-            placeholder="Item's second stat"
-            required=""
-            autoComplete="off"
-          />
-        </p>
-        <p>
-          <label htmlFor="inputPassword"></label>
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="description"
-            placeholder="Description: Insert URL to external web page or leave blank."
-            required=""
-            autoComplete="off"
-          />
-        </p>
-        <p>
-          <label htmlFor="inputPassword"></label>
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="image"
-            placeholder="Image: Insert URL to image or leave blank."
-            required=""
-            autoComplete="off"
-          />
-        </p>
-        <p>
-          <label></label>
-          <input
-            onChange={this.handleFieldChange}
-            type="number"
-            id="value"
-            placeholder="Item Cost"
-            required=""
-            autoComplete="off"
-          />
-        </p>
-        <p>
-        <label></label>
-          <select id="itemRarityId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">--> Select Item Rarity:</option>
-            <option value="1">Common</option>
-            <option value="2">Uncommon</option>
-            <option value="3">Rare</option>
-            <option value="4">Very-Rare</option>
-            <option value="5">Legendary</option>
-          </select>
-        </p>
-        <p>
-        <label></label>
-          <select id="itemTypeId" onChange={this.handleFieldChange}>
-            <option defaultValue="1">--> Select Item Type:</option>
-            <option value="1">Weapon</option>
-            <option value="2">Tool</option>
-            <option value="3">Food</option>
-            <option value="4">Clothing</option>
-            <option value="5">Transportation</option>
-            <option value="6">Property</option>
-            <option value="7">Hirelings</option>
-            <option value="8">Medicine</option>
-            <option value="9">Scrolls, Tomes, and Books</option>
-            <option value="10">Animals</option>
-            <option value="11">Armor</option>
-          </select>
-        </p>
-        <p>
-          <label>Legal:</label>
-          <input
-            name="legal"
-            type="checkbox"
-            checked={this.state.legal}
-            onChange={this.toggleChange}
-          />
-        </p>
-        <button className="submit" type="submit">Create Item</button>
-        <h4>{this.state.error}</h4>
-        <h4>{this.state.success}</h4>
-        <h4>{this.state.shop}</h4>
-      </form></div>
+        <form className="createItems" onSubmit={this.handleSubmit}>
+          <h1 className="h3 mb-3 font-weight-normal color-white">
+            Send Reward
+          </h1>
+          <p>
+            <label htmlFor="inputItemName" />
+            <input
+              onChange={this.handleFieldChange}
+              type="text"
+              id="recipientsName"
+              placeholder="Recipient's Name"
+              required=""
+              autoFocus=""
+              autoComplete="off"
+            />
+          </p>
+          <p>
+            <label />
+            <select id="rewardType" onChange={this.handleFieldChange}>
+              <option defaultValue="gold">--> Select Reward Type:</option>
+              <option value="gold">Gold</option>
+              <option value="item">Item</option>
+              <option value="both">Item and Gold</option>
+            </select>
+
+            <button className="rewardSubmit" onClick={this.handleClick}>
+              Change
+            </button>
+          </p>
+          {this.state.print}
+          <button className="submit" type="submit">
+            Create Item
+          </button>
+          <h4>{this.state.error}</h4>
+          <h4>{this.state.success}</h4>
+          <h4>{this.state.shop}</h4>
+        </form>
+      </div>
     );
   }
 }
-
-export default ItemCreate;
+export default RewardCreate;

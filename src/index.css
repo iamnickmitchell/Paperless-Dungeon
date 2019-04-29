@@ -214,12 +214,6 @@ body {
   zoom: 110%;
 }
 
-.font-maps-p {
-}
-
-.font-maps-h5 {
-}
-
 /* lines to be used throughout app */
 .line {
   margin-bottom: 1.5rem !important;
@@ -700,6 +694,21 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
+#itemId {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  min-width: 50vw;
+  max-width: 50vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
 #maxCarry {
   text-align: center;
   color: white;
@@ -820,6 +829,48 @@ input {
   border-top: 2px solid #1a4b2998;
 }
 
+#recipientsName {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  width: 60vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#itemName {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  width: 60vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#rewardValue {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  width: 60vw;
+  min-height: 4.5vh;
+  max-height: 4.5vh;
+  border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
 #itemRarityId {
   text-align: center;
   color: white;
@@ -839,7 +890,7 @@ input {
   padding-top: 20px;
 }
 
-#groupSelector {
+#groupId {
   text-align: center;
   color: white;
   background-color: #4797606b;
@@ -922,6 +973,19 @@ option {
   text-align: center;
 }
 
+.rewardSubmit {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  background-color: #4797606b;
+  min-width: 20vw;
+  border-radius: 0px 10px 10px 0px;
+  border-right: 2px solid #1a4b2998;
+  border-bottom: 2px solid #1a4b2998;
+  border-left: 2px solid #47976098;
+  border-top: 2px solid #47976098;
+}
+
 .submit {
   text-align: center;
   color: white;
@@ -948,6 +1012,18 @@ button:hover {
   min-width: 20vw;
   max-width: 20vw;
   border-radius: 10px;
+  border-right: 2px solid #47976098;
+  border-bottom: 2px solid #47976098;
+  border-left: 2px solid #1a4b2998;
+  border-top: 2px solid #1a4b2998;
+}
+
+#rewardType {
+  text-align: center;
+  color: white;
+  background-color: #4797606b;
+  width: 40vw;
+  border-radius: 10px 0px 0px 10px;
   border-right: 2px solid #47976098;
   border-bottom: 2px solid #47976098;
   border-left: 2px solid #1a4b2998;
