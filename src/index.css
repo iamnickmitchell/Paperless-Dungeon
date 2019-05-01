@@ -890,6 +890,16 @@ input {
   padding-top: 20px;
 }
 
+.lightWeight{
+  color: white;
+}
+.heavyWeight{
+  color: rgb(255, 230, 0);
+}
+.maxWeight{
+  color: rgb(184, 1, 1);
+}
+
 #groupId {
   text-align: center;
   color: white;
