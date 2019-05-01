@@ -28,7 +28,8 @@ class NavigationElements extends Component {
     playerLocationMap: "",
     maxCarry: "",
     currentWeight: "",
-    groups: []
+    groups: [],
+
   };
 
   shopBuySellRefresh = () => {
