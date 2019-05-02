@@ -51,42 +51,11 @@ class RewardCreate extends Component {
         />
       </p>
     );
-    const both = (
-      <div>
-        <p>
-          <label />
-          <select id="itemId" onChange={this.handleFieldChange}>
-            <option defaultValue="309">--> Select Reward Amount:</option>
-            <option value="309">1 Gold</option>
-            <option value="310">5 Gold</option>
-            <option value="311">100 Gold</option>
-            <option value="312">500 Gold</option>
-            <option value="313">1000 Gold</option>
-            <option value="314">2000 Gold</option>
-            <option value="315">5000 Gold</option>
-            <option value="316">10000 Gold</option>
-          </select>
-        </p>
-        <p>
-          <label htmlFor="inputPassword" />
-          <input
-            onChange={this.handleFieldChange}
-            type="text"
-            id="itemName"
-            placeholder="Item's Name"
-            required=""
-            autoComplete="off"
-          />
-        </p>
-      </div>
-    );
     if (this.state.rewardType === "gold") {
       this.setState({ print: gold });
     } else if (this.state.rewardType === "item") {
       this.setState({ print: item });
-    } else if (this.state.rewardType === "both") {
-      this.setState({ print: both });
-    }
+    } else {}
   };
 
   handleSubmit = e => {
@@ -168,7 +137,6 @@ class RewardCreate extends Component {
               <option defaultValue="gold">--> Select Reward Type:</option>
               <option value="gold">Gold</option>
               <option value="item">Item</option>
-              <option value="both">Item and Gold</option>
             </select>
 
             <button className="rewardSubmit" onClick={this.handleClick}>

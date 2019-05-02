@@ -12,8 +12,8 @@ import Logout from "../login-register/logout";
 import Register from "../login-register/register";
 import PleaseLogin from "../login-register/please-login";
 import apiManager from "../apiManager";
-import ShopPath from "../shop/shopPath"
-import RewardCreate from "../shop/shopRewards"
+import ShopPath from "../shop/shopPath";
+import RewardCreate from "../shop/shopRewards";
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
@@ -29,10 +29,16 @@ class NavigationElements extends Component {
     maxCarry: "",
     currentWeight: "",
     groups: [],
-
+    loadingScreen: ``
   };
 
   shopBuySellRefresh = () => {
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
     const newState = {};
     const currentUserId = localStorage.getItem("logged-in");
     return fetch(`${fetchURL}/userItems?userId=${currentUserId}&_expand=item`)
@@ -47,42 +53,71 @@ class NavigationElements extends Component {
             newState.funds = parsedFunds.funds;
           })
       )
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   };
 
   carryRefresh = () => {
-    const currentUserId = localStorage.getItem("logged-in")
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
+    const currentUserId = localStorage.getItem("logged-in");
     const newState = {};
-    return apiManager.user(currentUserId)
+    return apiManager
+      .user(currentUserId)
       .then(user => {
         newState.maxCarry = user.maxCarry;
         newState.currentWeight = user.currentWeight;
       })
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   };
 
   itemsRefresh = () => {
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
     const newState = {};
     return fetch(`${fetchURL}/items`)
       .then(items => items.json())
       .then(items => {
         newState.items = items;
       })
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   };
 
   groupsRefresh = () => {
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
     const newState = {};
     return fetch(`${fetchURL}/groups`)
       .then(groups => groups.json())
       .then(groups => {
         newState.groups = groups;
       })
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   };
 
   locationRefresh = () => {
-    const currentUserId = localStorage.getItem("logged-in")
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
+    const currentUserId = localStorage.getItem("logged-in");
     const newState = {};
     apiManager
       .playerLocations(currentUserId)
@@ -95,11 +130,18 @@ class NavigationElements extends Component {
         newState.playerLocationRuler = parsedplayerLocation.location.ruler;
         newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
       })
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   };
 
   refresh = () => {
-    const currentUserId = localStorage.getItem("logged-in")
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
+    const currentUserId = localStorage.getItem("logged-in");
     const newState = {};
     return apiManager
       .user(currentUserId)
@@ -135,17 +177,23 @@ class NavigationElements extends Component {
           newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
         })
       )
-      .then(()=>
-      apiManager.groups()
-      .then(groups => {
-        newState.groups = groups
+      .then(() =>
+        apiManager.groups().then(groups => {
+          newState.groups = groups;
         })
       )
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   };
 
   componentDidMount() {
-    const currentUserId = localStorage.getItem("logged-in")
+    const loadingScreen = (
+      <div className="loadingDiv">
+        <p className="loadingP">Loading...</p>
+      </div>
+    );
+    this.setState({ loadingScreen: loadingScreen });
+    const currentUserId = localStorage.getItem("logged-in");
     const newState = {};
     return apiManager
       .user(currentUserId)
@@ -181,13 +229,13 @@ class NavigationElements extends Component {
           newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
         })
       )
-      .then(()=>
-      apiManager.groups()
-      .then(groups => {
-        newState.groups = groups
+      .then(() =>
+        apiManager.groups().then(groups => {
+          newState.groups = groups;
         })
       )
-      .then(() => this.setState(newState));
+      .then(() => this.setState(newState))
+      .then(() => this.setState({ loadingScreen: null }));
   }
 
   isAuthenticated = () => localStorage.getItem("logged-in") !== null;
@@ -199,7 +247,7 @@ class NavigationElements extends Component {
           exact
           path="/"
           render={props => {
-            return <Home />;
+            return <Home loadingScreen={this.state.loadingScreen} />;
           }}
         />
         <Route
@@ -217,6 +265,7 @@ class NavigationElements extends Component {
                   playerLocationRuler={this.state.playerLocationRuler}
                   playerLocationArrival={this.state.playerLocationArrival}
                   locationRefresh={this.locationRefresh}
+                  loadingScreen={this.state.loadingScreen}
                 />
               );
             } else {
@@ -240,6 +289,7 @@ class NavigationElements extends Component {
                   carryRefresh={this.carryRefresh}
                   maxCarry={this.state.maxCarry}
                   currentWeight={this.state.currentWeight}
+                  loadingScreen={this.state.loadingScreen}
                 />
               );
             } else {
@@ -248,7 +298,7 @@ class NavigationElements extends Component {
           }}
         />
         <Route
-        exact
+          exact
           path="/Shop"
           render={props => {
             if (this.isAuthenticated()) {
@@ -262,6 +312,7 @@ class NavigationElements extends Component {
                   refresh={this.refresh}
                   shopBuySellRefresh={this.shopBuySellRefresh}
                   itemsRefresh={this.itemsRefresh}
+                  loadingScreen={this.state.loadingScreen}
                 />
               );
             } else {
@@ -275,15 +326,16 @@ class NavigationElements extends Component {
             if (this.isAuthenticated()) {
               return (
                 <ShopPath
-                {...props}
-                items={this.state.items}
-                funds={this.state.funds}
-                playerLocation={this.state.playerLocation}
-                playerLocationSize={this.state.playerLocationSize}
-                refresh={this.refresh}
-                shopBuySellRefresh={this.shopBuySellRefresh}
-                itemsRefresh={this.itemsRefresh}
-                carryRefresh={this.carryRefresh}
+                  {...props}
+                  items={this.state.items}
+                  funds={this.state.funds}
+                  playerLocation={this.state.playerLocation}
+                  playerLocationSize={this.state.playerLocationSize}
+                  refresh={this.refresh}
+                  shopBuySellRefresh={this.shopBuySellRefresh}
+                  itemsRefresh={this.itemsRefresh}
+                  carryRefresh={this.carryRefresh}
+                  loadingScreen={this.state.loadingScreen}
                 />
               );
             } else {
@@ -310,7 +362,13 @@ class NavigationElements extends Component {
         <Route
           path="/register"
           render={props => {
-            return <Register {...props} groups={this.state.groups} refresh={this.refresh} />;
+            return (
+              <Register
+                {...props}
+                groups={this.state.groups}
+                refresh={this.refresh}
+              />
+            );
           }}
         />
         <Route

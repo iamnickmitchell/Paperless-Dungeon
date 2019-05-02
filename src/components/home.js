@@ -15,6 +15,7 @@ class Home extends Component {
         As a player you can: Purchase, view, and sell items. View your current location's overview map and some basic stats about it. See the days weather and what day your group is currently on.
         </p>
       </div>
+      {this.props.loadingScreen}
       {/* <div id="three-container"></div>
       <div id="instructions">
       Search for locations, cities, items, or species.

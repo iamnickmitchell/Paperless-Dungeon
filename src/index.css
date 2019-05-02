@@ -900,6 +900,23 @@ input {
   color: rgb(184, 1, 1);
 }
 
+.loadingDiv{
+  position: absolute;
+  bottom: 12vh;
+  height: 2rem;
+  width: 25vw;
+  background-color: #659dbdbe;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.loadingP{
+  padding-left: 2vw;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.25rem !important;
+}
+
 #groupId {
   text-align: center;
   color: white;
