@@ -163,6 +163,7 @@ class ShopPath extends Component {
             ))}
           </div>
         </div>
+        {this.props.loadingScreen}
       </div>
     );
   }

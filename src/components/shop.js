@@ -138,6 +138,7 @@ class Shop extends Component {
             />
           </p>
         </div>
+        {this.props.loadingScreen}
       </div>
     );
   }

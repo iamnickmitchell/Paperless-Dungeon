@@ -69,6 +69,7 @@ class Characters extends Component {
                 />
               ))}
             </div>
+
             {/* <hr className="my-4" />
             <h4 className="color-white blue-background-player">Background:</h4>
             <div className="items grey-background">
@@ -82,6 +83,7 @@ class Characters extends Component {
             <hr className="my-4" /> */}
           </div>
         </div>
+        {this.props.loadingScreen}
       </div>
     );
   }

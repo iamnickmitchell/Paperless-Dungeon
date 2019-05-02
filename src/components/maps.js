@@ -82,6 +82,7 @@ class Maps extends Component {
             </button>
           </div>
         </div>
+        {this.props.loadingScreen}
       </div>
     );
   }
