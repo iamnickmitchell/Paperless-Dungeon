@@ -11,8 +11,14 @@ class Day extends Component {
             to="/logout"
           />
         </p>
+        <div className="weatherImageDiv">
+        <img className="weatherImage" src={this.props.weather.weatherIcon} alt=""></img>
+        <h1 className="weatherPtag">{this.props.weather.weather}</h1>
+        </div>
       </div>
     );
   }
 }
 export default Day;
+
+// https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png
