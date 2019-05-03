@@ -917,6 +917,17 @@ input {
   font-size: 1.25rem !important;
 }
 
+.weatherImageDiv{
+  display: flex;
+  justify-content: center;
+  background-color: #659dbdbd;
+}
+.weatherImage{}
+.weatherPtag{
+  margin-bottom: 0px;
+  margin-top: 1%;
+}
+
 #groupId {
   text-align: center;
   color: white;

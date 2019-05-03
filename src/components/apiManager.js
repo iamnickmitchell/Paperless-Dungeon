@@ -9,8 +9,11 @@ const apiManager = {
       userItems => userItems.json()
     ),
   items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
+  weather: () => fetch(`${fetchURL}/weather`).then(weather => weather.json()),
   location: () =>
     fetch(`${fetchURL}/locations`).then(location => location.json()),
+  locationWeather: currentLocation =>
+    fetch(`${fetchURL}/locations/${currentLocation}?_expand=weather`).then(location => location.json()),
   playerLocations: currentUserId =>
     fetch(`${fetchURL}/playerLocations/${currentUserId}?_expand=location`).then(
       user => user.json()

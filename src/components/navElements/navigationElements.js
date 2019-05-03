@@ -29,7 +29,9 @@ class NavigationElements extends Component {
     maxCarry: "",
     currentWeight: "",
     groups: [],
-    loadingScreen: ``
+    loadingScreen: ``,
+    weather: [],
+    currentLocation: 0
   };
 
   shopBuySellRefresh = () => {
@@ -129,7 +131,15 @@ class NavigationElements extends Component {
         newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
         newState.playerLocationRuler = parsedplayerLocation.location.ruler;
         newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
+        this.setState({ currentLocation: parsedplayerLocation.location.id });
       })
+      .then(() =>
+        apiManager
+          .locationWeather(this.state.currentLocation)
+          .then(location => {
+            newState.weather = location.weather;
+          })
+      )
       .then(() => this.setState(newState))
       .then(() => this.setState({ loadingScreen: null }));
   };
@@ -175,7 +185,15 @@ class NavigationElements extends Component {
           newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
           newState.playerLocationRuler = parsedplayerLocation.location.ruler;
           newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
+          this.setState({ currentLocation: parsedplayerLocation.location.id });
         })
+      )
+      .then(() =>
+        apiManager
+          .locationWeather(this.state.currentLocation)
+          .then(location => {
+            newState.weather = location.weather;
+          })
       )
       .then(() =>
         apiManager.groups().then(groups => {
@@ -227,7 +245,15 @@ class NavigationElements extends Component {
           newState.playerLocationOwner = parsedplayerLocation.location.ownedBy;
           newState.playerLocationRuler = parsedplayerLocation.location.ruler;
           newState.playerLocationArrival = parsedplayerLocation.arrivalTime;
+          this.setState({ currentLocation: parsedplayerLocation.location.id });
         })
+      )
+      .then(() =>
+        apiManager
+          .locationWeather(this.state.currentLocation)
+          .then(location => {
+            newState.weather = location.weather;
+          })
       )
       .then(() =>
         apiManager.groups().then(groups => {
@@ -347,7 +373,7 @@ class NavigationElements extends Component {
           path="/Day"
           render={props => {
             if (this.isAuthenticated()) {
-              return <Day />;
+              return <Day {...props} weather={this.state.weather} />;
             } else {
               return <PleaseLogin />;
             }
