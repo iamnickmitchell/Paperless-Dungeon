@@ -30,7 +30,7 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
         apiManager
           .user(currentUserId)
           .then(parsedFunds => {
-            const newFunds = parsedFunds.funds - value;
+            const newFunds = Number(parsedFunds.funds) - Number(value);
             return fetch(`${fetchURL}/users/${currentUserId}`, {
               method: "PATCH",
               headers: { "Content-Type": "application/json" },
@@ -47,7 +47,7 @@ function shopBuy(id, value, location, weight, refresh, carryRefresh) {
           .then(() => {
             apiManager.user(currentUserId)
             .then(user => {
-              const newWeight = user.currentWeight + weight;
+              const newWeight = Number(user.currentWeight) + Number(weight);
               return fetch(`${fetchURL}/users/${currentUserId}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },

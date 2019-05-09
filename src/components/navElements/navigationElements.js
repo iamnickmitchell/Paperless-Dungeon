@@ -17,6 +17,8 @@ import RewardCreate from "../shop/shopRewards";
 
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
 
+
+
 class NavigationElements extends Component {
   state = {
     username: [],
@@ -211,7 +213,10 @@ class NavigationElements extends Component {
       </div>
     );
     this.setState({ loadingScreen: loadingScreen });
-    const currentUserId = localStorage.getItem("logged-in");
+    let currentUserId = localStorage.getItem("logged-in");
+    if(currentUserId === null){
+      currentUserId = 1
+    }
     const newState = {};
     return apiManager
       .user(currentUserId)
