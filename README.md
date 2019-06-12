@@ -1,7 +1,7 @@
 A website designed to create an easy to use economy, map, and shop system for DnD table top games.
 
 <h1>Paperless Dungeon</h1>
-<p>version 1.0.8.4_alpha Release (current release)[See https://gist.github.com/iamnickmitchell/9a7182422e510ca68ce431e09bfa27cf for details]</p>
+<p>version 1.0.8.6_alpha Release (current release)[See https://gist.github.com/iamnickmitchell/9a7182422e510ca68ce431e09bfa27cf for details]</p>
 <p>version 1.1.0.0_alpha Release (current snapshot)</p>
 
 
@@ -38,9 +38,7 @@ Go to https://paperlessdungeon.netlify.com
 <p>5) On each card will be a buy button. If you would like to add an item to your inventory you can click the buy button on an object(the price of the item will be shown in parenthesis beside the buy button, you need to have more than or equal to the cost of the item to purchase it).</p>
 
 
-<!-- # To use the app (snapshot):
-
-Coming Soon... -->
+<!-- # To use the app (snapshot): Coming Soon... -->
 
 
 # Built using:
@@ -79,14 +77,14 @@ Other:
 * Heroku - API storage
 * Netlify - APP storage
 
-# ERD:
+# ERD: (Note-OUT OF DATE)
 ![Error: Image not found!](public/Images/README_images/ERD.png)
 
 # Authors:
 <h3>Nick Mitchell - project lead<h3>
 
 # Licensing:
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the GNU AGPLv3 License - see the LICENSE.md file for details
 
 # Acknowledgments:
 * NewForce - for showing me how to code well (I think this is a pretty important part)
