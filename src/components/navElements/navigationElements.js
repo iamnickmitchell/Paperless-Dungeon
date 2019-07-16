@@ -207,12 +207,13 @@ class NavigationElements extends Component {
   };
 
   componentDidMount() {
+    if(localStorage.getItem("logged-in")!==null){
     const loadingScreen = (
       <div className="loadingDiv">
         <p className="loadingP">Loading...</p>
       </div>
-    );
-    this.setState({ loadingScreen: loadingScreen });
+    )
+    this.setState({ loadingScreen: loadingScreen });}
     let currentUserId = localStorage.getItem("logged-in");
     if(currentUserId === null){
       currentUserId = 1

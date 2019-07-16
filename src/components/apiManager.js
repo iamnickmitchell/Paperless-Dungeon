@@ -9,7 +9,7 @@ const apiManager = {
     fetch(`${fetchURL}/userItems?userId=${currentUserId}&_expand=item`).then(
       userItems => userItems.json()
     ),
-  items: () => fetch(`${mongo}/items`).then(item => item.json()),
+  items: () => fetch(`${fetchURL}/items`).then(item => item.json()),
   weather: () => fetch(`${fetchURL}/weather`).then(weather => weather.json()),
   location: () =>
     fetch(`${fetchURL}/locations`).then(location => location.json()),

@@ -1093,3 +1093,9 @@ canvas {
   text-align: center;
   pointer-events: none;
 }
+
+.NOTE{
+  background-color: #8d2c2cd7;
+  color: white;
+  padding: 40px;
+}
