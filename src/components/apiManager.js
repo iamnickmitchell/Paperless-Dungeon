@@ -1,4 +1,5 @@
 const fetchURL = "https://dnd-web-tool.herokuapp.com";
+const mongo = "https://localhost:3000"
 
 const apiManager = {
   user: currentUserId =>
@@ -24,6 +25,13 @@ const apiManager = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(createUser)
+    });
+  },
+  registerGroup: createGroup => {
+    fetch(`${fetchURL}/groups`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(createGroup)
     });
   },
   rewardItemCreate: giveItem =>

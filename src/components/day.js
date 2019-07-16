@@ -12,8 +12,12 @@ class Day extends Component {
           />
         </p>
         <div className="weatherImageDiv">
-        <img className="weatherImage" src={this.props.weather.weatherIcon} alt=""></img>
-        <h1 className="weatherPtag">{this.props.weather.weather}</h1>
+          <img
+            className="weatherImage"
+            src={this.props.weather.weatherIcon}
+            alt=""
+          />
+          <h1 className="weatherPtag">{this.props.weather.weather}</h1>
         </div>
       </div>
     );

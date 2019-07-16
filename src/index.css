@@ -922,7 +922,6 @@ input {
   justify-content: center;
   background-color: #659dbdbd;
 }
-.weatherImage{}
 .weatherPtag{
   margin-bottom: 0px;
   margin-top: 1%;
@@ -1093,4 +1092,10 @@ canvas {
   width: 100%;
   text-align: center;
   pointer-events: none;
+}
+
+.NOTE{
+  background-color: #8d2c2cd7;
+  color: white;
+  padding: 40px;
 }
