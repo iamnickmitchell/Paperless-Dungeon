@@ -42,19 +42,18 @@ Go to https://paperlessdungeon.netlify.com
 
 
 # Built using:
-Programming Languages:
 ----------------
 * HTML5
 * CSS3
 * Javascript
 
-Frameworks/Libraries:
+Frameworks/Libraries (Some not present in current version):
 ----------------
 * react.js
 * redux
 
-Tech Stack:
 ----------------
+
 * three.js - styling
 * greensock - styling
 * moment.js - timestamps
@@ -77,7 +76,7 @@ Other:
 * Heroku - API storage
 * Netlify - APP storage
 
-# ERD: (Note-OUT OF DATE)
+# ERD: (Note-Some Changes Have Been Made to Current Version)
 ![Error: Image not found!](public/Images/README_images/ERD.png)
 
 # Authors:
@@ -87,10 +86,10 @@ Other:
 This project is licensed under the GNU AGPLv3 License - see the LICENSE.md file for details
 
 # Acknowledgments:
-* NewForce - for showing me how to code well (I think this is a pretty important part)
-* Friends - for giving me a reason to make this
-* Family - for supporting me with feedback as features are added
-* My Wonderful Fiance Megan - for being the one to carry the burden of listening to me rambling about code, cheering me up when I'm frustrated with code not working, and keeping me on track to reach my lofty goals and deadlines.
+* NewForce
+* Friends
+* Family
+* My Wonderful Fiance Megan
 
 -----------
 &#169;2019 Ayrshire Technologies
